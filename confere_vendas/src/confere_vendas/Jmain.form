@@ -17,6 +17,11 @@
         <EventHandler event="onTime" listener="org.netbeans.examples.lib.timerbean.TimerListener" parameters="java.awt.event.ActionEvent" handler="timer3OnTime"/>
       </Events>
     </Component>
+    <Component class="org.netbeans.examples.lib.timerbean.Timer" name="timer4">
+      <Events>
+        <EventHandler event="onTime" listener="org.netbeans.examples.lib.timerbean.TimerListener" parameters="java.awt.event.ActionEvent" handler="timer4OnTime"/>
+      </Events>
+    </Component>
   </NonVisualComponents>
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
@@ -890,6 +895,400 @@
                 </Component>
               </SubComponents>
             </Container>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="jPanel3">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Picos">
+                <Property name="tabTitle" type="java.lang.String" value="Picos"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="picos209" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="picos210" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="picos211" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="picos212" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="picos213" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="picos208" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="picos202" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="picos203" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="picos204" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="picos205" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="picos206" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="picos207" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="picos201" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="picos214" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="picos220" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="picos221" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="picos222" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="picos223" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="picos226" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="picos227" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="picos228" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="picos215" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="picos216" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="picos217" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="picos218" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="picos219" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="picos229" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="picos230" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="picos231" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="picos232" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="picos234" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="105" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="picos201" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="picos202" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="picos203" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="picos204" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="picos205" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="picos206" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="picos207" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="picos208" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="picos221" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="picos209" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="picos222" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="picos210" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="picos223" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="picos211" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="picos226" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="picos212" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="picos227" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="picos213" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="picos228" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="picos214" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="picos229" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="picos215" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="picos230" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="picos216" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="picos231" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="picos217" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="picos232" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="picos218" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="picos234" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="picos219" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="picos220" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="0" pref="20" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="picos201">
+              <Properties>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="33" green="33" red="ff" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="201 - N&#xc3;O CHEGOU"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="picos202">
+              <Properties>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="33" green="33" red="ff" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="202 - N&#xc3;O CHEGOU"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="picos203">
+              <Properties>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="33" green="33" red="ff" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="203 - N&#xc3;O CHEGOU"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="picos204">
+              <Properties>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="33" green="33" red="ff" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="204 - N&#xc3;O CHEGOU"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="picos205">
+              <Properties>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="33" green="33" red="ff" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="205 - N&#xc3;O CHEGOU"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="picos206">
+              <Properties>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="33" green="33" red="ff" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="206 - N&#xc3;O CHEGOU"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="picos207">
+              <Properties>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="33" green="33" red="ff" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="207 - N&#xc3;O CHEGOU"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="picos208">
+              <Properties>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="33" green="33" red="ff" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="208 - N&#xc3;O CHEGOU"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="picos209">
+              <Properties>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="33" green="33" red="ff" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="209 - N&#xc3;O CHEGOU"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="picos210">
+              <Properties>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="33" green="33" red="ff" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="210 - N&#xc3;O CHEGOU"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="picos211">
+              <Properties>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="33" green="33" red="ff" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="211 - N&#xc3;O CHEGOU"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="picos212">
+              <Properties>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="33" green="33" red="ff" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="212 - N&#xc3;O CHEGOU"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="picos213">
+              <Properties>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="33" green="33" red="ff" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="313 - N&#xc3;O CHEGOU"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="picos214">
+              <Properties>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="33" green="33" red="ff" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="214 - N&#xc3;O CHEGOU"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="picos215">
+              <Properties>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="33" green="33" red="ff" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="215 - N&#xc3;O CHEGOU"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="picos216">
+              <Properties>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="33" green="33" red="ff" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="216 - N&#xc3;O CHEGOU"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="picos217">
+              <Properties>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="33" green="33" red="ff" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="217 - N&#xc3;O CHEGOU"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="picos218">
+              <Properties>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="33" green="33" red="ff" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="218 - N&#xc3;O CHEGOU"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="picos219">
+              <Properties>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="33" green="33" red="ff" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="219 - N&#xc3;O CHEGOU"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="picos220">
+              <Properties>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="33" green="33" red="ff" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="220 - N&#xc3;O CHEGOU"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="picos221">
+              <Properties>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="33" green="33" red="ff" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="221 - N&#xc3;O CHEGOU"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="picos222">
+              <Properties>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="33" green="33" red="ff" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="222 - N&#xc3;O CHEGOU"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="picos223">
+              <Properties>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="33" green="33" red="ff" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="223 - N&#xc3;O CHEGOU"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="picos226">
+              <Properties>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="33" green="33" red="ff" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="226 - N&#xc3;O CHEGOU"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="picos227">
+              <Properties>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="33" green="33" red="ff" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="227 - N&#xc3;O CHEGOU"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="picos228">
+              <Properties>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="33" green="33" red="ff" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="228 - N&#xc3;O CHEGOU"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="picos229">
+              <Properties>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="33" green="33" red="ff" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="229 - N&#xc3;O CHEGOU"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="picos230">
+              <Properties>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="33" green="33" red="ff" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="230 - N&#xc3;O CHEGOU"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="picos231">
+              <Properties>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="33" green="33" red="ff" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="231 - N&#xc3;O CHEGOU"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="picos232">
+              <Properties>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="33" green="33" red="ff" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="232 - N&#xc3;O CHEGOU"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="picos234">
+              <Properties>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="33" green="33" red="ff" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="234 - N&#xc3;O CHEGOU"/>
+              </Properties>
+            </Component>
           </SubComponents>
         </Container>
       </SubComponents>

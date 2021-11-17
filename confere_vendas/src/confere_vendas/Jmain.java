@@ -8,7 +8,12 @@ package confere_vendas;
 import java.awt.Color;
 import java.io.File;
 import java.io.FileFilter;
+import java.text.SimpleDateFormat;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.Calendar;
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -22,17 +27,17 @@ public class Jmain extends javax.swing.JFrame {
 public Jmain() {
     
     initComponents();
-        
+    
+    
     setTitle("Confere Vendas");
-    setLocation(500, 500);
-
+    this.setLocationRelativeTo(null);
+    setResizable(false);
+    LocalDateTime localDate = LocalDateTime.now();
+    System.out.println(localDate);
     timer1.start();
     timer2.start();
     timer3.start();
-   
-        
-
-    
+    timer4.start();    
 }
 
     /**
@@ -47,6 +52,7 @@ public Jmain() {
         timer1 = new org.netbeans.examples.lib.timerbean.Timer();
         timer2 = new org.netbeans.examples.lib.timerbean.Timer();
         timer3 = new org.netbeans.examples.lib.timerbean.Timer();
+        timer4 = new org.netbeans.examples.lib.timerbean.Timer();
         srn = new javax.swing.JTabbedPane();
         saoraimundo = new javax.swing.JPanel();
         srn501 = new javax.swing.JLabel();
@@ -113,6 +119,38 @@ public Jmain() {
         caxias121 = new javax.swing.JLabel();
         caxias122 = new javax.swing.JLabel();
         caxias123 = new javax.swing.JLabel();
+        jPanel3 = new javax.swing.JPanel();
+        picos201 = new javax.swing.JLabel();
+        picos202 = new javax.swing.JLabel();
+        picos203 = new javax.swing.JLabel();
+        picos204 = new javax.swing.JLabel();
+        picos205 = new javax.swing.JLabel();
+        picos206 = new javax.swing.JLabel();
+        picos207 = new javax.swing.JLabel();
+        picos208 = new javax.swing.JLabel();
+        picos209 = new javax.swing.JLabel();
+        picos210 = new javax.swing.JLabel();
+        picos211 = new javax.swing.JLabel();
+        picos212 = new javax.swing.JLabel();
+        picos213 = new javax.swing.JLabel();
+        picos214 = new javax.swing.JLabel();
+        picos215 = new javax.swing.JLabel();
+        picos216 = new javax.swing.JLabel();
+        picos217 = new javax.swing.JLabel();
+        picos218 = new javax.swing.JLabel();
+        picos219 = new javax.swing.JLabel();
+        picos220 = new javax.swing.JLabel();
+        picos221 = new javax.swing.JLabel();
+        picos222 = new javax.swing.JLabel();
+        picos223 = new javax.swing.JLabel();
+        picos226 = new javax.swing.JLabel();
+        picos227 = new javax.swing.JLabel();
+        picos228 = new javax.swing.JLabel();
+        picos229 = new javax.swing.JLabel();
+        picos230 = new javax.swing.JLabel();
+        picos231 = new javax.swing.JLabel();
+        picos232 = new javax.swing.JLabel();
+        picos234 = new javax.swing.JLabel();
 
         timer1.addTimerListener(new org.netbeans.examples.lib.timerbean.TimerListener() {
             public void onTime(java.awt.event.ActionEvent evt) {
@@ -129,6 +167,12 @@ public Jmain() {
         timer3.addTimerListener(new org.netbeans.examples.lib.timerbean.TimerListener() {
             public void onTime(java.awt.event.ActionEvent evt) {
                 timer3OnTime(evt);
+            }
+        });
+
+        timer4.addTimerListener(new org.netbeans.examples.lib.timerbean.TimerListener() {
+            public void onTime(java.awt.event.ActionEvent evt) {
+                timer4OnTime(evt);
             }
         });
 
@@ -588,6 +632,215 @@ public Jmain() {
 
         srn.addTab("Caxias", jPanel2);
 
+        picos201.setForeground(new java.awt.Color(255, 51, 51));
+        picos201.setText("201 - NÃO CHEGOU");
+
+        picos202.setForeground(new java.awt.Color(255, 51, 51));
+        picos202.setText("202 - NÃO CHEGOU");
+
+        picos203.setForeground(new java.awt.Color(255, 51, 51));
+        picos203.setText("203 - NÃO CHEGOU");
+
+        picos204.setForeground(new java.awt.Color(255, 51, 51));
+        picos204.setText("204 - NÃO CHEGOU");
+
+        picos205.setForeground(new java.awt.Color(255, 51, 51));
+        picos205.setText("205 - NÃO CHEGOU");
+
+        picos206.setForeground(new java.awt.Color(255, 51, 51));
+        picos206.setText("206 - NÃO CHEGOU");
+
+        picos207.setForeground(new java.awt.Color(255, 51, 51));
+        picos207.setText("207 - NÃO CHEGOU");
+
+        picos208.setForeground(new java.awt.Color(255, 51, 51));
+        picos208.setText("208 - NÃO CHEGOU");
+
+        picos209.setForeground(new java.awt.Color(255, 51, 51));
+        picos209.setText("209 - NÃO CHEGOU");
+
+        picos210.setForeground(new java.awt.Color(255, 51, 51));
+        picos210.setText("210 - NÃO CHEGOU");
+
+        picos211.setForeground(new java.awt.Color(255, 51, 51));
+        picos211.setText("211 - NÃO CHEGOU");
+
+        picos212.setForeground(new java.awt.Color(255, 51, 51));
+        picos212.setText("212 - NÃO CHEGOU");
+
+        picos213.setForeground(new java.awt.Color(255, 51, 51));
+        picos213.setText("313 - NÃO CHEGOU");
+
+        picos214.setForeground(new java.awt.Color(255, 51, 51));
+        picos214.setText("214 - NÃO CHEGOU");
+
+        picos215.setForeground(new java.awt.Color(255, 51, 51));
+        picos215.setText("215 - NÃO CHEGOU");
+
+        picos216.setForeground(new java.awt.Color(255, 51, 51));
+        picos216.setText("216 - NÃO CHEGOU");
+
+        picos217.setForeground(new java.awt.Color(255, 51, 51));
+        picos217.setText("217 - NÃO CHEGOU");
+
+        picos218.setForeground(new java.awt.Color(255, 51, 51));
+        picos218.setText("218 - NÃO CHEGOU");
+
+        picos219.setForeground(new java.awt.Color(255, 51, 51));
+        picos219.setText("219 - NÃO CHEGOU");
+
+        picos220.setForeground(new java.awt.Color(255, 51, 51));
+        picos220.setText("220 - NÃO CHEGOU");
+
+        picos221.setForeground(new java.awt.Color(255, 51, 51));
+        picos221.setText("221 - NÃO CHEGOU");
+
+        picos222.setForeground(new java.awt.Color(255, 51, 51));
+        picos222.setText("222 - NÃO CHEGOU");
+
+        picos223.setForeground(new java.awt.Color(255, 51, 51));
+        picos223.setText("223 - NÃO CHEGOU");
+
+        picos226.setForeground(new java.awt.Color(255, 51, 51));
+        picos226.setText("226 - NÃO CHEGOU");
+
+        picos227.setForeground(new java.awt.Color(255, 51, 51));
+        picos227.setText("227 - NÃO CHEGOU");
+
+        picos228.setForeground(new java.awt.Color(255, 51, 51));
+        picos228.setText("228 - NÃO CHEGOU");
+
+        picos229.setForeground(new java.awt.Color(255, 51, 51));
+        picos229.setText("229 - NÃO CHEGOU");
+
+        picos230.setForeground(new java.awt.Color(255, 51, 51));
+        picos230.setText("230 - NÃO CHEGOU");
+
+        picos231.setForeground(new java.awt.Color(255, 51, 51));
+        picos231.setText("231 - NÃO CHEGOU");
+
+        picos232.setForeground(new java.awt.Color(255, 51, 51));
+        picos232.setText("232 - NÃO CHEGOU");
+
+        picos234.setForeground(new java.awt.Color(255, 51, 51));
+        picos234.setText("234 - NÃO CHEGOU");
+
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(picos209)
+                    .addComponent(picos210)
+                    .addComponent(picos211)
+                    .addComponent(picos212)
+                    .addComponent(picos213)
+                    .addComponent(picos208)
+                    .addComponent(picos202)
+                    .addComponent(picos203)
+                    .addComponent(picos204)
+                    .addComponent(picos205)
+                    .addComponent(picos206)
+                    .addComponent(picos207)
+                    .addComponent(picos201))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(picos214)
+                    .addComponent(picos220)
+                    .addComponent(picos221)
+                    .addComponent(picos222)
+                    .addComponent(picos223)
+                    .addComponent(picos226)
+                    .addComponent(picos227)
+                    .addComponent(picos228)
+                    .addComponent(picos215)
+                    .addComponent(picos216)
+                    .addComponent(picos217)
+                    .addComponent(picos218)
+                    .addComponent(picos219))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(picos229)
+                    .addComponent(picos230)
+                    .addComponent(picos231)
+                    .addComponent(picos232)
+                    .addComponent(picos234))
+                .addContainerGap(105, Short.MAX_VALUE))
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addComponent(picos201)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(picos202)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(picos203)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(picos204)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(picos205)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(picos206)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(picos207)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(picos208)
+                            .addComponent(picos221))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(picos209)
+                            .addComponent(picos222))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(picos210)
+                            .addComponent(picos223))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(picos211)
+                            .addComponent(picos226))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(picos212)
+                            .addComponent(picos227))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(picos213)
+                            .addComponent(picos228)))
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(picos214)
+                            .addComponent(picos229))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(picos215)
+                            .addComponent(picos230))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(picos216)
+                            .addComponent(picos231))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(picos217)
+                            .addComponent(picos232))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(picos218)
+                            .addComponent(picos234))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(picos219)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(picos220)))
+                .addGap(0, 20, Short.MAX_VALUE))
+        );
+
+        srn.addTab("Picos", jPanel3);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -603,7 +856,8 @@ public Jmain() {
     }// </editor-fold>//GEN-END:initComponents
 
     private void timer1OnTime(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_timer1OnTime
-        File diretorio = new File("C:\\Users\\anton\\Documents\\SRN");
+        File diretorio = new File("S:\\6433\\VDWIN\\PTPED");
+ 
         File[] listFiles = diretorio.listFiles(new FileFilter() {
 	public boolean accept(File pathname) {
                 if (pathname.getName().endsWith("301.TXT.GZ") == true) {
@@ -647,8 +901,8 @@ public Jmain() {
                     piripiri310.setForeground(Color.blue);
                 }
                 if (pathname.getName().endsWith("311.TXT.GZ") == true) {
-                    piripiri310.setText("311 Chegou");
-                    piripiri310.setForeground(Color.blue);
+                    piripiri311.setText("311 Chegou");
+                    piripiri311.setForeground(Color.blue);
                 }
                 if (pathname.getName().endsWith("312.TXT.GZ") == true) {
                     piripiri312.setText("312 Chegou");
@@ -740,9 +994,8 @@ public Jmain() {
     }//GEN-LAST:event_timer1OnTime
 
     private void timer2OnTime(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_timer2OnTime
-        File diretorio = new File("C:\\Users\\anton\\Documents\\SRN");
+        File diretorio = new File("S:\\6456\\VDWIN\\PTPED");
 	
-    
         File[] listFiles = diretorio.listFiles(new FileFilter() {
 	public boolean accept(File pathname) {
                 if (pathname.getName().endsWith("501.TXT.GZ") == true) {
@@ -795,7 +1048,7 @@ public Jmain() {
     }//GEN-LAST:event_timer2OnTime
 
     private void timer3OnTime(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_timer3OnTime
-        File diretorio = new File("C:\\Users\\anton\\Documents\\SRN");
+        File diretorio = new File("S:\\6648\\VDWIN\\PTPED");
 	
         File[] listFiles = diretorio.listFiles(new FileFilter() {
 	public boolean accept(File pathname) {
@@ -877,6 +1130,141 @@ public Jmain() {
         });
     }//GEN-LAST:event_timer3OnTime
 
+    private void timer4OnTime(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_timer4OnTime
+        // TODO add your handling code here:
+        File diretorio = new File("S:\\6429\\VDWIN\\PTPED");
+        
+        File[] listFiles = diretorio.listFiles(new FileFilter() {
+	public boolean accept(File pathname) {
+                if (pathname.getName().endsWith("201.TXT.GZ") == true) {
+                    picos201.setText("201 Chegou");
+                    picos201.setForeground(Color.blue);
+                }
+                if (pathname.getName().endsWith("202.TXT.GZ") == true) {
+                    picos202.setText("202 Chegou");
+                    picos202.setForeground(Color.blue);
+                }
+                if (pathname.getName().endsWith("203.TXT.GZ") == true) {
+                    picos203.setText("203 Chegou");
+                    picos203.setForeground(Color.blue);
+                }
+                if (pathname.getName().endsWith("204.TXT.GZ") == true) {
+                    picos204.setText("204 Chegou");
+                    picos204.setForeground(Color.blue);
+                }
+                if (pathname.getName().endsWith("205.TXT.GZ") == true) {
+                    picos205.setText("205 Chegou");
+                    picos205.setForeground(Color.blue);
+                }
+                if (pathname.getName().endsWith("206.TXT.GZ") == true) {
+                    picos206.setText("206 Chegou");
+                    picos206.setForeground(Color.blue);
+                }
+                if (pathname.getName().endsWith("207.TXT.GZ") == true) {
+                    picos207.setText("207 Chegou");
+                    picos207.setForeground(Color.blue);
+                }
+                if (pathname.getName().endsWith("208.TXT.GZ") == true) {
+                    picos208.setText("208 Chegou");
+                    picos208.setForeground(Color.blue);
+                }
+                if (pathname.getName().endsWith("209.TXT.GZ") == true) {
+                    picos209.setText("209 Chegou");
+                    picos209.setForeground(Color.blue);
+                }
+                if (pathname.getName().endsWith("210.TXT.GZ") == true) {
+                    picos210.setText("210 Chegou");
+                    picos210.setForeground(Color.blue);
+                }
+                if (pathname.getName().endsWith("211.TXT.GZ") == true) {
+                    picos211.setText("211 Chegou");
+                    picos211.setForeground(Color.blue);
+                }
+                if (pathname.getName().endsWith("212.TXT.GZ") == true) {
+                    picos212.setText("212 Chegou");
+                    picos212.setForeground(Color.blue);
+                }                
+                if (pathname.getName().endsWith("213.TXT.GZ") == true) {
+                    picos213.setText("213 Chegou");
+                    picos213.setForeground(Color.blue);
+                }
+                if (pathname.getName().endsWith("214.TXT.GZ") == true) {
+                    picos214.setText("214 Chegou");
+                    picos214.setForeground(Color.blue);
+                }
+                if (pathname.getName().endsWith("215.TXT.GZ") == true) {
+                    picos215.setText("215 Chegou");
+                    picos215.setForeground(Color.blue);
+                }
+                if (pathname.getName().endsWith("216.TXT.GZ") == true) {
+                    picos216.setText("216 Chegou");
+                    picos216.setForeground(Color.blue);
+                }
+                if (pathname.getName().endsWith("217.TXT.GZ") == true) {
+                    picos217.setText("217 Chegou");
+                    picos217.setForeground(Color.blue);
+                }
+                if (pathname.getName().endsWith("218.TXT.GZ") == true) {
+                    picos218.setText("218 Chegou");
+                    picos218.setForeground(Color.blue);
+                }
+                if (pathname.getName().endsWith("219.TXT.GZ") == true) {
+                    picos219.setText("219 Chegou");
+                    picos219.setForeground(Color.blue);
+                }
+                if (pathname.getName().endsWith("220.TXT.GZ") == true) {
+                    picos220.setText("220 Chegou");
+                    picos220.setForeground(Color.blue);
+                }
+                if (pathname.getName().endsWith("221.TXT.GZ") == true) {
+                    picos221.setText("221 Chegou");
+                    picos221.setForeground(Color.blue);
+                }
+                if (pathname.getName().endsWith("222.TXT.GZ") == true) {
+                    picos222.setText("222 Chegou");
+                    picos222.setForeground(Color.blue);
+                }
+                if (pathname.getName().endsWith("223.TXT.GZ") == true) {
+                    picos223.setText("223 Chegou");
+                    picos223.setForeground(Color.blue);
+                }
+                if (pathname.getName().endsWith("226.TXT.GZ") == true) {
+                    picos226.setText("226 Chegou");
+                    picos226.setForeground(Color.blue);
+                }
+                if (pathname.getName().endsWith("227.TXT.GZ") == true) {
+                    picos227.setText("227 Chegou");
+                    picos227.setForeground(Color.blue);
+                }                
+                if (pathname.getName().endsWith("228.TXT.GZ") == true) {
+                    picos228.setText("228 Chegou");
+                    picos228.setForeground(Color.blue);
+                }              
+                if (pathname.getName().endsWith("229.TXT.GZ") == true) {
+                    picos229.setText("229 Chegou");
+                    picos229.setForeground(Color.blue);
+                }               
+                if (pathname.getName().endsWith("230.TXT.GZ") == true) {
+                    picos230.setText("230 Chegou");
+                    picos230.setForeground(Color.blue);
+                }               
+                if (pathname.getName().endsWith("231.TXT.GZ") == true) {
+                    picos231.setText("231 Chegou");
+                    picos231.setForeground(Color.blue);
+                }               
+                if (pathname.getName().endsWith("232.TXT.GZ") == true) {
+                    picos232.setText("232 Chegou");
+                    picos232.setForeground(Color.blue);
+                }                          
+                if (pathname.getName().endsWith("234.TXT.GZ") == true) {
+                    picos234.setText("234 Chegou");
+                    picos234.setForeground(Color.blue);
+                }                
+        return true;
+        }      
+        });
+    }//GEN-LAST:event_timer4OnTime
+
     /**
      * @param args the command line arguments
      */
@@ -888,7 +1276,7 @@ public Jmain() {
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
+                if ("Windows".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
                 }
@@ -933,6 +1321,38 @@ public Jmain() {
     private javax.swing.JLabel caxias123;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JLabel picos201;
+    private javax.swing.JLabel picos202;
+    private javax.swing.JLabel picos203;
+    private javax.swing.JLabel picos204;
+    private javax.swing.JLabel picos205;
+    private javax.swing.JLabel picos206;
+    private javax.swing.JLabel picos207;
+    private javax.swing.JLabel picos208;
+    private javax.swing.JLabel picos209;
+    private javax.swing.JLabel picos210;
+    private javax.swing.JLabel picos211;
+    private javax.swing.JLabel picos212;
+    private javax.swing.JLabel picos213;
+    private javax.swing.JLabel picos214;
+    private javax.swing.JLabel picos215;
+    private javax.swing.JLabel picos216;
+    private javax.swing.JLabel picos217;
+    private javax.swing.JLabel picos218;
+    private javax.swing.JLabel picos219;
+    private javax.swing.JLabel picos220;
+    private javax.swing.JLabel picos221;
+    private javax.swing.JLabel picos222;
+    private javax.swing.JLabel picos223;
+    private javax.swing.JLabel picos226;
+    private javax.swing.JLabel picos227;
+    private javax.swing.JLabel picos228;
+    private javax.swing.JLabel picos229;
+    private javax.swing.JLabel picos230;
+    private javax.swing.JLabel picos231;
+    private javax.swing.JLabel picos232;
+    private javax.swing.JLabel picos234;
     private javax.swing.JLabel piripiri301;
     private javax.swing.JLabel piripiri302;
     private javax.swing.JLabel piripiri303;
@@ -982,5 +1402,6 @@ public Jmain() {
     private org.netbeans.examples.lib.timerbean.Timer timer1;
     private org.netbeans.examples.lib.timerbean.Timer timer2;
     private org.netbeans.examples.lib.timerbean.Timer timer3;
+    private org.netbeans.examples.lib.timerbean.Timer timer4;
     // End of variables declaration//GEN-END:variables
 }
