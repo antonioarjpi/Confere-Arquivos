@@ -26,6 +26,13 @@ public Jmain() {
     setTitle("Confere Vendas");
     setLocation(500, 500);
 
+    timer1.start();
+    timer2.start();
+    timer3.start();
+   
+        
+
+    
 }
 
     /**
@@ -37,6 +44,9 @@ public Jmain() {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        timer1 = new org.netbeans.examples.lib.timerbean.Timer();
+        timer2 = new org.netbeans.examples.lib.timerbean.Timer();
+        timer3 = new org.netbeans.examples.lib.timerbean.Timer();
         srn = new javax.swing.JTabbedPane();
         saoraimundo = new javax.swing.JPanel();
         srn501 = new javax.swing.JLabel();
@@ -50,7 +60,6 @@ public Jmain() {
         srn512 = new javax.swing.JLabel();
         srn513 = new javax.swing.JLabel();
         srn514 = new javax.swing.JLabel();
-        atualizarSrn = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         piripiri301 = new javax.swing.JLabel();
         piripiri302 = new javax.swing.JLabel();
@@ -84,7 +93,44 @@ public Jmain() {
         piripiri332 = new javax.swing.JLabel();
         piripiri333 = new javax.swing.JLabel();
         piripiri334 = new javax.swing.JLabel();
-        atualizarPiripiri = new javax.swing.JButton();
+        jPanel2 = new javax.swing.JPanel();
+        saoraimundo1 = new javax.swing.JPanel();
+        caxias101 = new javax.swing.JLabel();
+        caxias102 = new javax.swing.JLabel();
+        caxias103 = new javax.swing.JLabel();
+        caxias104 = new javax.swing.JLabel();
+        caxias105 = new javax.swing.JLabel();
+        caxias106 = new javax.swing.JLabel();
+        caxias107 = new javax.swing.JLabel();
+        caxias108 = new javax.swing.JLabel();
+        caxias109 = new javax.swing.JLabel();
+        caxias110 = new javax.swing.JLabel();
+        caxias111 = new javax.swing.JLabel();
+        caxias112 = new javax.swing.JLabel();
+        caxias113 = new javax.swing.JLabel();
+        caxias114 = new javax.swing.JLabel();
+        caxias116 = new javax.swing.JLabel();
+        caxias121 = new javax.swing.JLabel();
+        caxias122 = new javax.swing.JLabel();
+        caxias123 = new javax.swing.JLabel();
+
+        timer1.addTimerListener(new org.netbeans.examples.lib.timerbean.TimerListener() {
+            public void onTime(java.awt.event.ActionEvent evt) {
+                timer1OnTime(evt);
+            }
+        });
+
+        timer2.addTimerListener(new org.netbeans.examples.lib.timerbean.TimerListener() {
+            public void onTime(java.awt.event.ActionEvent evt) {
+                timer2OnTime(evt);
+            }
+        });
+
+        timer3.addTimerListener(new org.netbeans.examples.lib.timerbean.TimerListener() {
+            public void onTime(java.awt.event.ActionEvent evt) {
+                timer3OnTime(evt);
+            }
+        });
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -121,19 +167,6 @@ public Jmain() {
         srn514.setForeground(new java.awt.Color(255, 0, 102));
         srn514.setText("513 - NÃO CHEGOU");
 
-        atualizarSrn.setText("atualizar");
-        atualizarSrn.setSelected(true);
-        atualizarSrn.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                atualizarSrnMouseClicked(evt);
-            }
-        });
-        atualizarSrn.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                atualizarSrnActionPerformed(evt);
-            }
-        });
-
         javax.swing.GroupLayout saoraimundoLayout = new javax.swing.GroupLayout(saoraimundo);
         saoraimundo.setLayout(saoraimundoLayout);
         saoraimundoLayout.setHorizontalGroup(
@@ -141,32 +174,24 @@ public Jmain() {
             .addGroup(saoraimundoLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(saoraimundoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(saoraimundoLayout.createSequentialGroup()
-                        .addGroup(saoraimundoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(srn502)
-                            .addComponent(srn503)
-                            .addComponent(srn504)
-                            .addComponent(srn505)
-                            .addComponent(srn506)
-                            .addComponent(srn507)
-                            .addComponent(srn511)
-                            .addComponent(srn512)
-                            .addComponent(srn513)
-                            .addComponent(srn514))
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(saoraimundoLayout.createSequentialGroup()
-                        .addComponent(srn501)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 248, Short.MAX_VALUE)
-                        .addComponent(atualizarSrn)))
-                .addContainerGap())
+                    .addComponent(srn502)
+                    .addComponent(srn503)
+                    .addComponent(srn504)
+                    .addComponent(srn505)
+                    .addComponent(srn506)
+                    .addComponent(srn507)
+                    .addComponent(srn511)
+                    .addComponent(srn512)
+                    .addComponent(srn513)
+                    .addComponent(srn514)
+                    .addComponent(srn501))
+                .addContainerGap(331, Short.MAX_VALUE))
         );
         saoraimundoLayout.setVerticalGroup(
             saoraimundoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(saoraimundoLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(saoraimundoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(srn501)
-                    .addComponent(atualizarSrn, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(srn501)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(srn502)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -288,19 +313,6 @@ public Jmain() {
         piripiri334.setForeground(new java.awt.Color(255, 51, 51));
         piripiri334.setText("334 - NÃO CHEGOU");
 
-        atualizarPiripiri.setText("atualizar");
-        atualizarPiripiri.setSelected(true);
-        atualizarPiripiri.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                atualizarPiripiriMouseClicked(evt);
-            }
-        });
-        atualizarPiripiri.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                atualizarPiripiriActionPerformed(evt);
-            }
-        });
-
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -344,9 +356,7 @@ public Jmain() {
                     .addComponent(piripiri332)
                     .addComponent(piripiri333)
                     .addComponent(piripiri334))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 22, Short.MAX_VALUE)
-                .addComponent(atualizarPiripiri)
-                .addContainerGap())
+                .addContainerGap(105, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -394,8 +404,7 @@ public Jmain() {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(piripiri314)
-                            .addComponent(piripiri329)
-                            .addComponent(atualizarPiripiri, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(piripiri329))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(piripiri315)
@@ -423,6 +432,162 @@ public Jmain() {
 
         srn.addTab("Piripiri", jPanel1);
 
+        caxias101.setForeground(new java.awt.Color(255, 51, 51));
+        caxias101.setText("101 - NÃO CHEGOU");
+
+        caxias102.setForeground(new java.awt.Color(255, 0, 102));
+        caxias102.setText("102 - NÃO CHEGOU");
+
+        caxias103.setForeground(new java.awt.Color(255, 0, 102));
+        caxias103.setText("103 - NÃO CHEGOU");
+
+        caxias104.setForeground(new java.awt.Color(255, 0, 102));
+        caxias104.setText("104 - NÃO CHEGOU");
+
+        caxias105.setForeground(new java.awt.Color(255, 0, 102));
+        caxias105.setText("105 - NÃO CHEGOU");
+
+        caxias106.setForeground(new java.awt.Color(255, 0, 102));
+        caxias106.setText("106 - NÃO CHEGOU");
+
+        caxias107.setForeground(new java.awt.Color(255, 0, 102));
+        caxias107.setText("107 - NÃO CHEGOU");
+
+        caxias108.setForeground(new java.awt.Color(255, 0, 102));
+        caxias108.setText("108 - NÃO CHEGOU");
+
+        caxias109.setForeground(new java.awt.Color(255, 0, 102));
+        caxias109.setText("109 - NÃO CHEGOU");
+
+        caxias110.setForeground(new java.awt.Color(255, 0, 102));
+        caxias110.setText("110 - NÃO CHEGOU");
+
+        caxias111.setForeground(new java.awt.Color(255, 0, 102));
+        caxias111.setText("111 - NÃO CHEGOU");
+
+        caxias112.setForeground(new java.awt.Color(255, 0, 102));
+        caxias112.setText("112 - NÃO CHEGOU");
+
+        caxias113.setForeground(new java.awt.Color(255, 0, 102));
+        caxias113.setText("113 - NÃO CHEGOU");
+
+        caxias114.setForeground(new java.awt.Color(255, 0, 102));
+        caxias114.setText("114 - NÃO CHEGOU");
+
+        caxias116.setForeground(new java.awt.Color(255, 0, 102));
+        caxias116.setText("116 - NÃO CHEGOU");
+
+        caxias121.setForeground(new java.awt.Color(255, 0, 102));
+        caxias121.setText("121 - NÃO CHEGOU");
+
+        caxias122.setForeground(new java.awt.Color(255, 0, 102));
+        caxias122.setText("122 - NÃO CHEGOU");
+
+        caxias123.setForeground(new java.awt.Color(255, 0, 102));
+        caxias123.setText("123 - NÃO CHEGOU");
+
+        javax.swing.GroupLayout saoraimundo1Layout = new javax.swing.GroupLayout(saoraimundo1);
+        saoraimundo1.setLayout(saoraimundo1Layout);
+        saoraimundo1Layout.setHorizontalGroup(
+            saoraimundo1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(saoraimundo1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(saoraimundo1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(saoraimundo1Layout.createSequentialGroup()
+                        .addComponent(caxias101)
+                        .addGap(18, 18, 18)
+                        .addComponent(caxias114))
+                    .addGroup(saoraimundo1Layout.createSequentialGroup()
+                        .addComponent(caxias103)
+                        .addGap(18, 18, 18)
+                        .addComponent(caxias121))
+                    .addGroup(saoraimundo1Layout.createSequentialGroup()
+                        .addComponent(caxias104)
+                        .addGap(18, 18, 18)
+                        .addComponent(caxias122))
+                    .addGroup(saoraimundo1Layout.createSequentialGroup()
+                        .addComponent(caxias105)
+                        .addGap(18, 18, 18)
+                        .addComponent(caxias123))
+                    .addComponent(caxias106)
+                    .addComponent(caxias107)
+                    .addComponent(caxias108)
+                    .addComponent(caxias109)
+                    .addComponent(caxias110)
+                    .addComponent(caxias111)
+                    .addComponent(caxias112)
+                    .addComponent(caxias113)
+                    .addGroup(saoraimundo1Layout.createSequentialGroup()
+                        .addComponent(caxias102)
+                        .addGap(18, 18, 18)
+                        .addComponent(caxias116)))
+                .addContainerGap(218, Short.MAX_VALUE))
+        );
+        saoraimundo1Layout.setVerticalGroup(
+            saoraimundo1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(saoraimundo1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(saoraimundo1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(caxias101)
+                    .addComponent(caxias114, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(saoraimundo1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(caxias102)
+                    .addComponent(caxias116, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(saoraimundo1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(caxias103)
+                    .addComponent(caxias121, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(saoraimundo1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(caxias104)
+                    .addComponent(caxias122, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(saoraimundo1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(caxias105)
+                    .addComponent(caxias123, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(caxias106)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(caxias107)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(caxias108)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(caxias109)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(caxias110, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(caxias111, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(caxias112, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(caxias113, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(20, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 436, Short.MAX_VALUE)
+            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel2Layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(saoraimundo1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 285, Short.MAX_VALUE)
+            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel2Layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(saoraimundo1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+
+        srn.addTab("Caxias", jPanel2);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -437,72 +602,8 @@ public Jmain() {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void atualizarSrnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_atualizarSrnMouseClicked
-        // TODO add your handling code here:
-        
-        File diretorio = new File("S:\\6456\\VDWIN\\PTPED");
-	
-    
-        File[] listFiles = diretorio.listFiles(new FileFilter() {
-	public boolean accept(File pathname) {
-                if (pathname.getName().endsWith("501.TXT.GZ") == true) {
-                    srn501.setText("501 Chegou");
-                    srn501.setForeground(Color.blue);
-                }
-                if (pathname.getName().endsWith("502.TXT.GZ") == true) {
-                    srn502.setText("502 Chegou");
-                    srn502.setForeground(Color.blue);
-                }
-                if (pathname.getName().endsWith("503.TXT.GZ") == true) {
-                    srn503.setText("503 Chegou");
-                    srn503.setForeground(Color.blue);
-                }
-                if (pathname.getName().endsWith("504.TXT.GZ") == true) {
-                    srn504.setText("504 Chegou");
-                    srn504.setForeground(Color.blue);
-                }
-                if (pathname.getName().endsWith("505.TXT.GZ") == true) {
-                    srn505.setText("505 Chegou");
-                    srn505.setForeground(Color.blue);
-                }
-                if (pathname.getName().endsWith("506.TXT.GZ") == true) {
-                    srn506.setText("506 Chegou");
-                    srn506.setForeground(Color.blue);
-                }
-                if (pathname.getName().endsWith("507.TXT.GZ") == true) {
-                    srn507.setText("507 Chegou");
-                    srn507.setForeground(Color.blue);
-                }
-                if (pathname.getName().endsWith("511.TXT.GZ") == true) {
-                    srn511.setText("511 Chegou");
-                    srn511.setForeground(Color.blue);
-                }
-                if (pathname.getName().endsWith("512.TXT.GZ") == true) {
-                    srn512.setText("512 Chegou");
-                    srn512.setForeground(Color.blue);
-                }
-                if (pathname.getName().endsWith("513.TXT.GZ") == true) {
-                    srn513.setText("513 Chegou");
-                    srn513.setForeground(Color.blue);
-                }
-                if (pathname.getName().endsWith("514.TXT.GZ") == true) {
-                    srn514.setText("514 Chegou");
-                    srn514.setForeground(Color.blue);
-                }
-        return true;
-        }      
-        });
-    }//GEN-LAST:event_atualizarSrnMouseClicked
-
-    private void atualizarSrnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_atualizarSrnActionPerformed
-        
-        
-    }//GEN-LAST:event_atualizarSrnActionPerformed
-
-    private void atualizarPiripiriMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_atualizarPiripiriMouseClicked
-            File diretorio = new File("S:\\6433\\VDWIN\\PTPED");
-	
-    
+    private void timer1OnTime(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_timer1OnTime
+        File diretorio = new File("C:\\Users\\anton\\Documents\\SRN");
         File[] listFiles = diretorio.listFiles(new FileFilter() {
 	public boolean accept(File pathname) {
                 if (pathname.getName().endsWith("301.TXT.GZ") == true) {
@@ -636,11 +737,145 @@ public Jmain() {
         return true;
         }      
         });
-    }//GEN-LAST:event_atualizarPiripiriMouseClicked
+    }//GEN-LAST:event_timer1OnTime
 
-    private void atualizarPiripiriActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_atualizarPiripiriActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_atualizarPiripiriActionPerformed
+    private void timer2OnTime(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_timer2OnTime
+        File diretorio = new File("C:\\Users\\anton\\Documents\\SRN");
+	
+    
+        File[] listFiles = diretorio.listFiles(new FileFilter() {
+	public boolean accept(File pathname) {
+                if (pathname.getName().endsWith("501.TXT.GZ") == true) {
+                    srn501.setText("501 Chegou");
+                    srn501.setForeground(Color.blue);
+                }
+                if (pathname.getName().endsWith("502.TXT.GZ") == true) {
+                    srn502.setText("502 Chegou");
+                    srn502.setForeground(Color.blue);
+                }
+                if (pathname.getName().endsWith("503.TXT.GZ") == true) {
+                    srn503.setText("503 Chegou");
+                    srn503.setForeground(Color.blue);
+                }
+                if (pathname.getName().endsWith("504.TXT.GZ") == true) {
+                    srn504.setText("504 Chegou");
+                    srn504.setForeground(Color.blue);
+                }
+                if (pathname.getName().endsWith("505.TXT.GZ") == true) {
+                    srn505.setText("505 Chegou");
+                    srn505.setForeground(Color.blue);
+                }
+                if (pathname.getName().endsWith("506.TXT.GZ") == true) {
+                    srn506.setText("506 Chegou");
+                    srn506.setForeground(Color.blue);
+                }
+                if (pathname.getName().endsWith("507.TXT.GZ") == true) {
+                    srn507.setText("507 Chegou");
+                    srn507.setForeground(Color.blue);
+                }
+                if (pathname.getName().endsWith("511.TXT.GZ") == true) {
+                    srn511.setText("511 Chegou");
+                    srn511.setForeground(Color.blue);
+                }
+                if (pathname.getName().endsWith("512.TXT.GZ") == true) {
+                    srn512.setText("512 Chegou");
+                    srn512.setForeground(Color.blue);
+                }
+                if (pathname.getName().endsWith("513.TXT.GZ") == true) {
+                    srn513.setText("513 Chegou");
+                    srn513.setForeground(Color.blue);
+                }
+                if (pathname.getName().endsWith("514.TXT.GZ") == true) {
+                    srn514.setText("514 Chegou");
+                    srn514.setForeground(Color.blue);
+                }
+        return true;
+        }      
+        });
+    }//GEN-LAST:event_timer2OnTime
+
+    private void timer3OnTime(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_timer3OnTime
+        File diretorio = new File("C:\\Users\\anton\\Documents\\SRN");
+	
+        File[] listFiles = diretorio.listFiles(new FileFilter() {
+	public boolean accept(File pathname) {
+            if (pathname.getName().endsWith("101.TXT.GZ") == true) {
+                caxias101.setText("101 Chegou");
+                caxias101.setForeground(Color.blue);
+                }
+            if (pathname.getName().endsWith("102.TXT.GZ") == true) {
+                caxias102.setText("102 Chegou");
+                caxias102.setForeground(Color.blue);
+                }
+            if (pathname.getName().endsWith("101.TXT.GZ") == true) {
+                caxias103.setText("101 Chegou");
+                caxias103.setForeground(Color.blue);
+                }
+            if (pathname.getName().endsWith("104.TXT.GZ") == true) {
+                caxias104.setText("104 Chegou");
+                caxias104.setForeground(Color.blue);
+                }
+            if (pathname.getName().endsWith("105.TXT.GZ") == true) {
+                caxias105.setText("105 Chegou");
+                caxias105.setForeground(Color.blue);
+                }
+            if (pathname.getName().endsWith("106.TXT.GZ") == true) {
+                caxias106.setText("106 Chegou");
+                caxias106.setForeground(Color.blue);
+                }
+            if (pathname.getName().endsWith("107.TXT.GZ") == true) {
+                caxias107.setText("107 Chegou");
+                caxias107.setForeground(Color.blue);
+                }
+            if (pathname.getName().endsWith("108.TXT.GZ") == true) {
+                caxias108.setText("108 Chegou");
+                caxias108.setForeground(Color.blue);
+                }
+            if (pathname.getName().endsWith("109.TXT.GZ") == true) {
+                caxias109.setText("109 Chegou");
+                caxias109.setForeground(Color.blue);
+                }
+            if (pathname.getName().endsWith("110.TXT.GZ") == true) {
+                caxias110.setText("110 Chegou");
+                caxias110.setForeground(Color.blue);
+                }
+            if (pathname.getName().endsWith("111.TXT.GZ") == true) {
+                caxias111.setText("111 Chegou");
+                caxias111.setForeground(Color.blue);
+                }
+            if (pathname.getName().endsWith("112.TXT.GZ") == true) {
+                caxias112.setText("112 Chegou");
+                caxias112.setForeground(Color.blue);
+                }
+            if (pathname.getName().endsWith("113.TXT.GZ") == true) {
+                caxias113.setText("113 Chegou");
+                caxias113.setForeground(Color.blue);
+                }
+            if (pathname.getName().endsWith("114.TXT.GZ") == true) {
+                caxias114.setText("114 Chegou");
+                caxias114.setForeground(Color.blue);
+                }
+            if (pathname.getName().endsWith("116.TXT.GZ") == true) {
+                caxias116.setText("116 Chegou");
+                caxias116.setForeground(Color.blue);
+                }
+            if (pathname.getName().endsWith("121.TXT.GZ") == true) {
+                caxias121.setText("121 Chegou");
+                caxias121.setForeground(Color.blue);
+                }
+            if (pathname.getName().endsWith("122.TXT.GZ") == true) {
+                caxias122.setText("122 Chegou");
+                caxias122.setForeground(Color.blue);
+                }
+             if (pathname.getName().endsWith("123.TXT.GZ") == true) {
+                caxias123.setText("123 Chegou");
+                caxias123.setForeground(Color.blue);
+                }
+
+               return true;
+        }      
+        });
+    }//GEN-LAST:event_timer3OnTime
 
     /**
      * @param args the command line arguments
@@ -678,9 +913,26 @@ public Jmain() {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton atualizarPiripiri;
-    private javax.swing.JButton atualizarSrn;
+    private javax.swing.JLabel caxias101;
+    private javax.swing.JLabel caxias102;
+    private javax.swing.JLabel caxias103;
+    private javax.swing.JLabel caxias104;
+    private javax.swing.JLabel caxias105;
+    private javax.swing.JLabel caxias106;
+    private javax.swing.JLabel caxias107;
+    private javax.swing.JLabel caxias108;
+    private javax.swing.JLabel caxias109;
+    private javax.swing.JLabel caxias110;
+    private javax.swing.JLabel caxias111;
+    private javax.swing.JLabel caxias112;
+    private javax.swing.JLabel caxias113;
+    private javax.swing.JLabel caxias114;
+    private javax.swing.JLabel caxias116;
+    private javax.swing.JLabel caxias121;
+    private javax.swing.JLabel caxias122;
+    private javax.swing.JLabel caxias123;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JLabel piripiri301;
     private javax.swing.JLabel piripiri302;
     private javax.swing.JLabel piripiri303;
@@ -714,6 +966,7 @@ public Jmain() {
     private javax.swing.JLabel piripiri333;
     private javax.swing.JLabel piripiri334;
     private javax.swing.JPanel saoraimundo;
+    private javax.swing.JPanel saoraimundo1;
     private javax.swing.JTabbedPane srn;
     private javax.swing.JLabel srn501;
     private javax.swing.JLabel srn502;
@@ -726,5 +979,8 @@ public Jmain() {
     private javax.swing.JLabel srn512;
     private javax.swing.JLabel srn513;
     private javax.swing.JLabel srn514;
+    private org.netbeans.examples.lib.timerbean.Timer timer1;
+    private org.netbeans.examples.lib.timerbean.Timer timer2;
+    private org.netbeans.examples.lib.timerbean.Timer timer3;
     // End of variables declaration//GEN-END:variables
 }
