@@ -32,12 +32,9 @@ public Jmain() {
     setTitle("Confere Vendas");
     this.setLocationRelativeTo(null);
     setResizable(false);
-    LocalDateTime localDate = LocalDateTime.now();
-    System.out.println(localDate);
-    timer1.start();
-    timer2.start();
-    timer3.start();
-    timer4.start();    
+
+    
+
 }
 
     /**
@@ -49,11 +46,11 @@ public Jmain() {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        timer1 = new org.netbeans.examples.lib.timerbean.Timer();
-        timer2 = new org.netbeans.examples.lib.timerbean.Timer();
-        timer3 = new org.netbeans.examples.lib.timerbean.Timer();
-        timer4 = new org.netbeans.examples.lib.timerbean.Timer();
-        timer5 = new org.netbeans.examples.lib.timerbean.Timer();
+        piripiri = new org.netbeans.examples.lib.timerbean.Timer();
+        picos = new org.netbeans.examples.lib.timerbean.Timer();
+        caxias = new org.netbeans.examples.lib.timerbean.Timer();
+        sraimundo = new org.netbeans.examples.lib.timerbean.Timer();
+        floriano = new org.netbeans.examples.lib.timerbean.Timer();
         srn = new javax.swing.JTabbedPane();
         saoraimundo = new javax.swing.JPanel();
         srn501 = new javax.swing.JLabel();
@@ -152,10 +149,65 @@ public Jmain() {
         picos231 = new javax.swing.JLabel();
         picos232 = new javax.swing.JLabel();
         picos234 = new javax.swing.JLabel();
+        jPanel4 = new javax.swing.JPanel();
+        floriano401 = new javax.swing.JLabel();
+        floriano402 = new javax.swing.JLabel();
+        floriano403 = new javax.swing.JLabel();
+        floriano404 = new javax.swing.JLabel();
+        floriano405 = new javax.swing.JLabel();
+        floriano406 = new javax.swing.JLabel();
+        floriano407 = new javax.swing.JLabel();
+        floriano408 = new javax.swing.JLabel();
+        floriano409 = new javax.swing.JLabel();
+        floriano410 = new javax.swing.JLabel();
+        floriano411 = new javax.swing.JLabel();
+        floriano412 = new javax.swing.JLabel();
+        floriano413 = new javax.swing.JLabel();
+        floriano414 = new javax.swing.JLabel();
+        floriano415 = new javax.swing.JLabel();
+        floriano416 = new javax.swing.JLabel();
+        floriano417 = new javax.swing.JLabel();
+        floriano419 = new javax.swing.JLabel();
+        floriano426 = new javax.swing.JLabel();
+        floriano427 = new javax.swing.JLabel();
+        floriano428 = new javax.swing.JLabel();
+        floriano429 = new javax.swing.JLabel();
+        floriano430 = new javax.swing.JLabel();
+        floriano431 = new javax.swing.JLabel();
+        jPanel5 = new javax.swing.JPanel();
+        ativarPicos = new javax.swing.JCheckBox();
+        ativarPiripiri = new javax.swing.JCheckBox();
+        ativarFloriano = new javax.swing.JCheckBox();
+        ativarSrn = new javax.swing.JCheckBox();
+        ativarCaxias = new javax.swing.JCheckBox();
 
-        timer1.addTimerListener(new org.netbeans.examples.lib.timerbean.TimerListener() {
+        piripiri.addTimerListener(new org.netbeans.examples.lib.timerbean.TimerListener() {
             public void onTime(java.awt.event.ActionEvent evt) {
-                timer1OnTime(evt);
+                piripiriOnTime(evt);
+            }
+        });
+
+        picos.addTimerListener(new org.netbeans.examples.lib.timerbean.TimerListener() {
+            public void onTime(java.awt.event.ActionEvent evt) {
+                picosOnTime(evt);
+            }
+        });
+
+        caxias.addTimerListener(new org.netbeans.examples.lib.timerbean.TimerListener() {
+            public void onTime(java.awt.event.ActionEvent evt) {
+                caxiasOnTime(evt);
+            }
+        });
+
+        sraimundo.addTimerListener(new org.netbeans.examples.lib.timerbean.TimerListener() {
+            public void onTime(java.awt.event.ActionEvent evt) {
+                sraimundoOnTime(evt);
+            }
+        });
+
+        floriano.addTimerListener(new org.netbeans.examples.lib.timerbean.TimerListener() {
+            public void onTime(java.awt.event.ActionEvent evt) {
+                florianoOnTime(evt);
             }
         });
 
@@ -824,6 +876,242 @@ public Jmain() {
 
         srn.addTab("Picos", jPanel3);
 
+        floriano401.setForeground(new java.awt.Color(255, 51, 51));
+        floriano401.setText("401 - NÃO CHEGOU");
+
+        floriano402.setForeground(new java.awt.Color(255, 51, 51));
+        floriano402.setText("402 - NÃO CHEGOU");
+
+        floriano403.setForeground(new java.awt.Color(255, 51, 51));
+        floriano403.setText("403 - NÃO CHEGOU");
+
+        floriano404.setForeground(new java.awt.Color(255, 51, 51));
+        floriano404.setText("404 - NÃO CHEGOU");
+
+        floriano405.setForeground(new java.awt.Color(255, 51, 51));
+        floriano405.setText("405 - NÃO CHEGOU");
+
+        floriano406.setForeground(new java.awt.Color(255, 51, 51));
+        floriano406.setText("406 - NÃO CHEGOU");
+
+        floriano407.setForeground(new java.awt.Color(255, 51, 51));
+        floriano407.setText("407 - NÃO CHEGOU");
+
+        floriano408.setForeground(new java.awt.Color(255, 51, 51));
+        floriano408.setText("408 - NÃO CHEGOU");
+
+        floriano409.setForeground(new java.awt.Color(255, 51, 51));
+        floriano409.setText("409 - NÃO CHEGOU");
+
+        floriano410.setForeground(new java.awt.Color(255, 51, 51));
+        floriano410.setText("410 - NÃO CHEGOU");
+
+        floriano411.setForeground(new java.awt.Color(255, 51, 51));
+        floriano411.setText("411 - NÃO CHEGOU");
+
+        floriano412.setForeground(new java.awt.Color(255, 51, 51));
+        floriano412.setText("412 - NÃO CHEGOU");
+
+        floriano413.setForeground(new java.awt.Color(255, 51, 51));
+        floriano413.setText("413 - NÃO CHEGOU");
+
+        floriano414.setForeground(new java.awt.Color(255, 51, 51));
+        floriano414.setText("414 - NÃO CHEGOU");
+
+        floriano415.setForeground(new java.awt.Color(255, 51, 51));
+        floriano415.setText("415 - NÃO CHEGOU");
+
+        floriano416.setForeground(new java.awt.Color(255, 51, 51));
+        floriano416.setText("416 - NÃO CHEGOU");
+
+        floriano417.setForeground(new java.awt.Color(255, 51, 51));
+        floriano417.setText("417 - NÃO CHEGOU");
+
+        floriano419.setForeground(new java.awt.Color(255, 51, 51));
+        floriano419.setText("419 - NÃO CHEGOU");
+
+        floriano426.setForeground(new java.awt.Color(255, 51, 51));
+        floriano426.setText("426 - NÃO CHEGOU");
+
+        floriano427.setForeground(new java.awt.Color(255, 51, 51));
+        floriano427.setText("427 - NÃO CHEGOU");
+
+        floriano428.setForeground(new java.awt.Color(255, 51, 51));
+        floriano428.setText("428 - NÃO CHEGOU");
+
+        floriano429.setForeground(new java.awt.Color(255, 51, 51));
+        floriano429.setText("429 - NÃO CHEGOU");
+
+        floriano430.setForeground(new java.awt.Color(255, 51, 51));
+        floriano430.setText("430 - NÃO CHEGOU");
+
+        floriano431.setForeground(new java.awt.Color(255, 51, 51));
+        floriano431.setText("431 - NÃO CHEGOU");
+
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(floriano413)
+                    .addComponent(floriano412)
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(floriano402)
+                            .addComponent(floriano403)
+                            .addComponent(floriano404)
+                            .addComponent(floriano405)
+                            .addComponent(floriano401)
+                            .addComponent(floriano406)
+                            .addComponent(floriano407)
+                            .addComponent(floriano409)
+                            .addComponent(floriano408)
+                            .addComponent(floriano410)
+                            .addComponent(floriano411))
+                        .addGap(29, 29, 29)
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(floriano431)
+                            .addComponent(floriano430)
+                            .addComponent(floriano429)
+                            .addComponent(floriano428)
+                            .addComponent(floriano427)
+                            .addComponent(floriano426)
+                            .addComponent(floriano415)
+                            .addComponent(floriano416)
+                            .addComponent(floriano417)
+                            .addComponent(floriano419)
+                            .addComponent(floriano414))))
+                .addContainerGap(207, Short.MAX_VALUE))
+        );
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(jPanel4Layout.createSequentialGroup()
+                                .addComponent(floriano401)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(floriano402)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(floriano403)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(floriano404)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(floriano405))
+                            .addGroup(jPanel4Layout.createSequentialGroup()
+                                .addComponent(floriano414)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(floriano415)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(floriano416)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(floriano417)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(floriano419)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(floriano406)
+                            .addComponent(floriano426))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(floriano407)
+                            .addComponent(floriano427))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(floriano408)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(floriano409))
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addComponent(floriano428)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(floriano429)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(floriano410)
+                    .addComponent(floriano430))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(floriano411)
+                    .addComponent(floriano431))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(floriano412)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(floriano413)
+                .addContainerGap(20, Short.MAX_VALUE))
+        );
+
+        srn.addTab("Floriano", jPanel4);
+
+        ativarPicos.setText("Ativar Picos");
+        ativarPicos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ativarPicosActionPerformed(evt);
+            }
+        });
+
+        ativarPiripiri.setText("Ativar Piripiri");
+        ativarPiripiri.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ativarPiripiriActionPerformed(evt);
+            }
+        });
+
+        ativarFloriano.setText("Ativar Floriano");
+        ativarFloriano.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ativarFlorianoActionPerformed(evt);
+            }
+        });
+
+        ativarSrn.setText("Ativar SRN");
+        ativarSrn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ativarSrnActionPerformed(evt);
+            }
+        });
+
+        ativarCaxias.setText("Ativar Caxias");
+        ativarCaxias.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ativarCaxiasActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
+        jPanel5.setLayout(jPanel5Layout);
+        jPanel5Layout.setHorizontalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addGap(19, 19, 19)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(ativarFloriano)
+                    .addComponent(ativarCaxias)
+                    .addComponent(ativarPiripiri)
+                    .addComponent(ativarPicos)
+                    .addComponent(ativarSrn))
+                .addContainerGap(322, Short.MAX_VALUE))
+        );
+        jPanel5Layout.setVerticalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addGap(15, 15, 15)
+                .addComponent(ativarPicos)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(ativarPiripiri)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(ativarFloriano)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(ativarSrn)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(ativarCaxias)
+                .addContainerGap(155, Short.MAX_VALUE))
+        );
+
+        srn.addTab("Config", jPanel5);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -838,7 +1126,7 @@ public Jmain() {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void timer1OnTime(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_timer1OnTime
+    private void piripiriOnTime(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_piripiriOnTime
         File diretorio = new File("S:\\6433\\VDWIN\\PTPED");
  
         File[] listFiles = diretorio.listFiles(new FileFilter() {
@@ -974,7 +1262,425 @@ public Jmain() {
         return true;
         }      
         });
-    }//GEN-LAST:event_timer1OnTime
+    }//GEN-LAST:event_piripiriOnTime
+
+    private void florianoOnTime(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_florianoOnTime
+        File diretorio = new File("S:\\6449\\VDWIN\\PTPED");
+ 
+        File[] listFiles = diretorio.listFiles(new FileFilter() {
+            public boolean accept(File pathname) {
+                if (pathname.getName().endsWith("401.TXT.GZ") == true) {
+                    floriano401.setText("401 Chegou");
+                    floriano401.setForeground(Color.blue);
+                }
+                if (pathname.getName().endsWith("402.TXT.GZ") == true) {
+                    floriano402.setText("402 Chegou");
+                    floriano402.setForeground(Color.blue);
+                }
+                if (pathname.getName().endsWith("403.TXT.GZ") == true) {
+                    floriano403.setText("403 Chegou");
+                    floriano403.setForeground(Color.blue);
+                }
+                if (pathname.getName().endsWith("404.TXT.GZ") == true) {
+                    floriano404.setText("404 Chegou");
+                    floriano404.setForeground(Color.blue);
+                }
+                if (pathname.getName().endsWith("405.TXT.GZ") == true) {
+                    floriano405.setText("405 Chegou");
+                    floriano405.setForeground(Color.blue);
+                }
+                if (pathname.getName().endsWith("406.TXT.GZ") == true) {
+                    floriano406.setText("406 Chegou");
+                    floriano406.setForeground(Color.blue);
+                }
+                if (pathname.getName().endsWith("407.TXT.GZ") == true) {
+                    floriano407.setText("407 Chegou");
+                    floriano407.setForeground(Color.blue);
+                }
+                if (pathname.getName().endsWith("408.TXT.GZ") == true) {
+                    floriano408.setText("408 Chegou");
+                    floriano408.setForeground(Color.blue);
+                }
+                if (pathname.getName().endsWith("409.TXT.GZ") == true) {
+                    floriano409.setText("409 Chegou");
+                    floriano409.setForeground(Color.blue);
+                }
+                if (pathname.getName().endsWith("410.TXT.GZ") == true) {
+                    floriano410.setText("410 Chegou");
+                    floriano410.setForeground(Color.blue);
+                }
+                if (pathname.getName().endsWith("411.TXT.GZ") == true) {
+                    floriano411.setText("411 Chegou");
+                    floriano411.setForeground(Color.blue);
+                }
+                if (pathname.getName().endsWith("412.TXT.GZ") == true) {
+                    floriano412.setText("412 Chegou");
+                    floriano412.setForeground(Color.blue);
+                }                
+                if (pathname.getName().endsWith("413.TXT.GZ") == true) {
+                    floriano413.setText("413 Chegou");
+                    floriano413.setForeground(Color.blue);
+                }
+                if (pathname.getName().endsWith("414.TXT.GZ") == true) {
+                    floriano414.setText("414 Chegou");
+                    floriano414.setForeground(Color.blue);
+                }
+                if (pathname.getName().endsWith("415.TXT.GZ") == true) {
+                    floriano415.setText("415 Chegou");
+                    floriano415.setForeground(Color.blue);
+                }
+                if (pathname.getName().endsWith("416.TXT.GZ") == true) {
+                    floriano416.setText("416 Chegou");
+                    floriano416.setForeground(Color.blue);
+                }
+                if (pathname.getName().endsWith("417.TXT.GZ") == true) {
+                    floriano417.setText("417 Chegou");
+                    floriano417.setForeground(Color.blue);
+                }
+                if (pathname.getName().endsWith("419.TXT.GZ") == true) {
+                    floriano419.setText("419 Chegou");
+                    floriano419.setForeground(Color.blue);
+                }
+                if (pathname.getName().endsWith("426.TXT.GZ") == true) {
+                    floriano426.setText("426 Chegou");
+                    floriano426.setForeground(Color.blue);
+                }
+                if (pathname.getName().endsWith("427.TXT.GZ") == true) {
+                    floriano427.setText("427 Chegou");
+                    floriano427.setForeground(Color.blue);
+                }                
+                if (pathname.getName().endsWith("428.TXT.GZ") == true) {
+                    floriano428.setText("428 Chegou");
+                    floriano428.setForeground(Color.blue);
+                }              
+                if (pathname.getName().endsWith("429.TXT.GZ") == true) {
+                    floriano429.setText("429 Chegou");
+                    floriano429.setForeground(Color.blue);
+                }               
+                if (pathname.getName().endsWith("430.TXT.GZ") == true) {
+                    floriano430.setText("430 Chegou");
+                    floriano430.setForeground(Color.blue);
+                }               
+                if (pathname.getName().endsWith("431.TXT.GZ") == true) {
+                    floriano431.setText("431 Chegou");
+                    floriano431.setForeground(Color.blue);
+                }
+        return true;
+        }      
+        });
+    }//GEN-LAST:event_florianoOnTime
+
+    private void picosOnTime(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_picosOnTime
+        File diretorio = new File("S:\\6429\\VDWIN\\PTPED");
+
+        File[] listFiles = diretorio.listFiles(new FileFilter() {
+	public boolean accept(File pathname) {
+                if (pathname.getName().endsWith("201.TXT.GZ") == true) {
+                    picos201.setText("201 Chegou");
+                    picos201.setForeground(Color.blue);
+                }
+                if (pathname.getName().endsWith("202.TXT.GZ") == true) {
+                    picos202.setText("202 Chegou");
+                    picos202.setForeground(Color.blue);
+                }
+                if (pathname.getName().endsWith("203.TXT.GZ") == true) {
+                    picos203.setText("203 Chegou");
+                    picos203.setForeground(Color.blue);
+                }
+                if (pathname.getName().endsWith("204.TXT.GZ") == true) {
+                    picos204.setText("204 Chegou");
+                    picos204.setForeground(Color.blue);
+                }
+                if (pathname.getName().endsWith("205.TXT.GZ") == true) {
+                    picos205.setText("205 Chegou");
+                    picos205.setForeground(Color.blue);
+                }
+                if (pathname.getName().endsWith("206.TXT.GZ") == true) {
+                    picos206.setText("206 Chegou");
+                    picos206.setForeground(Color.blue);
+                }
+                if (pathname.getName().endsWith("207.TXT.GZ") == true) {
+                    picos207.setText("207 Chegou");
+                    picos207.setForeground(Color.blue);
+                }
+                if (pathname.getName().endsWith("208.TXT.GZ") == true) {
+                    picos208.setText("208 Chegou");
+                    picos208.setForeground(Color.blue);
+                }
+                if (pathname.getName().endsWith("209.TXT.GZ") == true) {
+                    picos209.setText("209 Chegou");
+                    picos209.setForeground(Color.blue);
+                }
+                if (pathname.getName().endsWith("210.TXT.GZ") == true) {
+                    picos210.setText("210 Chegou");
+                    picos210.setForeground(Color.blue);
+                }
+                if (pathname.getName().endsWith("211.TXT.GZ") == true) {
+                    picos211.setText("211 Chegou");
+                    picos211.setForeground(Color.blue);
+                }
+                if (pathname.getName().endsWith("212.TXT.GZ") == true) {
+                    picos212.setText("212 Chegou");
+                    picos212.setForeground(Color.blue);
+                }                
+                if (pathname.getName().endsWith("213.TXT.GZ") == true) {
+                    picos213.setText("213 Chegou");
+                    picos213.setForeground(Color.blue);
+                }
+                if (pathname.getName().endsWith("214.TXT.GZ") == true) {
+                    picos214.setText("214 Chegou");
+                    picos214.setForeground(Color.blue);
+                }
+                if (pathname.getName().endsWith("215.TXT.GZ") == true) {
+                    picos215.setText("215 Chegou");
+                    picos215.setForeground(Color.blue);
+                }
+                if (pathname.getName().endsWith("216.TXT.GZ") == true) {
+                    picos216.setText("216 Chegou");
+                    picos216.setForeground(Color.blue);
+                }
+                if (pathname.getName().endsWith("217.TXT.GZ") == true) {
+                    picos217.setText("217 Chegou");
+                    picos217.setForeground(Color.blue);
+                }
+                if (pathname.getName().endsWith("218.TXT.GZ") == true) {
+                    picos218.setText("218 Chegou");
+                    picos218.setForeground(Color.blue);
+                }
+                if (pathname.getName().endsWith("219.TXT.GZ") == true) {
+                    picos219.setText("219 Chegou");
+                    picos219.setForeground(Color.blue);
+                }
+                if (pathname.getName().endsWith("220.TXT.GZ") == true) {
+                    picos220.setText("220 Chegou");
+                    picos220.setForeground(Color.blue);
+                }
+                if (pathname.getName().endsWith("221.TXT.GZ") == true) {
+                    picos221.setText("221 Chegou");
+                    picos221.setForeground(Color.blue);
+                }
+                if (pathname.getName().endsWith("222.TXT.GZ") == true) {
+                    picos222.setText("222 Chegou");
+                    picos222.setForeground(Color.blue);
+                }
+                if (pathname.getName().endsWith("223.TXT.GZ") == true) {
+                    picos223.setText("223 Chegou");
+                    picos223.setForeground(Color.blue);
+                }
+                if (pathname.getName().endsWith("226.TXT.GZ") == true) {
+                    picos226.setText("226 Chegou");
+                    picos226.setForeground(Color.blue);
+                }
+                if (pathname.getName().endsWith("227.TXT.GZ") == true) {
+                    picos227.setText("227 Chegou");
+                    picos227.setForeground(Color.blue);
+                }                
+                if (pathname.getName().endsWith("228.TXT.GZ") == true) {
+                    picos228.setText("228 Chegou");
+                    picos228.setForeground(Color.blue);
+                }              
+                if (pathname.getName().endsWith("229.TXT.GZ") == true) {
+                    picos229.setText("229 Chegou");
+                    picos229.setForeground(Color.blue);
+                }               
+                if (pathname.getName().endsWith("230.TXT.GZ") == true) {
+                    picos230.setText("230 Chegou");
+                    picos230.setForeground(Color.blue);
+                }               
+                if (pathname.getName().endsWith("231.TXT.GZ") == true) {
+                    picos231.setText("231 Chegou");
+                    picos231.setForeground(Color.blue);
+                }               
+                if (pathname.getName().endsWith("232.TXT.GZ") == true) {
+                    picos232.setText("232 Chegou");
+                    picos232.setForeground(Color.blue);
+                }                          
+                if (pathname.getName().endsWith("234.TXT.GZ") == true) {
+                    picos234.setText("234 Chegou");
+                    picos234.setForeground(Color.blue);
+                }                
+        return true;
+        }      
+        });
+    }//GEN-LAST:event_picosOnTime
+
+    private void caxiasOnTime(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_caxiasOnTime
+        File diretorio = new File("S:\\6648\\VDWIN\\PTPED");
+	
+        File[] listFiles = diretorio.listFiles(new FileFilter() {
+	public boolean accept(File pathname) {
+            if (pathname.getName().endsWith("101.TXT.GZ") == true) {
+                caxias101.setText("101 Chegou");
+                caxias101.setForeground(Color.blue);
+                }
+            if (pathname.getName().endsWith("102.TXT.GZ") == true) {
+                caxias102.setText("102 Chegou");
+                caxias102.setForeground(Color.blue);
+                }
+            if (pathname.getName().endsWith("101.TXT.GZ") == true) {
+                caxias103.setText("101 Chegou");
+                caxias103.setForeground(Color.blue);
+                }
+            if (pathname.getName().endsWith("104.TXT.GZ") == true) {
+                caxias104.setText("104 Chegou");
+                caxias104.setForeground(Color.blue);
+                }
+            if (pathname.getName().endsWith("105.TXT.GZ") == true) {
+                caxias105.setText("105 Chegou");
+                caxias105.setForeground(Color.blue);
+                }
+            if (pathname.getName().endsWith("106.TXT.GZ") == true) {
+                caxias106.setText("106 Chegou");
+                caxias106.setForeground(Color.blue);
+                }
+            if (pathname.getName().endsWith("107.TXT.GZ") == true) {
+                caxias107.setText("107 Chegou");
+                caxias107.setForeground(Color.blue);
+                }
+            if (pathname.getName().endsWith("108.TXT.GZ") == true) {
+                caxias108.setText("108 Chegou");
+                caxias108.setForeground(Color.blue);
+                }
+            if (pathname.getName().endsWith("109.TXT.GZ") == true) {
+                caxias109.setText("109 Chegou");
+                caxias109.setForeground(Color.blue);
+                }
+            if (pathname.getName().endsWith("110.TXT.GZ") == true) {
+                caxias110.setText("110 Chegou");
+                caxias110.setForeground(Color.blue);
+                }
+            if (pathname.getName().endsWith("111.TXT.GZ") == true) {
+                caxias111.setText("111 Chegou");
+                caxias111.setForeground(Color.blue);
+                }
+            if (pathname.getName().endsWith("112.TXT.GZ") == true) {
+                caxias112.setText("112 Chegou");
+                caxias112.setForeground(Color.blue);
+                }
+            if (pathname.getName().endsWith("113.TXT.GZ") == true) {
+                caxias113.setText("113 Chegou");
+                caxias113.setForeground(Color.blue);
+                }
+            if (pathname.getName().endsWith("114.TXT.GZ") == true) {
+                caxias114.setText("114 Chegou");
+                caxias114.setForeground(Color.blue);
+                }
+            if (pathname.getName().endsWith("116.TXT.GZ") == true) {
+                caxias116.setText("116 Chegou");
+                caxias116.setForeground(Color.blue);
+                }
+            if (pathname.getName().endsWith("121.TXT.GZ") == true) {
+                caxias121.setText("121 Chegou");
+                caxias121.setForeground(Color.blue);
+                }
+            if (pathname.getName().endsWith("122.TXT.GZ") == true) {
+                caxias122.setText("122 Chegou");
+                caxias122.setForeground(Color.blue);
+                }
+             if (pathname.getName().endsWith("123.TXT.GZ") == true) {
+                caxias123.setText("123 Chegou");
+                caxias123.setForeground(Color.blue);
+                }
+
+               return true;
+        }      
+        });
+    }//GEN-LAST:event_caxiasOnTime
+
+    private void sraimundoOnTime(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sraimundoOnTime
+        File diretorio = new File("S:\\6456\\VDWIN\\PTPED");
+	
+        File[] listFiles = diretorio.listFiles(new FileFilter() {
+	public boolean accept(File pathname) {
+                if (pathname.getName().endsWith("501.TXT.GZ") == true) {
+                    srn501.setText("501 Chegou");
+                    srn501.setForeground(Color.blue);
+                }
+                if (pathname.getName().endsWith("502.TXT.GZ") == true) {
+                    srn502.setText("502 Chegou");
+                    srn502.setForeground(Color.blue);
+                }
+                if (pathname.getName().endsWith("503.TXT.GZ") == true) {
+                    srn503.setText("503 Chegou");
+                    srn503.setForeground(Color.blue);
+                }
+                if (pathname.getName().endsWith("504.TXT.GZ") == true) {
+                    srn504.setText("504 Chegou");
+                    srn504.setForeground(Color.blue);
+                }
+                if (pathname.getName().endsWith("505.TXT.GZ") == true) {
+                    srn505.setText("505 Chegou");
+                    srn505.setForeground(Color.blue);
+                }
+                if (pathname.getName().endsWith("506.TXT.GZ") == true) {
+                    srn506.setText("506 Chegou");
+                    srn506.setForeground(Color.blue);
+                }
+                if (pathname.getName().endsWith("507.TXT.GZ") == true) {
+                    srn507.setText("507 Chegou");
+                    srn507.setForeground(Color.blue);
+                }
+                if (pathname.getName().endsWith("511.TXT.GZ") == true) {
+                    srn511.setText("511 Chegou");
+                    srn511.setForeground(Color.blue);
+                }
+                if (pathname.getName().endsWith("512.TXT.GZ") == true) {
+                    srn512.setText("512 Chegou");
+                    srn512.setForeground(Color.blue);
+                }
+                if (pathname.getName().endsWith("513.TXT.GZ") == true) {
+                    srn513.setText("513 Chegou");
+                    srn513.setForeground(Color.blue);
+                }
+                if (pathname.getName().endsWith("514.TXT.GZ") == true) {
+                    srn514.setText("514 Chegou");
+                    srn514.setForeground(Color.blue);
+                }
+        return true;
+        }      
+        });
+    }//GEN-LAST:event_sraimundoOnTime
+
+    private void ativarPicosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ativarPicosActionPerformed
+        if(ativarPicos.isSelected()){
+          picos.start();  
+        }else{
+          picos.stop();
+        }
+        
+    }//GEN-LAST:event_ativarPicosActionPerformed
+
+    private void ativarPiripiriActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ativarPiripiriActionPerformed
+        if(ativarPiripiri.isSelected()){
+            piripiri.start();
+        }else{
+            piripiri.stop();
+        }
+    }//GEN-LAST:event_ativarPiripiriActionPerformed
+
+    private void ativarFlorianoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ativarFlorianoActionPerformed
+        if(ativarFloriano.isSelected()){
+            floriano.start();
+        }else{
+            floriano.stop();
+        }
+    }//GEN-LAST:event_ativarFlorianoActionPerformed
+
+    private void ativarSrnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ativarSrnActionPerformed
+        if(ativarSrn.isSelected()){
+            sraimundo.start();
+        }else{
+            sraimundo.stop();
+        }
+    }//GEN-LAST:event_ativarSrnActionPerformed
+
+    private void ativarCaxiasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ativarCaxiasActionPerformed
+        if(ativarCaxias.isSelected()){
+            caxias.start();
+        }else{
+            caxias.stop();
+        }
+    }//GEN-LAST:event_ativarCaxiasActionPerformed
 
     /**
      * @param args the command line arguments
@@ -1012,6 +1718,12 @@ public Jmain() {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JCheckBox ativarCaxias;
+    private javax.swing.JCheckBox ativarFloriano;
+    private javax.swing.JCheckBox ativarPicos;
+    private javax.swing.JCheckBox ativarPiripiri;
+    private javax.swing.JCheckBox ativarSrn;
+    private org.netbeans.examples.lib.timerbean.Timer caxias;
     private javax.swing.JLabel caxias101;
     private javax.swing.JLabel caxias102;
     private javax.swing.JLabel caxias103;
@@ -1030,9 +1742,37 @@ public Jmain() {
     private javax.swing.JLabel caxias121;
     private javax.swing.JLabel caxias122;
     private javax.swing.JLabel caxias123;
+    private org.netbeans.examples.lib.timerbean.Timer floriano;
+    private javax.swing.JLabel floriano401;
+    private javax.swing.JLabel floriano402;
+    private javax.swing.JLabel floriano403;
+    private javax.swing.JLabel floriano404;
+    private javax.swing.JLabel floriano405;
+    private javax.swing.JLabel floriano406;
+    private javax.swing.JLabel floriano407;
+    private javax.swing.JLabel floriano408;
+    private javax.swing.JLabel floriano409;
+    private javax.swing.JLabel floriano410;
+    private javax.swing.JLabel floriano411;
+    private javax.swing.JLabel floriano412;
+    private javax.swing.JLabel floriano413;
+    private javax.swing.JLabel floriano414;
+    private javax.swing.JLabel floriano415;
+    private javax.swing.JLabel floriano416;
+    private javax.swing.JLabel floriano417;
+    private javax.swing.JLabel floriano419;
+    private javax.swing.JLabel floriano426;
+    private javax.swing.JLabel floriano427;
+    private javax.swing.JLabel floriano428;
+    private javax.swing.JLabel floriano429;
+    private javax.swing.JLabel floriano430;
+    private javax.swing.JLabel floriano431;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel5;
+    private org.netbeans.examples.lib.timerbean.Timer picos;
     private javax.swing.JLabel picos201;
     private javax.swing.JLabel picos202;
     private javax.swing.JLabel picos203;
@@ -1064,6 +1804,7 @@ public Jmain() {
     private javax.swing.JLabel picos231;
     private javax.swing.JLabel picos232;
     private javax.swing.JLabel picos234;
+    private org.netbeans.examples.lib.timerbean.Timer piripiri;
     private javax.swing.JLabel piripiri301;
     private javax.swing.JLabel piripiri302;
     private javax.swing.JLabel piripiri303;
@@ -1098,6 +1839,7 @@ public Jmain() {
     private javax.swing.JLabel piripiri334;
     private javax.swing.JPanel saoraimundo;
     private javax.swing.JPanel saoraimundo1;
+    private org.netbeans.examples.lib.timerbean.Timer sraimundo;
     private javax.swing.JTabbedPane srn;
     private javax.swing.JLabel srn501;
     private javax.swing.JLabel srn502;
@@ -1110,10 +1852,5 @@ public Jmain() {
     private javax.swing.JLabel srn512;
     private javax.swing.JLabel srn513;
     private javax.swing.JLabel srn514;
-    private org.netbeans.examples.lib.timerbean.Timer timer1;
-    private org.netbeans.examples.lib.timerbean.Timer timer2;
-    private org.netbeans.examples.lib.timerbean.Timer timer3;
-    private org.netbeans.examples.lib.timerbean.Timer timer4;
-    private org.netbeans.examples.lib.timerbean.Timer timer5;
     // End of variables declaration//GEN-END:variables
 }
