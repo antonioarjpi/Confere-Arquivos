@@ -1588,11 +1588,13 @@ public Jmain() {
     }//GEN-LAST:event_caxiasOnTime
 
     private void sraimundoOnTime(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sraimundoOnTime
-        File diretorio = new File("S:\\6456\\VDWIN\\PTPED");
+        //File diretorio = new File("S:\\6456\\VDWIN\\PTPED");
+        File diretorio = new File("C:\\Users\\anton\\Documents\\SRN");
 	
         File[] listFiles = diretorio.listFiles(new FileFilter() {
 	public boolean accept(File pathname) {
                 if (pathname.getName().endsWith("501.TXT.GZ") == true) {
+                    System.out.println(pathname.lastModified());
                     srn501.setText("501 Chegou");
                     srn501.setForeground(Color.blue);
                 }
