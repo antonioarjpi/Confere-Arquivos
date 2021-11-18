@@ -53,6 +53,7 @@ public Jmain() {
         timer2 = new org.netbeans.examples.lib.timerbean.Timer();
         timer3 = new org.netbeans.examples.lib.timerbean.Timer();
         timer4 = new org.netbeans.examples.lib.timerbean.Timer();
+        timer5 = new org.netbeans.examples.lib.timerbean.Timer();
         srn = new javax.swing.JTabbedPane();
         saoraimundo = new javax.swing.JPanel();
         srn501 = new javax.swing.JLabel();
@@ -158,58 +159,40 @@ public Jmain() {
             }
         });
 
-        timer2.addTimerListener(new org.netbeans.examples.lib.timerbean.TimerListener() {
-            public void onTime(java.awt.event.ActionEvent evt) {
-                timer2OnTime(evt);
-            }
-        });
-
-        timer3.addTimerListener(new org.netbeans.examples.lib.timerbean.TimerListener() {
-            public void onTime(java.awt.event.ActionEvent evt) {
-                timer3OnTime(evt);
-            }
-        });
-
-        timer4.addTimerListener(new org.netbeans.examples.lib.timerbean.TimerListener() {
-            public void onTime(java.awt.event.ActionEvent evt) {
-                timer4OnTime(evt);
-            }
-        });
-
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         srn501.setForeground(new java.awt.Color(255, 51, 51));
         srn501.setText("501 - NÃO CHEGOU");
 
-        srn502.setForeground(new java.awt.Color(255, 0, 102));
+        srn502.setForeground(new java.awt.Color(255, 51, 51));
         srn502.setText("502 - NÃO CHEGOU");
 
-        srn503.setForeground(new java.awt.Color(255, 0, 102));
+        srn503.setForeground(new java.awt.Color(255, 51, 51));
         srn503.setText("503 - NÃO CHEGOU");
 
-        srn504.setForeground(new java.awt.Color(255, 0, 102));
+        srn504.setForeground(new java.awt.Color(255, 51, 51));
         srn504.setText("504 - NÃO CHEGOU");
 
-        srn505.setForeground(new java.awt.Color(255, 0, 102));
+        srn505.setForeground(new java.awt.Color(255, 51, 51));
         srn505.setText("505 - NÃO CHEGOU");
 
-        srn506.setForeground(new java.awt.Color(255, 0, 102));
+        srn506.setForeground(new java.awt.Color(255, 51, 51));
         srn506.setText("506 - NÃO CHEGOU");
 
-        srn507.setForeground(new java.awt.Color(255, 0, 102));
+        srn507.setForeground(new java.awt.Color(255, 51, 51));
         srn507.setText("507 - NÃO CHEGOU");
 
-        srn511.setForeground(new java.awt.Color(255, 0, 102));
+        srn511.setForeground(new java.awt.Color(255, 51, 51));
         srn511.setText("511 - NÃO CHEGOU");
 
-        srn512.setForeground(new java.awt.Color(255, 0, 102));
+        srn512.setForeground(new java.awt.Color(255, 51, 51));
         srn512.setText("512 - NÃO CHEGOU");
 
-        srn513.setForeground(new java.awt.Color(255, 0, 102));
+        srn513.setForeground(new java.awt.Color(255, 51, 51));
         srn513.setText("513 - NÃO CHEGOU");
 
-        srn514.setForeground(new java.awt.Color(255, 0, 102));
-        srn514.setText("513 - NÃO CHEGOU");
+        srn514.setForeground(new java.awt.Color(255, 51, 51));
+        srn514.setText("514 - NÃO CHEGOU");
 
         javax.swing.GroupLayout saoraimundoLayout = new javax.swing.GroupLayout(saoraimundo);
         saoraimundo.setLayout(saoraimundoLayout);
@@ -479,55 +462,55 @@ public Jmain() {
         caxias101.setForeground(new java.awt.Color(255, 51, 51));
         caxias101.setText("101 - NÃO CHEGOU");
 
-        caxias102.setForeground(new java.awt.Color(255, 0, 102));
+        caxias102.setForeground(new java.awt.Color(255, 51, 51));
         caxias102.setText("102 - NÃO CHEGOU");
 
-        caxias103.setForeground(new java.awt.Color(255, 0, 102));
+        caxias103.setForeground(new java.awt.Color(255, 51, 51));
         caxias103.setText("103 - NÃO CHEGOU");
 
-        caxias104.setForeground(new java.awt.Color(255, 0, 102));
+        caxias104.setForeground(new java.awt.Color(255, 51, 51));
         caxias104.setText("104 - NÃO CHEGOU");
 
-        caxias105.setForeground(new java.awt.Color(255, 0, 102));
+        caxias105.setForeground(new java.awt.Color(255, 51, 51));
         caxias105.setText("105 - NÃO CHEGOU");
 
-        caxias106.setForeground(new java.awt.Color(255, 0, 102));
+        caxias106.setForeground(new java.awt.Color(255, 51, 51));
         caxias106.setText("106 - NÃO CHEGOU");
 
-        caxias107.setForeground(new java.awt.Color(255, 0, 102));
+        caxias107.setForeground(new java.awt.Color(255, 51, 51));
         caxias107.setText("107 - NÃO CHEGOU");
 
-        caxias108.setForeground(new java.awt.Color(255, 0, 102));
+        caxias108.setForeground(new java.awt.Color(255, 51, 51));
         caxias108.setText("108 - NÃO CHEGOU");
 
-        caxias109.setForeground(new java.awt.Color(255, 0, 102));
+        caxias109.setForeground(new java.awt.Color(255, 51, 51));
         caxias109.setText("109 - NÃO CHEGOU");
 
-        caxias110.setForeground(new java.awt.Color(255, 0, 102));
+        caxias110.setForeground(new java.awt.Color(255, 51, 51));
         caxias110.setText("110 - NÃO CHEGOU");
 
-        caxias111.setForeground(new java.awt.Color(255, 0, 102));
+        caxias111.setForeground(new java.awt.Color(255, 51, 51));
         caxias111.setText("111 - NÃO CHEGOU");
 
-        caxias112.setForeground(new java.awt.Color(255, 0, 102));
+        caxias112.setForeground(new java.awt.Color(255, 51, 51));
         caxias112.setText("112 - NÃO CHEGOU");
 
-        caxias113.setForeground(new java.awt.Color(255, 0, 102));
+        caxias113.setForeground(new java.awt.Color(255, 51, 51));
         caxias113.setText("113 - NÃO CHEGOU");
 
-        caxias114.setForeground(new java.awt.Color(255, 0, 102));
+        caxias114.setForeground(new java.awt.Color(255, 51, 51));
         caxias114.setText("114 - NÃO CHEGOU");
 
-        caxias116.setForeground(new java.awt.Color(255, 0, 102));
+        caxias116.setForeground(new java.awt.Color(255, 51, 51));
         caxias116.setText("116 - NÃO CHEGOU");
 
-        caxias121.setForeground(new java.awt.Color(255, 0, 102));
+        caxias121.setForeground(new java.awt.Color(255, 51, 51));
         caxias121.setText("121 - NÃO CHEGOU");
 
-        caxias122.setForeground(new java.awt.Color(255, 0, 102));
+        caxias122.setForeground(new java.awt.Color(255, 51, 51));
         caxias122.setText("122 - NÃO CHEGOU");
 
-        caxias123.setForeground(new java.awt.Color(255, 0, 102));
+        caxias123.setForeground(new java.awt.Color(255, 51, 51));
         caxias123.setText("123 - NÃO CHEGOU");
 
         javax.swing.GroupLayout saoraimundo1Layout = new javax.swing.GroupLayout(saoraimundo1);
@@ -669,7 +652,7 @@ public Jmain() {
         picos212.setText("212 - NÃO CHEGOU");
 
         picos213.setForeground(new java.awt.Color(255, 51, 51));
-        picos213.setText("313 - NÃO CHEGOU");
+        picos213.setText("213 - NÃO CHEGOU");
 
         picos214.setForeground(new java.awt.Color(255, 51, 51));
         picos214.setText("214 - NÃO CHEGOU");
@@ -993,278 +976,6 @@ public Jmain() {
         });
     }//GEN-LAST:event_timer1OnTime
 
-    private void timer2OnTime(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_timer2OnTime
-        File diretorio = new File("S:\\6456\\VDWIN\\PTPED");
-	
-        File[] listFiles = diretorio.listFiles(new FileFilter() {
-	public boolean accept(File pathname) {
-                if (pathname.getName().endsWith("501.TXT.GZ") == true) {
-                    srn501.setText("501 Chegou");
-                    srn501.setForeground(Color.blue);
-                }
-                if (pathname.getName().endsWith("502.TXT.GZ") == true) {
-                    srn502.setText("502 Chegou");
-                    srn502.setForeground(Color.blue);
-                }
-                if (pathname.getName().endsWith("503.TXT.GZ") == true) {
-                    srn503.setText("503 Chegou");
-                    srn503.setForeground(Color.blue);
-                }
-                if (pathname.getName().endsWith("504.TXT.GZ") == true) {
-                    srn504.setText("504 Chegou");
-                    srn504.setForeground(Color.blue);
-                }
-                if (pathname.getName().endsWith("505.TXT.GZ") == true) {
-                    srn505.setText("505 Chegou");
-                    srn505.setForeground(Color.blue);
-                }
-                if (pathname.getName().endsWith("506.TXT.GZ") == true) {
-                    srn506.setText("506 Chegou");
-                    srn506.setForeground(Color.blue);
-                }
-                if (pathname.getName().endsWith("507.TXT.GZ") == true) {
-                    srn507.setText("507 Chegou");
-                    srn507.setForeground(Color.blue);
-                }
-                if (pathname.getName().endsWith("511.TXT.GZ") == true) {
-                    srn511.setText("511 Chegou");
-                    srn511.setForeground(Color.blue);
-                }
-                if (pathname.getName().endsWith("512.TXT.GZ") == true) {
-                    srn512.setText("512 Chegou");
-                    srn512.setForeground(Color.blue);
-                }
-                if (pathname.getName().endsWith("513.TXT.GZ") == true) {
-                    srn513.setText("513 Chegou");
-                    srn513.setForeground(Color.blue);
-                }
-                if (pathname.getName().endsWith("514.TXT.GZ") == true) {
-                    srn514.setText("514 Chegou");
-                    srn514.setForeground(Color.blue);
-                }
-        return true;
-        }      
-        });
-    }//GEN-LAST:event_timer2OnTime
-
-    private void timer3OnTime(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_timer3OnTime
-        File diretorio = new File("S:\\6648\\VDWIN\\PTPED");
-	
-        File[] listFiles = diretorio.listFiles(new FileFilter() {
-	public boolean accept(File pathname) {
-            if (pathname.getName().endsWith("101.TXT.GZ") == true) {
-                caxias101.setText("101 Chegou");
-                caxias101.setForeground(Color.blue);
-                }
-            if (pathname.getName().endsWith("102.TXT.GZ") == true) {
-                caxias102.setText("102 Chegou");
-                caxias102.setForeground(Color.blue);
-                }
-            if (pathname.getName().endsWith("101.TXT.GZ") == true) {
-                caxias103.setText("101 Chegou");
-                caxias103.setForeground(Color.blue);
-                }
-            if (pathname.getName().endsWith("104.TXT.GZ") == true) {
-                caxias104.setText("104 Chegou");
-                caxias104.setForeground(Color.blue);
-                }
-            if (pathname.getName().endsWith("105.TXT.GZ") == true) {
-                caxias105.setText("105 Chegou");
-                caxias105.setForeground(Color.blue);
-                }
-            if (pathname.getName().endsWith("106.TXT.GZ") == true) {
-                caxias106.setText("106 Chegou");
-                caxias106.setForeground(Color.blue);
-                }
-            if (pathname.getName().endsWith("107.TXT.GZ") == true) {
-                caxias107.setText("107 Chegou");
-                caxias107.setForeground(Color.blue);
-                }
-            if (pathname.getName().endsWith("108.TXT.GZ") == true) {
-                caxias108.setText("108 Chegou");
-                caxias108.setForeground(Color.blue);
-                }
-            if (pathname.getName().endsWith("109.TXT.GZ") == true) {
-                caxias109.setText("109 Chegou");
-                caxias109.setForeground(Color.blue);
-                }
-            if (pathname.getName().endsWith("110.TXT.GZ") == true) {
-                caxias110.setText("110 Chegou");
-                caxias110.setForeground(Color.blue);
-                }
-            if (pathname.getName().endsWith("111.TXT.GZ") == true) {
-                caxias111.setText("111 Chegou");
-                caxias111.setForeground(Color.blue);
-                }
-            if (pathname.getName().endsWith("112.TXT.GZ") == true) {
-                caxias112.setText("112 Chegou");
-                caxias112.setForeground(Color.blue);
-                }
-            if (pathname.getName().endsWith("113.TXT.GZ") == true) {
-                caxias113.setText("113 Chegou");
-                caxias113.setForeground(Color.blue);
-                }
-            if (pathname.getName().endsWith("114.TXT.GZ") == true) {
-                caxias114.setText("114 Chegou");
-                caxias114.setForeground(Color.blue);
-                }
-            if (pathname.getName().endsWith("116.TXT.GZ") == true) {
-                caxias116.setText("116 Chegou");
-                caxias116.setForeground(Color.blue);
-                }
-            if (pathname.getName().endsWith("121.TXT.GZ") == true) {
-                caxias121.setText("121 Chegou");
-                caxias121.setForeground(Color.blue);
-                }
-            if (pathname.getName().endsWith("122.TXT.GZ") == true) {
-                caxias122.setText("122 Chegou");
-                caxias122.setForeground(Color.blue);
-                }
-             if (pathname.getName().endsWith("123.TXT.GZ") == true) {
-                caxias123.setText("123 Chegou");
-                caxias123.setForeground(Color.blue);
-                }
-
-               return true;
-        }      
-        });
-    }//GEN-LAST:event_timer3OnTime
-
-    private void timer4OnTime(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_timer4OnTime
-        // TODO add your handling code here:
-        File diretorio = new File("S:\\6429\\VDWIN\\PTPED");
-        
-        File[] listFiles = diretorio.listFiles(new FileFilter() {
-	public boolean accept(File pathname) {
-                if (pathname.getName().endsWith("201.TXT.GZ") == true) {
-                    picos201.setText("201 Chegou");
-                    picos201.setForeground(Color.blue);
-                }
-                if (pathname.getName().endsWith("202.TXT.GZ") == true) {
-                    picos202.setText("202 Chegou");
-                    picos202.setForeground(Color.blue);
-                }
-                if (pathname.getName().endsWith("203.TXT.GZ") == true) {
-                    picos203.setText("203 Chegou");
-                    picos203.setForeground(Color.blue);
-                }
-                if (pathname.getName().endsWith("204.TXT.GZ") == true) {
-                    picos204.setText("204 Chegou");
-                    picos204.setForeground(Color.blue);
-                }
-                if (pathname.getName().endsWith("205.TXT.GZ") == true) {
-                    picos205.setText("205 Chegou");
-                    picos205.setForeground(Color.blue);
-                }
-                if (pathname.getName().endsWith("206.TXT.GZ") == true) {
-                    picos206.setText("206 Chegou");
-                    picos206.setForeground(Color.blue);
-                }
-                if (pathname.getName().endsWith("207.TXT.GZ") == true) {
-                    picos207.setText("207 Chegou");
-                    picos207.setForeground(Color.blue);
-                }
-                if (pathname.getName().endsWith("208.TXT.GZ") == true) {
-                    picos208.setText("208 Chegou");
-                    picos208.setForeground(Color.blue);
-                }
-                if (pathname.getName().endsWith("209.TXT.GZ") == true) {
-                    picos209.setText("209 Chegou");
-                    picos209.setForeground(Color.blue);
-                }
-                if (pathname.getName().endsWith("210.TXT.GZ") == true) {
-                    picos210.setText("210 Chegou");
-                    picos210.setForeground(Color.blue);
-                }
-                if (pathname.getName().endsWith("211.TXT.GZ") == true) {
-                    picos211.setText("211 Chegou");
-                    picos211.setForeground(Color.blue);
-                }
-                if (pathname.getName().endsWith("212.TXT.GZ") == true) {
-                    picos212.setText("212 Chegou");
-                    picos212.setForeground(Color.blue);
-                }                
-                if (pathname.getName().endsWith("213.TXT.GZ") == true) {
-                    picos213.setText("213 Chegou");
-                    picos213.setForeground(Color.blue);
-                }
-                if (pathname.getName().endsWith("214.TXT.GZ") == true) {
-                    picos214.setText("214 Chegou");
-                    picos214.setForeground(Color.blue);
-                }
-                if (pathname.getName().endsWith("215.TXT.GZ") == true) {
-                    picos215.setText("215 Chegou");
-                    picos215.setForeground(Color.blue);
-                }
-                if (pathname.getName().endsWith("216.TXT.GZ") == true) {
-                    picos216.setText("216 Chegou");
-                    picos216.setForeground(Color.blue);
-                }
-                if (pathname.getName().endsWith("217.TXT.GZ") == true) {
-                    picos217.setText("217 Chegou");
-                    picos217.setForeground(Color.blue);
-                }
-                if (pathname.getName().endsWith("218.TXT.GZ") == true) {
-                    picos218.setText("218 Chegou");
-                    picos218.setForeground(Color.blue);
-                }
-                if (pathname.getName().endsWith("219.TXT.GZ") == true) {
-                    picos219.setText("219 Chegou");
-                    picos219.setForeground(Color.blue);
-                }
-                if (pathname.getName().endsWith("220.TXT.GZ") == true) {
-                    picos220.setText("220 Chegou");
-                    picos220.setForeground(Color.blue);
-                }
-                if (pathname.getName().endsWith("221.TXT.GZ") == true) {
-                    picos221.setText("221 Chegou");
-                    picos221.setForeground(Color.blue);
-                }
-                if (pathname.getName().endsWith("222.TXT.GZ") == true) {
-                    picos222.setText("222 Chegou");
-                    picos222.setForeground(Color.blue);
-                }
-                if (pathname.getName().endsWith("223.TXT.GZ") == true) {
-                    picos223.setText("223 Chegou");
-                    picos223.setForeground(Color.blue);
-                }
-                if (pathname.getName().endsWith("226.TXT.GZ") == true) {
-                    picos226.setText("226 Chegou");
-                    picos226.setForeground(Color.blue);
-                }
-                if (pathname.getName().endsWith("227.TXT.GZ") == true) {
-                    picos227.setText("227 Chegou");
-                    picos227.setForeground(Color.blue);
-                }                
-                if (pathname.getName().endsWith("228.TXT.GZ") == true) {
-                    picos228.setText("228 Chegou");
-                    picos228.setForeground(Color.blue);
-                }              
-                if (pathname.getName().endsWith("229.TXT.GZ") == true) {
-                    picos229.setText("229 Chegou");
-                    picos229.setForeground(Color.blue);
-                }               
-                if (pathname.getName().endsWith("230.TXT.GZ") == true) {
-                    picos230.setText("230 Chegou");
-                    picos230.setForeground(Color.blue);
-                }               
-                if (pathname.getName().endsWith("231.TXT.GZ") == true) {
-                    picos231.setText("231 Chegou");
-                    picos231.setForeground(Color.blue);
-                }               
-                if (pathname.getName().endsWith("232.TXT.GZ") == true) {
-                    picos232.setText("232 Chegou");
-                    picos232.setForeground(Color.blue);
-                }                          
-                if (pathname.getName().endsWith("234.TXT.GZ") == true) {
-                    picos234.setText("234 Chegou");
-                    picos234.setForeground(Color.blue);
-                }                
-        return true;
-        }      
-        });
-    }//GEN-LAST:event_timer4OnTime
-
     /**
      * @param args the command line arguments
      */
@@ -1403,5 +1114,6 @@ public Jmain() {
     private org.netbeans.examples.lib.timerbean.Timer timer2;
     private org.netbeans.examples.lib.timerbean.Timer timer3;
     private org.netbeans.examples.lib.timerbean.Timer timer4;
+    private org.netbeans.examples.lib.timerbean.Timer timer5;
     // End of variables declaration//GEN-END:variables
 }
