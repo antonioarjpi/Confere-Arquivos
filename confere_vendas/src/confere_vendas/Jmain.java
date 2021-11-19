@@ -1593,8 +1593,8 @@ public Jmain() {
     }//GEN-LAST:event_picosOnTime
 
     private void caxiasOnTime(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_caxiasOnTime
-       // File diretorio = new File("S:\\6648\\VDWIN\\PTPED");
-	File diretorio = new File("C:\\Users\\anton\\Documents\\SRN");
+        File diretorio = new File("S:\\6648\\VDWIN\\PTPED");
+	//File diretorio = new File("C:\\Users\\anton\\Documents\\SRN");
         File[] listFiles = diretorio.listFiles(new FileFilter() {
 	public boolean accept(File pathname) {
             if (pathname.getName().endsWith(diaDaSemana+"101.TXT.GZ") == true) {
@@ -1605,8 +1605,8 @@ public Jmain() {
                 caxias102.setText("102 Chegou");
                 caxias102.setForeground(Color.blue);
                 }
-            if (pathname.getName().endsWith(diaDaSemana+"101.TXT.GZ") == true) {
-                caxias103.setText("101 Chegou");
+            if (pathname.getName().endsWith(diaDaSemana+"103.TXT.GZ") == true) {
+                caxias103.setText("103 Chegou");
                 caxias103.setForeground(Color.blue);
                 }
             if (pathname.getName().endsWith(diaDaSemana+"104.TXT.GZ") == true) {
@@ -1676,8 +1676,8 @@ public Jmain() {
     }//GEN-LAST:event_caxiasOnTime
 
     private void sraimundoOnTime(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sraimundoOnTime
-        //File diretorio = new File("S:\\6456\\VDWIN\\PTPED");
-        File diretorio = new File("C:\\Users\\anton\\Documents\\SRN");
+        File diretorio = new File("S:\\6456\\VDWIN\\PTPED");
+        //File diretorio = new File("C:\\Users\\anton\\Documents\\SRN");
         File[] listFiles = diretorio.listFiles(new FileFilter() {
 	public boolean accept(File pathname) {
                 if (pathname.getName().endsWith(diaDaSemana+"501.TXT.GZ") == true) {
