@@ -27,6 +27,8 @@
         <EventHandler event="onTime" listener="org.netbeans.examples.lib.timerbean.TimerListener" parameters="java.awt.event.ActionEvent" handler="florianoOnTime"/>
       </Events>
     </Component>
+    <Component class="javax.swing.ButtonGroup" name="buttonGroup1">
+    </Component>
   </NonVisualComponents>
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
@@ -1627,13 +1629,23 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="ativarFloriano" min="-2" max="-2" attributes="0"/>
+                          <Component id="ativarPicos" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="ativarCaxias" min="-2" max="-2" attributes="0"/>
                           <Component id="ativarPiripiri" min="-2" max="-2" attributes="0"/>
-                          <Component id="ativarPicos" min="-2" max="-2" attributes="0"/>
+                          <Component id="ativarFloriano" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="ativarSrn" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="322" max="32767" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="domingo" min="-2" max="-2" attributes="0"/>
+                          <Component id="sabado" min="-2" max="-2" attributes="0"/>
+                          <Component id="segunda" min="-2" max="-2" attributes="0"/>
+                          <Component id="terca" min="-2" max="-2" attributes="0"/>
+                          <Component id="quarta" min="-2" max="-2" attributes="0"/>
+                          <Component id="quinta" min="-2" max="-2" attributes="0"/>
+                          <Component id="sexta" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="237" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1641,16 +1653,35 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
-                      <Component id="ativarPicos" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="ativarPicos" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="segunda" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="ativarPiripiri" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="ativarPiripiri" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="terca" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="ativarFloriano" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="ativarFloriano" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="quarta" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="ativarSrn" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="ativarSrn" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="quinta" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="ativarCaxias" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="155" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="ativarCaxias" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="sexta" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="sabado" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="domingo" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace pref="109" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1694,6 +1725,62 @@
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ativarCaxiasActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JRadioButton" name="segunda">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Segunda"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="segundaActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JRadioButton" name="terca">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Ter&#xe7;a"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="tercaActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JRadioButton" name="quarta">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Quarta"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="quartaActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JRadioButton" name="quinta">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Quinta"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="quintaActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JRadioButton" name="sexta">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Sexta"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="sextaActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JRadioButton" name="sabado">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="S&#xe1;bado"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="sabadoActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JRadioButton" name="domingo">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Domingo"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="domingoActionPerformed"/>
               </Events>
             </Component>
           </SubComponents>

@@ -51,6 +51,7 @@ public Jmain() {
         caxias = new org.netbeans.examples.lib.timerbean.Timer();
         sraimundo = new org.netbeans.examples.lib.timerbean.Timer();
         floriano = new org.netbeans.examples.lib.timerbean.Timer();
+        buttonGroup1 = new javax.swing.ButtonGroup();
         srn = new javax.swing.JTabbedPane();
         saoraimundo = new javax.swing.JPanel();
         srn501 = new javax.swing.JLabel();
@@ -180,6 +181,13 @@ public Jmain() {
         ativarFloriano = new javax.swing.JCheckBox();
         ativarSrn = new javax.swing.JCheckBox();
         ativarCaxias = new javax.swing.JCheckBox();
+        segunda = new javax.swing.JRadioButton();
+        terca = new javax.swing.JRadioButton();
+        quarta = new javax.swing.JRadioButton();
+        quinta = new javax.swing.JRadioButton();
+        sexta = new javax.swing.JRadioButton();
+        sabado = new javax.swing.JRadioButton();
+        domingo = new javax.swing.JRadioButton();
 
         piripiri.addTimerListener(new org.netbeans.examples.lib.timerbean.TimerListener() {
             public void onTime(java.awt.event.ActionEvent evt) {
@@ -1080,6 +1088,55 @@ public Jmain() {
             }
         });
 
+        segunda.setText("Segunda");
+        segunda.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                segundaActionPerformed(evt);
+            }
+        });
+
+        terca.setText("Terça");
+        terca.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tercaActionPerformed(evt);
+            }
+        });
+
+        quarta.setText("Quarta");
+        quarta.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                quartaActionPerformed(evt);
+            }
+        });
+
+        quinta.setText("Quinta");
+        quinta.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                quintaActionPerformed(evt);
+            }
+        });
+
+        sexta.setText("Sexta");
+        sexta.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                sextaActionPerformed(evt);
+            }
+        });
+
+        sabado.setText("Sábado");
+        sabado.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                sabadoActionPerformed(evt);
+            }
+        });
+
+        domingo.setText("Domingo");
+        domingo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                domingoActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
         jPanel5Layout.setHorizontalGroup(
@@ -1087,27 +1144,50 @@ public Jmain() {
             .addGroup(jPanel5Layout.createSequentialGroup()
                 .addGap(19, 19, 19)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(ativarFloriano)
+                    .addComponent(ativarPicos)
                     .addComponent(ativarCaxias)
                     .addComponent(ativarPiripiri)
-                    .addComponent(ativarPicos)
+                    .addComponent(ativarFloriano)
                     .addComponent(ativarSrn))
-                .addContainerGap(322, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(domingo)
+                    .addComponent(sabado)
+                    .addComponent(segunda)
+                    .addComponent(terca)
+                    .addComponent(quarta)
+                    .addComponent(quinta)
+                    .addComponent(sexta))
+                .addContainerGap(237, Short.MAX_VALUE))
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel5Layout.createSequentialGroup()
                 .addGap(15, 15, 15)
-                .addComponent(ativarPicos)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(ativarPicos)
+                    .addComponent(segunda))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(ativarPiripiri)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(ativarPiripiri)
+                    .addComponent(terca))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(ativarFloriano)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(ativarFloriano)
+                    .addComponent(quarta))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(ativarSrn)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(ativarSrn)
+                    .addComponent(quinta))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(ativarCaxias)
-                .addContainerGap(155, Short.MAX_VALUE))
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(ativarCaxias)
+                    .addComponent(sexta))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(sabado)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(domingo)
+                .addContainerGap(109, Short.MAX_VALUE))
         );
 
         srn.addTab("Config", jPanel5);
@@ -1684,6 +1764,83 @@ public Jmain() {
         }
     }//GEN-LAST:event_ativarCaxiasActionPerformed
 
+    private void segundaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_segundaActionPerformed
+       if(segunda.isSelected()){
+           terca.setSelected(false);
+           quarta.setSelected(false);
+           quinta.setSelected(false);
+           sexta.setSelected(false);
+           sabado.setSelected(false);
+           domingo.setSelected(false);
+       }
+    }//GEN-LAST:event_segundaActionPerformed
+
+    private void quartaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_quartaActionPerformed
+        if(quarta.isSelected()){
+           segunda.setSelected(false);
+           terca.setSelected(false);
+           sexta.setSelected(false);
+           quinta.setSelected(false);       
+           sabado.setSelected(false);
+           domingo.setSelected(false);
+       }
+    }//GEN-LAST:event_quartaActionPerformed
+
+    private void tercaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tercaActionPerformed
+        if(terca.isSelected()){
+           segunda.setSelected(false);
+           quarta.setSelected(false);
+           quinta.setSelected(false);
+           sexta.setSelected(false);
+           sabado.setSelected(false);
+           domingo.setSelected(false);
+       }
+    }//GEN-LAST:event_tercaActionPerformed
+
+    private void quintaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_quintaActionPerformed
+       if(quinta.isSelected()){
+           terca.setSelected(false);
+           quarta.setSelected(false);
+           segunda.setSelected(false);
+           sexta.setSelected(false);
+           sabado.setSelected(false);
+           domingo.setSelected(false);
+       }
+    }//GEN-LAST:event_quintaActionPerformed
+
+    private void sextaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sextaActionPerformed
+        if(sexta.isSelected()){
+           segunda.setSelected(false);
+           terca.setSelected(false);
+           quarta.setSelected(false);
+           quinta.setSelected(false);       
+           sabado.setSelected(false);
+           domingo.setSelected(false);
+       }
+    }//GEN-LAST:event_sextaActionPerformed
+
+    private void sabadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sabadoActionPerformed
+        if(sabado.isSelected()){
+           segunda.setSelected(false);
+           terca.setSelected(false);
+           quarta.setSelected(false);
+           quinta.setSelected(false);       
+           sexta.setSelected(false);
+           domingo.setSelected(false);
+       }
+    }//GEN-LAST:event_sabadoActionPerformed
+
+    private void domingoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_domingoActionPerformed
+        if(domingo.isSelected()){
+           segunda.setSelected(false);
+           terca.setSelected(false);
+           quarta.setSelected(false);
+           quinta.setSelected(false);       
+           sabado.setSelected(false);
+           sexta.setSelected(false);
+       }
+    }//GEN-LAST:event_domingoActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -1725,6 +1882,7 @@ public Jmain() {
     private javax.swing.JCheckBox ativarPicos;
     private javax.swing.JCheckBox ativarPiripiri;
     private javax.swing.JCheckBox ativarSrn;
+    private javax.swing.ButtonGroup buttonGroup1;
     private org.netbeans.examples.lib.timerbean.Timer caxias;
     private javax.swing.JLabel caxias101;
     private javax.swing.JLabel caxias102;
@@ -1744,6 +1902,7 @@ public Jmain() {
     private javax.swing.JLabel caxias121;
     private javax.swing.JLabel caxias122;
     private javax.swing.JLabel caxias123;
+    private javax.swing.JRadioButton domingo;
     private org.netbeans.examples.lib.timerbean.Timer floriano;
     private javax.swing.JLabel floriano401;
     private javax.swing.JLabel floriano402;
@@ -1839,8 +1998,13 @@ public Jmain() {
     private javax.swing.JLabel piripiri332;
     private javax.swing.JLabel piripiri333;
     private javax.swing.JLabel piripiri334;
+    private javax.swing.JRadioButton quarta;
+    private javax.swing.JRadioButton quinta;
+    private javax.swing.JRadioButton sabado;
     private javax.swing.JPanel saoraimundo;
     private javax.swing.JPanel saoraimundo1;
+    private javax.swing.JRadioButton segunda;
+    private javax.swing.JRadioButton sexta;
     private org.netbeans.examples.lib.timerbean.Timer sraimundo;
     private javax.swing.JTabbedPane srn;
     private javax.swing.JLabel srn501;
@@ -1854,5 +2018,6 @@ public Jmain() {
     private javax.swing.JLabel srn512;
     private javax.swing.JLabel srn513;
     private javax.swing.JLabel srn514;
+    private javax.swing.JRadioButton terca;
     // End of variables declaration//GEN-END:variables
 }
