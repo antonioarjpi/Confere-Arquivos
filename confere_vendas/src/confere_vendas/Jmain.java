@@ -20,20 +20,14 @@ import javax.swing.JOptionPane;
  * @author Antonio
  */
 public class Jmain extends javax.swing.JFrame {
-
-    /**
-     * Creates new form Jmain
-     */
+    public String diaDaSemana;
 public Jmain() {
     
     initComponents();
-    
-    
     setTitle("Confere Vendas");
     this.setLocationRelativeTo(null);
     setResizable(false);
-
-    
+   
 
 }
 
@@ -188,6 +182,8 @@ public Jmain() {
         sexta = new javax.swing.JRadioButton();
         sabado = new javax.swing.JRadioButton();
         domingo = new javax.swing.JRadioButton();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
         piripiri.addTimerListener(new org.netbeans.examples.lib.timerbean.TimerListener() {
             public void onTime(java.awt.event.ActionEvent evt) {
@@ -1137,6 +1133,12 @@ public Jmain() {
             }
         });
 
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel1.setText("Ativar filial");
+
+        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel2.setText("Seleciona dia");
+
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
         jPanel5Layout.setHorizontalGroup(
@@ -1144,11 +1146,13 @@ public Jmain() {
             .addGroup(jPanel5Layout.createSequentialGroup()
                 .addGap(19, 19, 19)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(ativarPicos)
                     .addComponent(ativarCaxias)
-                    .addComponent(ativarPiripiri)
                     .addComponent(ativarFloriano)
-                    .addComponent(ativarSrn))
+                    .addComponent(ativarSrn)
+                    .addComponent(ativarPicos)
+                    .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(ativarPiripiri)))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(domingo)
@@ -1157,13 +1161,17 @@ public Jmain() {
                     .addComponent(terca)
                     .addComponent(quarta)
                     .addComponent(quinta)
-                    .addComponent(sexta))
-                .addContainerGap(237, Short.MAX_VALUE))
+                    .addComponent(sexta)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.TRAILING))
+                .addContainerGap(225, Short.MAX_VALUE))
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel5Layout.createSequentialGroup()
-                .addGap(15, 15, 15)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel1)
+                    .addComponent(jLabel2))
+                .addGap(1, 1, 1)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(ativarPicos)
                     .addComponent(segunda))
@@ -1187,7 +1195,7 @@ public Jmain() {
                 .addComponent(sabado)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(domingo)
-                .addContainerGap(109, Short.MAX_VALUE))
+                .addContainerGap(108, Short.MAX_VALUE))
         );
 
         srn.addTab("Config", jPanel5);
@@ -1211,131 +1219,131 @@ public Jmain() {
  
         File[] listFiles = diretorio.listFiles(new FileFilter() {
 	public boolean accept(File pathname) {
-                if (pathname.getName().endsWith("301.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"301.TXT.GZ") == true) {
                     piripiri301.setText("301 Chegou");
                     piripiri301.setForeground(Color.blue);
                 }
-                if (pathname.getName().endsWith("302.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"302.TXT.GZ") == true) {
                     piripiri302.setText("302 Chegou");
                     piripiri302.setForeground(Color.blue);
                 }
-                if (pathname.getName().endsWith("303.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"303.TXT.GZ") == true) {
                     piripiri303.setText("303 Chegou");
                     piripiri303.setForeground(Color.blue);
                 }
-                if (pathname.getName().endsWith("304.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"304.TXT.GZ") == true) {
                     piripiri304.setText("304 Chegou");
                     piripiri304.setForeground(Color.blue);
                 }
-                if (pathname.getName().endsWith("305.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"305.TXT.GZ") == true) {
                     piripiri305.setText("305 Chegou");
                     piripiri305.setForeground(Color.blue);
                 }
-                if (pathname.getName().endsWith("306.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"306.TXT.GZ") == true) {
                     piripiri306.setText("306 Chegou");
                     piripiri306.setForeground(Color.blue);
                 }
-                if (pathname.getName().endsWith("307.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"307.TXT.GZ") == true) {
                     piripiri307.setText("307 Chegou");
                     piripiri307.setForeground(Color.blue);
                 }
-                if (pathname.getName().endsWith("308.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"308.TXT.GZ") == true) {
                     piripiri308.setText("308 Chegou");
                     piripiri308.setForeground(Color.blue);
                 }
-                if (pathname.getName().endsWith("309.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"309.TXT.GZ") == true) {
                     piripiri309.setText("309 Chegou");
                     piripiri309.setForeground(Color.blue);
                 }
-                if (pathname.getName().endsWith("310.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"310.TXT.GZ") == true) {
                     piripiri310.setText("310 Chegou");
                     piripiri310.setForeground(Color.blue);
                 }
-                if (pathname.getName().endsWith("311.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"311.TXT.GZ") == true) {
                     piripiri311.setText("311 Chegou");
                     piripiri311.setForeground(Color.blue);
                 }
-                if (pathname.getName().endsWith("312.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"312.TXT.GZ") == true) {
                     piripiri312.setText("312 Chegou");
                     piripiri312.setForeground(Color.blue);
                 }                
-                if (pathname.getName().endsWith("313.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"313.TXT.GZ") == true) {
                     piripiri313.setText("313 Chegou");
                     piripiri313.setForeground(Color.blue);
                 }
-                if (pathname.getName().endsWith("314.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"314.TXT.GZ") == true) {
                     piripiri314.setText("314 Chegou");
                     piripiri314.setForeground(Color.blue);
                 }
-                if (pathname.getName().endsWith("315.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"315.TXT.GZ") == true) {
                     piripiri315.setText("315 Chegou");
                     piripiri315.setForeground(Color.blue);
                 }
-                if (pathname.getName().endsWith("316.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"316.TXT.GZ") == true) {
                     piripiri316.setText("316 Chegou");
                     piripiri316.setForeground(Color.blue);
                 }
-                if (pathname.getName().endsWith("317.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"317.TXT.GZ") == true) {
                     piripiri317.setText("317 Chegou");
                     piripiri317.setForeground(Color.blue);
                 }
-                if (pathname.getName().endsWith("318.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"318.TXT.GZ") == true) {
                     piripiri318.setText("318 Chegou");
                     piripiri318.setForeground(Color.blue);
                 }
-                if (pathname.getName().endsWith("319.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"319.TXT.GZ") == true) {
                     piripiri319.setText("319 Chegou");
                     piripiri319.setForeground(Color.blue);
                 }
-                if (pathname.getName().endsWith("320.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"320.TXT.GZ") == true) {
                     piripiri320.setText("320 Chegou");
                     piripiri320.setForeground(Color.blue);
                 }
-                if (pathname.getName().endsWith("321.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"321.TXT.GZ") == true) {
                     piripiri321.setText("321 Chegou");
                     piripiri321.setForeground(Color.blue);
                 }
-                if (pathname.getName().endsWith("322.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"322.TXT.GZ") == true) {
                     piripiri322.setText("322 Chegou");
                     piripiri322.setForeground(Color.blue);
                 }
-                if (pathname.getName().endsWith("323.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"323.TXT.GZ") == true) {
                     piripiri323.setText("323 Chegou");
                     piripiri323.setForeground(Color.blue);
                 }
-                if (pathname.getName().endsWith("326.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"326.TXT.GZ") == true) {
                     piripiri326.setText("326 Chegou");
                     piripiri326.setForeground(Color.blue);
                 }
-                if (pathname.getName().endsWith("327.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"327.TXT.GZ") == true) {
                     piripiri327.setText("327 Chegou");
                     piripiri327.setForeground(Color.blue);
                 }                
-                if (pathname.getName().endsWith("328.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"328.TXT.GZ") == true) {
                     piripiri328.setText("328 Chegou");
                     piripiri328.setForeground(Color.blue);
                 }              
-                if (pathname.getName().endsWith("329.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"329.TXT.GZ") == true) {
                     piripiri329.setText("329 Chegou");
                     piripiri329.setForeground(Color.blue);
                 }               
-                if (pathname.getName().endsWith("330.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"330.TXT.GZ") == true) {
                     piripiri330.setText("330 Chegou");
                     piripiri330.setForeground(Color.blue);
                 }               
-                if (pathname.getName().endsWith("331.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"331.TXT.GZ") == true) {
                     piripiri331.setText("331 Chegou");
                     piripiri331.setForeground(Color.blue);
                 }               
-                if (pathname.getName().endsWith("332.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"332.TXT.GZ") == true) {
                     piripiri332.setText("332 Chegou");
                     piripiri332.setForeground(Color.blue);
                 }                
-                if (pathname.getName().endsWith("333.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"333.TXT.GZ") == true) {
                     piripiri333.setText("333 Chegou");
                     piripiri333.setForeground(Color.blue);
                 }               
-                if (pathname.getName().endsWith("334.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"334.TXT.GZ") == true) {
                     piripiri334.setText("334 Chegou");
                     piripiri334.setForeground(Color.blue);
                 }                
@@ -1349,99 +1357,99 @@ public Jmain() {
  
         File[] listFiles = diretorio.listFiles(new FileFilter() {
             public boolean accept(File pathname) {
-                if (pathname.getName().endsWith("401.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"401.TXT.GZ") == true) {
                     floriano401.setText("401 Chegou");
                     floriano401.setForeground(Color.blue);
                 }
-                if (pathname.getName().endsWith("402.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"402.TXT.GZ") == true) {
                     floriano402.setText("402 Chegou");
                     floriano402.setForeground(Color.blue);
                 }
-                if (pathname.getName().endsWith("403.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"403.TXT.GZ") == true) {
                     floriano403.setText("403 Chegou");
                     floriano403.setForeground(Color.blue);
                 }
-                if (pathname.getName().endsWith("404.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"404.TXT.GZ") == true) {
                     floriano404.setText("404 Chegou");
                     floriano404.setForeground(Color.blue);
                 }
-                if (pathname.getName().endsWith("405.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"405.TXT.GZ") == true) {
                     floriano405.setText("405 Chegou");
                     floriano405.setForeground(Color.blue);
                 }
-                if (pathname.getName().endsWith("406.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"406.TXT.GZ") == true) {
                     floriano406.setText("406 Chegou");
                     floriano406.setForeground(Color.blue);
                 }
-                if (pathname.getName().endsWith("407.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"407.TXT.GZ") == true) {
                     floriano407.setText("407 Chegou");
                     floriano407.setForeground(Color.blue);
                 }
-                if (pathname.getName().endsWith("408.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"408.TXT.GZ") == true) {
                     floriano408.setText("408 Chegou");
                     floriano408.setForeground(Color.blue);
                 }
-                if (pathname.getName().endsWith("409.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"409.TXT.GZ") == true) {
                     floriano409.setText("409 Chegou");
                     floriano409.setForeground(Color.blue);
                 }
-                if (pathname.getName().endsWith("410.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"410.TXT.GZ") == true) {
                     floriano410.setText("410 Chegou");
                     floriano410.setForeground(Color.blue);
                 }
-                if (pathname.getName().endsWith("411.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"411.TXT.GZ") == true) {
                     floriano411.setText("411 Chegou");
                     floriano411.setForeground(Color.blue);
                 }
-                if (pathname.getName().endsWith("412.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"412.TXT.GZ") == true) {
                     floriano412.setText("412 Chegou");
                     floriano412.setForeground(Color.blue);
                 }                
-                if (pathname.getName().endsWith("413.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"413.TXT.GZ") == true) {
                     floriano413.setText("413 Chegou");
                     floriano413.setForeground(Color.blue);
                 }
-                if (pathname.getName().endsWith("414.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"414.TXT.GZ") == true) {
                     floriano414.setText("414 Chegou");
                     floriano414.setForeground(Color.blue);
                 }
-                if (pathname.getName().endsWith("415.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"415.TXT.GZ") == true) {
                     floriano415.setText("415 Chegou");
                     floriano415.setForeground(Color.blue);
                 }
-                if (pathname.getName().endsWith("416.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"416.TXT.GZ") == true) {
                     floriano416.setText("416 Chegou");
                     floriano416.setForeground(Color.blue);
                 }
-                if (pathname.getName().endsWith("417.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"417.TXT.GZ") == true) {
                     floriano417.setText("417 Chegou");
                     floriano417.setForeground(Color.blue);
                 }
-                if (pathname.getName().endsWith("419.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"419.TXT.GZ") == true) {
                     floriano419.setText("419 Chegou");
                     floriano419.setForeground(Color.blue);
                 }
-                if (pathname.getName().endsWith("426.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"426.TXT.GZ") == true) {
                     floriano426.setText("426 Chegou");
                     floriano426.setForeground(Color.blue);
                 }
-                if (pathname.getName().endsWith("427.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"427.TXT.GZ") == true) {
                     floriano427.setText("427 Chegou");
                     floriano427.setForeground(Color.blue);
                 }                
-                if (pathname.getName().endsWith("428.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"428.TXT.GZ") == true) {
                     floriano428.setText("428 Chegou");
                     floriano428.setForeground(Color.blue);
                 }              
-                if (pathname.getName().endsWith("429.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"429.TXT.GZ") == true) {
                     floriano429.setText("429 Chegou");
                     floriano429.setForeground(Color.blue);
                 }               
-                if (pathname.getName().endsWith("430.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"430.TXT.GZ") == true) {
                     floriano430.setText("430 Chegou");
                     floriano430.setForeground(Color.blue);
                 }               
-                if (pathname.getName().endsWith("431.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"431.TXT.GZ") == true) {
                     floriano431.setText("431 Chegou");
                     floriano431.setForeground(Color.blue);
                 }
@@ -1455,127 +1463,127 @@ public Jmain() {
 
         File[] listFiles = diretorio.listFiles(new FileFilter() {
 	public boolean accept(File pathname) {
-                if (pathname.getName().endsWith("201.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"201.TXT.GZ") == true) {
                     picos201.setText("201 Chegou");
                     picos201.setForeground(Color.blue);
                 }
-                if (pathname.getName().endsWith("202.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"202.TXT.GZ") == true) {
                     picos202.setText("202 Chegou");
                     picos202.setForeground(Color.blue);
                 }
-                if (pathname.getName().endsWith("203.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"203.TXT.GZ") == true) {
                     picos203.setText("203 Chegou");
                     picos203.setForeground(Color.blue);
                 }
-                if (pathname.getName().endsWith("204.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"204.TXT.GZ") == true) {
                     picos204.setText("204 Chegou");
                     picos204.setForeground(Color.blue);
                 }
-                if (pathname.getName().endsWith("205.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"205.TXT.GZ") == true) {
                     picos205.setText("205 Chegou");
                     picos205.setForeground(Color.blue);
                 }
-                if (pathname.getName().endsWith("206.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"206.TXT.GZ") == true) {
                     picos206.setText("206 Chegou");
                     picos206.setForeground(Color.blue);
                 }
-                if (pathname.getName().endsWith("207.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"207.TXT.GZ") == true) {
                     picos207.setText("207 Chegou");
                     picos207.setForeground(Color.blue);
                 }
-                if (pathname.getName().endsWith("208.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"208.TXT.GZ") == true) {
                     picos208.setText("208 Chegou");
                     picos208.setForeground(Color.blue);
                 }
-                if (pathname.getName().endsWith("209.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"209.TXT.GZ") == true) {
                     picos209.setText("209 Chegou");
                     picos209.setForeground(Color.blue);
                 }
-                if (pathname.getName().endsWith("210.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"210.TXT.GZ") == true) {
                     picos210.setText("210 Chegou");
                     picos210.setForeground(Color.blue);
                 }
-                if (pathname.getName().endsWith("211.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"211.TXT.GZ") == true) {
                     picos211.setText("211 Chegou");
                     picos211.setForeground(Color.blue);
                 }
-                if (pathname.getName().endsWith("212.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"212.TXT.GZ") == true) {
                     picos212.setText("212 Chegou");
                     picos212.setForeground(Color.blue);
                 }                
-                if (pathname.getName().endsWith("213.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"213.TXT.GZ") == true) {
                     picos213.setText("213 Chegou");
                     picos213.setForeground(Color.blue);
                 }
-                if (pathname.getName().endsWith("214.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"214.TXT.GZ") == true) {
                     picos214.setText("214 Chegou");
                     picos214.setForeground(Color.blue);
                 }
-                if (pathname.getName().endsWith("215.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"215.TXT.GZ") == true) {
                     picos215.setText("215 Chegou");
                     picos215.setForeground(Color.blue);
                 }
-                if (pathname.getName().endsWith("216.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"216.TXT.GZ") == true) {
                     picos216.setText("216 Chegou");
                     picos216.setForeground(Color.blue);
                 }
-                if (pathname.getName().endsWith("217.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"217.TXT.GZ") == true) {
                     picos217.setText("217 Chegou");
                     picos217.setForeground(Color.blue);
                 }
-                if (pathname.getName().endsWith("218.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"218.TXT.GZ") == true) {
                     picos218.setText("218 Chegou");
                     picos218.setForeground(Color.blue);
                 }
-                if (pathname.getName().endsWith("219.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"219.TXT.GZ") == true) {
                     picos219.setText("219 Chegou");
                     picos219.setForeground(Color.blue);
                 }
-                if (pathname.getName().endsWith("220.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"220.TXT.GZ") == true) {
                     picos220.setText("220 Chegou");
                     picos220.setForeground(Color.blue);
                 }
-                if (pathname.getName().endsWith("221.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"221.TXT.GZ") == true) {
                     picos221.setText("221 Chegou");
                     picos221.setForeground(Color.blue);
                 }
-                if (pathname.getName().endsWith("222.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"222.TXT.GZ") == true) {
                     picos222.setText("222 Chegou");
                     picos222.setForeground(Color.blue);
                 }
-                if (pathname.getName().endsWith("223.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"223.TXT.GZ") == true) {
                     picos223.setText("223 Chegou");
                     picos223.setForeground(Color.blue);
                 }
-                if (pathname.getName().endsWith("226.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"226.TXT.GZ") == true) {
                     picos226.setText("226 Chegou");
                     picos226.setForeground(Color.blue);
                 }
-                if (pathname.getName().endsWith("227.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"227.TXT.GZ") == true) {
                     picos227.setText("227 Chegou");
                     picos227.setForeground(Color.blue);
                 }                
-                if (pathname.getName().endsWith("228.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"228.TXT.GZ") == true) {
                     picos228.setText("228 Chegou");
                     picos228.setForeground(Color.blue);
                 }              
-                if (pathname.getName().endsWith("229.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"229.TXT.GZ") == true) {
                     picos229.setText("229 Chegou");
                     picos229.setForeground(Color.blue);
                 }               
-                if (pathname.getName().endsWith("230.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"230.TXT.GZ") == true) {
                     picos230.setText("230 Chegou");
                     picos230.setForeground(Color.blue);
                 }               
-                if (pathname.getName().endsWith("231.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"231.TXT.GZ") == true) {
                     picos231.setText("231 Chegou");
                     picos231.setForeground(Color.blue);
                 }               
-                if (pathname.getName().endsWith("232.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"232.TXT.GZ") == true) {
                     picos232.setText("232 Chegou");
                     picos232.setForeground(Color.blue);
                 }                          
-                if (pathname.getName().endsWith("234.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"234.TXT.GZ") == true) {
                     picos234.setText("234 Chegou");
                     picos234.setForeground(Color.blue);
                 }                
@@ -1585,83 +1593,83 @@ public Jmain() {
     }//GEN-LAST:event_picosOnTime
 
     private void caxiasOnTime(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_caxiasOnTime
-        File diretorio = new File("S:\\6648\\VDWIN\\PTPED");
-	
+       // File diretorio = new File("S:\\6648\\VDWIN\\PTPED");
+	File diretorio = new File("C:\\Users\\anton\\Documents\\SRN");
         File[] listFiles = diretorio.listFiles(new FileFilter() {
 	public boolean accept(File pathname) {
-            if (pathname.getName().endsWith("101.TXT.GZ") == true) {
+            if (pathname.getName().endsWith(diaDaSemana+"101.TXT.GZ") == true) {
                 caxias101.setText("101 Chegou");
                 caxias101.setForeground(Color.blue);
                 }
-            if (pathname.getName().endsWith("102.TXT.GZ") == true) {
+            if (pathname.getName().endsWith(diaDaSemana+"102.TXT.GZ") == true) {
                 caxias102.setText("102 Chegou");
                 caxias102.setForeground(Color.blue);
                 }
-            if (pathname.getName().endsWith("101.TXT.GZ") == true) {
+            if (pathname.getName().endsWith(diaDaSemana+"101.TXT.GZ") == true) {
                 caxias103.setText("101 Chegou");
                 caxias103.setForeground(Color.blue);
                 }
-            if (pathname.getName().endsWith("104.TXT.GZ") == true) {
+            if (pathname.getName().endsWith(diaDaSemana+"104.TXT.GZ") == true) {
                 caxias104.setText("104 Chegou");
                 caxias104.setForeground(Color.blue);
                 }
-            if (pathname.getName().endsWith("105.TXT.GZ") == true) {
+            if (pathname.getName().endsWith(diaDaSemana+"105.TXT.GZ") == true) {
                 caxias105.setText("105 Chegou");
                 caxias105.setForeground(Color.blue);
                 }
-            if (pathname.getName().endsWith("106.TXT.GZ") == true) {
+            if (pathname.getName().endsWith(diaDaSemana+"106.TXT.GZ") == true) {
                 caxias106.setText("106 Chegou");
                 caxias106.setForeground(Color.blue);
                 }
-            if (pathname.getName().endsWith("107.TXT.GZ") == true) {
+            if (pathname.getName().endsWith(diaDaSemana+"107.TXT.GZ") == true) {
                 caxias107.setText("107 Chegou");
                 caxias107.setForeground(Color.blue);
                 }
-            if (pathname.getName().endsWith("108.TXT.GZ") == true) {
+            if (pathname.getName().endsWith(diaDaSemana+"108.TXT.GZ") == true) {
                 caxias108.setText("108 Chegou");
                 caxias108.setForeground(Color.blue);
                 }
-            if (pathname.getName().endsWith("109.TXT.GZ") == true) {
+            if (pathname.getName().endsWith(diaDaSemana+"109.TXT.GZ") == true) {
                 caxias109.setText("109 Chegou");
                 caxias109.setForeground(Color.blue);
                 }
-            if (pathname.getName().endsWith("110.TXT.GZ") == true) {
+            if (pathname.getName().endsWith(diaDaSemana+"110.TXT.GZ") == true) {
                 caxias110.setText("110 Chegou");
                 caxias110.setForeground(Color.blue);
                 }
-            if (pathname.getName().endsWith("111.TXT.GZ") == true) {
+            if (pathname.getName().endsWith(diaDaSemana+"111.TXT.GZ") == true) {
                 caxias111.setText("111 Chegou");
                 caxias111.setForeground(Color.blue);
                 }
-            if (pathname.getName().endsWith("112.TXT.GZ") == true) {
+            if (pathname.getName().endsWith(diaDaSemana+"112.TXT.GZ") == true) {
                 caxias112.setText("112 Chegou");
                 caxias112.setForeground(Color.blue);
                 }
-            if (pathname.getName().endsWith("113.TXT.GZ") == true) {
+            if (pathname.getName().endsWith(diaDaSemana+"113.TXT.GZ") == true) {
                 caxias113.setText("113 Chegou");
                 caxias113.setForeground(Color.blue);
                 }
-            if (pathname.getName().endsWith("114.TXT.GZ") == true) {
+            if (pathname.getName().endsWith(diaDaSemana+"114.TXT.GZ") == true) {
                 caxias114.setText("114 Chegou");
                 caxias114.setForeground(Color.blue);
                 }
-            if (pathname.getName().endsWith("116.TXT.GZ") == true) {
+            if (pathname.getName().endsWith(diaDaSemana+"116.TXT.GZ") == true) {
                 caxias116.setText("116 Chegou");
                 caxias116.setForeground(Color.blue);
                 }
-            if (pathname.getName().endsWith("121.TXT.GZ") == true) {
+            if (pathname.getName().endsWith(diaDaSemana+"121.TXT.GZ") == true) {
                 caxias121.setText("121 Chegou");
                 caxias121.setForeground(Color.blue);
                 }
-            if (pathname.getName().endsWith("122.TXT.GZ") == true) {
+            if (pathname.getName().endsWith(diaDaSemana+"122.TXT.GZ") == true) {
                 caxias122.setText("122 Chegou");
                 caxias122.setForeground(Color.blue);
                 }
-             if (pathname.getName().endsWith("123.TXT.GZ") == true) {
+             if (pathname.getName().endsWith(diaDaSemana+"123.TXT.GZ") == true) {
                 caxias123.setText("123 Chegou");
                 caxias123.setForeground(Color.blue);
                 }
-
+             
                return true;
         }      
         });
@@ -1670,51 +1678,49 @@ public Jmain() {
     private void sraimundoOnTime(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sraimundoOnTime
         //File diretorio = new File("S:\\6456\\VDWIN\\PTPED");
         File diretorio = new File("C:\\Users\\anton\\Documents\\SRN");
-	
         File[] listFiles = diretorio.listFiles(new FileFilter() {
 	public boolean accept(File pathname) {
-                if (pathname.getName().endsWith("501.TXT.GZ") == true) {
-                    System.out.println(pathname.lastModified());
+                if (pathname.getName().endsWith(diaDaSemana+"501.TXT.GZ") == true) {
                     srn501.setText("501 Chegou");
                     srn501.setForeground(Color.blue);
                 }
-                if (pathname.getName().endsWith("502.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"502.TXT.GZ") == true) {
                     srn502.setText("502 Chegou");
                     srn502.setForeground(Color.blue);
                 }
-                if (pathname.getName().endsWith("503.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"503.TXT.GZ") == true) {
                     srn503.setText("503 Chegou");
                     srn503.setForeground(Color.blue);
                 }
-                if (pathname.getName().endsWith("504.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"504.TXT.GZ") == true) {
                     srn504.setText("504 Chegou");
                     srn504.setForeground(Color.blue);
                 }
-                if (pathname.getName().endsWith("505.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"505.TXT.GZ") == true) {
                     srn505.setText("505 Chegou");
                     srn505.setForeground(Color.blue);
                 }
-                if (pathname.getName().endsWith("506.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"506.TXT.GZ") == true) {
                     srn506.setText("506 Chegou");
                     srn506.setForeground(Color.blue);
                 }
-                if (pathname.getName().endsWith("507.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"507.TXT.GZ") == true) {
                     srn507.setText("507 Chegou");
                     srn507.setForeground(Color.blue);
                 }
-                if (pathname.getName().endsWith("511.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"511.TXT.GZ") == true) {
                     srn511.setText("511 Chegou");
                     srn511.setForeground(Color.blue);
                 }
-                if (pathname.getName().endsWith("512.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"512.TXT.GZ") == true) {
                     srn512.setText("512 Chegou");
                     srn512.setForeground(Color.blue);
                 }
-                if (pathname.getName().endsWith("513.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"513.TXT.GZ") == true) {
                     srn513.setText("513 Chegou");
                     srn513.setForeground(Color.blue);
                 }
-                if (pathname.getName().endsWith("514.TXT.GZ") == true) {
+                if (pathname.getName().endsWith(diaDaSemana+"514.TXT.GZ") == true) {
                     srn514.setText("514 Chegou");
                     srn514.setForeground(Color.blue);
                 }
@@ -1765,14 +1771,17 @@ public Jmain() {
     }//GEN-LAST:event_ativarCaxiasActionPerformed
 
     private void segundaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_segundaActionPerformed
-       if(segunda.isSelected()){
+        if(segunda.isSelected()){
            terca.setSelected(false);
            quarta.setSelected(false);
            quinta.setSelected(false);
            sexta.setSelected(false);
            sabado.setSelected(false);
            domingo.setSelected(false);
+          
        }
+        Dia dia = new Dia();
+        diaDaSemana = dia.getSegunda();
     }//GEN-LAST:event_segundaActionPerformed
 
     private void quartaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_quartaActionPerformed
@@ -1782,8 +1791,10 @@ public Jmain() {
            sexta.setSelected(false);
            quinta.setSelected(false);       
            sabado.setSelected(false);
-           domingo.setSelected(false);
+           domingo.setSelected(false); 
        }
+        Dia dia = new Dia();
+        diaDaSemana = dia.getQuarta();
     }//GEN-LAST:event_quartaActionPerformed
 
     private void tercaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tercaActionPerformed
@@ -1795,6 +1806,8 @@ public Jmain() {
            sabado.setSelected(false);
            domingo.setSelected(false);
        }
+        Dia dia = new Dia();
+        diaDaSemana = dia.getTerca();
     }//GEN-LAST:event_tercaActionPerformed
 
     private void quintaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_quintaActionPerformed
@@ -1806,6 +1819,8 @@ public Jmain() {
            sabado.setSelected(false);
            domingo.setSelected(false);
        }
+        Dia dia = new Dia();
+        diaDaSemana = dia.getQuinta();
     }//GEN-LAST:event_quintaActionPerformed
 
     private void sextaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sextaActionPerformed
@@ -1817,6 +1832,8 @@ public Jmain() {
            sabado.setSelected(false);
            domingo.setSelected(false);
        }
+        Dia dia = new Dia();
+        diaDaSemana = dia.getSexta();
     }//GEN-LAST:event_sextaActionPerformed
 
     private void sabadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sabadoActionPerformed
@@ -1828,6 +1845,8 @@ public Jmain() {
            sexta.setSelected(false);
            domingo.setSelected(false);
        }
+        Dia dia = new Dia();
+        diaDaSemana = dia.getSabado();
     }//GEN-LAST:event_sabadoActionPerformed
 
     private void domingoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_domingoActionPerformed
@@ -1839,6 +1858,8 @@ public Jmain() {
            sabado.setSelected(false);
            sexta.setSelected(false);
        }
+        Dia dia = new Dia();
+        diaDaSemana = dia.getDomingo();
     }//GEN-LAST:event_domingoActionPerformed
 
     /**
@@ -1850,6 +1871,31 @@ public Jmain() {
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
          * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
          */
+        
+        
+      
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Windows".equals(info.getName())) {
@@ -1872,6 +1918,7 @@ public Jmain() {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new Jmain().setVisible(true);
+                
             }
         });
     }
@@ -1928,6 +1975,8 @@ public Jmain() {
     private javax.swing.JLabel floriano429;
     private javax.swing.JLabel floriano430;
     private javax.swing.JLabel floriano431;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
