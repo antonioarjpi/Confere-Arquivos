@@ -26,7 +26,7 @@ public Jmain() {
     initComponents();
     setTitle("Confere Vendas");
     this.setLocationRelativeTo(null);
-    setResizable(false);
+    
    
 
 }
@@ -47,51 +47,6 @@ public Jmain() {
         floriano = new org.netbeans.examples.lib.timerbean.Timer();
         buttonGroup1 = new javax.swing.ButtonGroup();
         srn = new javax.swing.JTabbedPane();
-        saoraimundo = new javax.swing.JPanel();
-        srn501 = new javax.swing.JLabel();
-        srn502 = new javax.swing.JLabel();
-        srn503 = new javax.swing.JLabel();
-        srn504 = new javax.swing.JLabel();
-        srn505 = new javax.swing.JLabel();
-        srn506 = new javax.swing.JLabel();
-        srn507 = new javax.swing.JLabel();
-        srn511 = new javax.swing.JLabel();
-        srn512 = new javax.swing.JLabel();
-        srn513 = new javax.swing.JLabel();
-        srn514 = new javax.swing.JLabel();
-        jPanel1 = new javax.swing.JPanel();
-        piripiri301 = new javax.swing.JLabel();
-        piripiri302 = new javax.swing.JLabel();
-        piripiri303 = new javax.swing.JLabel();
-        piripiri304 = new javax.swing.JLabel();
-        piripiri305 = new javax.swing.JLabel();
-        piripiri306 = new javax.swing.JLabel();
-        piripiri307 = new javax.swing.JLabel();
-        piripiri308 = new javax.swing.JLabel();
-        piripiri309 = new javax.swing.JLabel();
-        piripiri310 = new javax.swing.JLabel();
-        piripiri311 = new javax.swing.JLabel();
-        piripiri312 = new javax.swing.JLabel();
-        piripiri313 = new javax.swing.JLabel();
-        piripiri314 = new javax.swing.JLabel();
-        piripiri315 = new javax.swing.JLabel();
-        piripiri316 = new javax.swing.JLabel();
-        piripiri317 = new javax.swing.JLabel();
-        piripiri318 = new javax.swing.JLabel();
-        piripiri319 = new javax.swing.JLabel();
-        piripiri320 = new javax.swing.JLabel();
-        piripiri321 = new javax.swing.JLabel();
-        piripiri322 = new javax.swing.JLabel();
-        piripiri323 = new javax.swing.JLabel();
-        piripiri326 = new javax.swing.JLabel();
-        piripiri327 = new javax.swing.JLabel();
-        piripiri328 = new javax.swing.JLabel();
-        piripiri329 = new javax.swing.JLabel();
-        piripiri330 = new javax.swing.JLabel();
-        piripiri331 = new javax.swing.JLabel();
-        piripiri332 = new javax.swing.JLabel();
-        piripiri333 = new javax.swing.JLabel();
-        piripiri334 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         saoraimundo1 = new javax.swing.JPanel();
         caxias101 = new javax.swing.JLabel();
@@ -105,13 +60,26 @@ public Jmain() {
         caxias109 = new javax.swing.JLabel();
         caxias110 = new javax.swing.JLabel();
         caxias111 = new javax.swing.JLabel();
-        caxias112 = new javax.swing.JLabel();
         caxias113 = new javax.swing.JLabel();
         caxias114 = new javax.swing.JLabel();
-        caxias116 = new javax.swing.JLabel();
-        caxias121 = new javax.swing.JLabel();
         caxias122 = new javax.swing.JLabel();
         caxias123 = new javax.swing.JLabel();
+        caxias112 = new javax.swing.JLabel();
+        jPanel5 = new javax.swing.JPanel();
+        ativarPicos = new javax.swing.JCheckBox();
+        ativarPiripiri = new javax.swing.JCheckBox();
+        ativarFloriano = new javax.swing.JCheckBox();
+        ativarSrn = new javax.swing.JCheckBox();
+        ativarCaxias = new javax.swing.JCheckBox();
+        segunda = new javax.swing.JRadioButton();
+        terca = new javax.swing.JRadioButton();
+        quarta = new javax.swing.JRadioButton();
+        quinta = new javax.swing.JRadioButton();
+        sexta = new javax.swing.JRadioButton();
+        sabado = new javax.swing.JRadioButton();
+        domingo = new javax.swing.JRadioButton();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         picos201 = new javax.swing.JLabel();
         picos202 = new javax.swing.JLabel();
@@ -144,7 +112,39 @@ public Jmain() {
         picos231 = new javax.swing.JLabel();
         picos232 = new javax.swing.JLabel();
         picos234 = new javax.swing.JLabel();
-        jPanel4 = new javax.swing.JPanel();
+        jLabel3 = new javax.swing.JLabel();
+        piripiri301 = new javax.swing.JLabel();
+        piripiri302 = new javax.swing.JLabel();
+        piripiri303 = new javax.swing.JLabel();
+        piripiri304 = new javax.swing.JLabel();
+        piripiri305 = new javax.swing.JLabel();
+        piripiri306 = new javax.swing.JLabel();
+        piripiri307 = new javax.swing.JLabel();
+        piripiri308 = new javax.swing.JLabel();
+        piripiri309 = new javax.swing.JLabel();
+        piripiri310 = new javax.swing.JLabel();
+        piripiri311 = new javax.swing.JLabel();
+        piripiri312 = new javax.swing.JLabel();
+        piripiri313 = new javax.swing.JLabel();
+        piripiri314 = new javax.swing.JLabel();
+        piripiri315 = new javax.swing.JLabel();
+        piripiri316 = new javax.swing.JLabel();
+        piripiri317 = new javax.swing.JLabel();
+        piripiri319 = new javax.swing.JLabel();
+        piripiri320 = new javax.swing.JLabel();
+        piripiri321 = new javax.swing.JLabel();
+        piripiri322 = new javax.swing.JLabel();
+        piripiri323 = new javax.swing.JLabel();
+        piripiri326 = new javax.swing.JLabel();
+        piripiri327 = new javax.swing.JLabel();
+        piripiri328 = new javax.swing.JLabel();
+        piripiri329 = new javax.swing.JLabel();
+        piripiri330 = new javax.swing.JLabel();
+        piripiri331 = new javax.swing.JLabel();
+        piripiri332 = new javax.swing.JLabel();
+        piripiri333 = new javax.swing.JLabel();
+        piripiri334 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
         floriano401 = new javax.swing.JLabel();
         floriano402 = new javax.swing.JLabel();
         floriano403 = new javax.swing.JLabel();
@@ -152,7 +152,6 @@ public Jmain() {
         floriano405 = new javax.swing.JLabel();
         floriano406 = new javax.swing.JLabel();
         floriano407 = new javax.swing.JLabel();
-        floriano408 = new javax.swing.JLabel();
         floriano409 = new javax.swing.JLabel();
         floriano410 = new javax.swing.JLabel();
         floriano411 = new javax.swing.JLabel();
@@ -169,21 +168,20 @@ public Jmain() {
         floriano429 = new javax.swing.JLabel();
         floriano430 = new javax.swing.JLabel();
         floriano431 = new javax.swing.JLabel();
-        jPanel5 = new javax.swing.JPanel();
-        ativarPicos = new javax.swing.JCheckBox();
-        ativarPiripiri = new javax.swing.JCheckBox();
-        ativarFloriano = new javax.swing.JCheckBox();
-        ativarSrn = new javax.swing.JCheckBox();
-        ativarCaxias = new javax.swing.JCheckBox();
-        segunda = new javax.swing.JRadioButton();
-        terca = new javax.swing.JRadioButton();
-        quarta = new javax.swing.JRadioButton();
-        quinta = new javax.swing.JRadioButton();
-        sexta = new javax.swing.JRadioButton();
-        sabado = new javax.swing.JRadioButton();
-        domingo = new javax.swing.JRadioButton();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        srn501 = new javax.swing.JLabel();
+        srn502 = new javax.swing.JLabel();
+        srn503 = new javax.swing.JLabel();
+        srn504 = new javax.swing.JLabel();
+        srn505 = new javax.swing.JLabel();
+        srn506 = new javax.swing.JLabel();
+        srn507 = new javax.swing.JLabel();
+        srn511 = new javax.swing.JLabel();
+        srn512 = new javax.swing.JLabel();
+        srn513 = new javax.swing.JLabel();
+        srn514 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        floriano418 = new javax.swing.JLabel();
 
         piripiri.addTimerListener(new org.netbeans.examples.lib.timerbean.TimerListener() {
             public void onTime(java.awt.event.ActionEvent evt) {
@@ -217,303 +215,7 @@ public Jmain() {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        srn501.setForeground(new java.awt.Color(255, 51, 51));
-        srn501.setText("501 - NÃO CHEGOU");
-
-        srn502.setForeground(new java.awt.Color(255, 51, 51));
-        srn502.setText("502 - NÃO CHEGOU");
-
-        srn503.setForeground(new java.awt.Color(255, 51, 51));
-        srn503.setText("503 - NÃO CHEGOU");
-
-        srn504.setForeground(new java.awt.Color(255, 51, 51));
-        srn504.setText("504 - NÃO CHEGOU");
-
-        srn505.setForeground(new java.awt.Color(255, 51, 51));
-        srn505.setText("505 - NÃO CHEGOU");
-
-        srn506.setForeground(new java.awt.Color(255, 51, 51));
-        srn506.setText("506 - NÃO CHEGOU");
-
-        srn507.setForeground(new java.awt.Color(255, 51, 51));
-        srn507.setText("507 - NÃO CHEGOU");
-
-        srn511.setForeground(new java.awt.Color(255, 51, 51));
-        srn511.setText("511 - NÃO CHEGOU");
-
-        srn512.setForeground(new java.awt.Color(255, 51, 51));
-        srn512.setText("512 - NÃO CHEGOU");
-
-        srn513.setForeground(new java.awt.Color(255, 51, 51));
-        srn513.setText("513 - NÃO CHEGOU");
-
-        srn514.setForeground(new java.awt.Color(255, 51, 51));
-        srn514.setText("514 - NÃO CHEGOU");
-
-        javax.swing.GroupLayout saoraimundoLayout = new javax.swing.GroupLayout(saoraimundo);
-        saoraimundo.setLayout(saoraimundoLayout);
-        saoraimundoLayout.setHorizontalGroup(
-            saoraimundoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(saoraimundoLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(saoraimundoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(srn502)
-                    .addComponent(srn503)
-                    .addComponent(srn504)
-                    .addComponent(srn505)
-                    .addComponent(srn506)
-                    .addComponent(srn507)
-                    .addComponent(srn511)
-                    .addComponent(srn512)
-                    .addComponent(srn513)
-                    .addComponent(srn514)
-                    .addComponent(srn501))
-                .addContainerGap(331, Short.MAX_VALUE))
-        );
-        saoraimundoLayout.setVerticalGroup(
-            saoraimundoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(saoraimundoLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(srn501)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(srn502)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(srn503)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(srn504)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(srn505)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(srn506)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(srn507)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(srn511)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(srn512)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(srn513, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(srn514, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(60, Short.MAX_VALUE))
-        );
-
-        srn.addTab("São Raimundo", saoraimundo);
-
-        piripiri301.setForeground(new java.awt.Color(255, 51, 51));
-        piripiri301.setText("301 - NÃO CHEGOU");
-
-        piripiri302.setForeground(new java.awt.Color(255, 51, 51));
-        piripiri302.setText("302 - NÃO CHEGOU");
-
-        piripiri303.setForeground(new java.awt.Color(255, 51, 51));
-        piripiri303.setText("303 - NÃO CHEGOU");
-
-        piripiri304.setForeground(new java.awt.Color(255, 51, 51));
-        piripiri304.setText("304 - NÃO CHEGOU");
-
-        piripiri305.setForeground(new java.awt.Color(255, 51, 51));
-        piripiri305.setText("305 - NÃO CHEGOU");
-
-        piripiri306.setForeground(new java.awt.Color(255, 51, 51));
-        piripiri306.setText("306 - NÃO CHEGOU");
-
-        piripiri307.setForeground(new java.awt.Color(255, 51, 51));
-        piripiri307.setText("307 - NÃO CHEGOU");
-
-        piripiri308.setForeground(new java.awt.Color(255, 51, 51));
-        piripiri308.setText("308 - NÃO CHEGOU");
-
-        piripiri309.setForeground(new java.awt.Color(255, 51, 51));
-        piripiri309.setText("309 - NÃO CHEGOU");
-
-        piripiri310.setForeground(new java.awt.Color(255, 51, 51));
-        piripiri310.setText("310 - NÃO CHEGOU");
-
-        piripiri311.setForeground(new java.awt.Color(255, 51, 51));
-        piripiri311.setText("311 - NÃO CHEGOU");
-
-        piripiri312.setForeground(new java.awt.Color(255, 51, 51));
-        piripiri312.setText("312 - NÃO CHEGOU");
-
-        piripiri313.setForeground(new java.awt.Color(255, 51, 51));
-        piripiri313.setText("313 - NÃO CHEGOU");
-
-        piripiri314.setForeground(new java.awt.Color(255, 51, 51));
-        piripiri314.setText("314 - NÃO CHEGOU");
-
-        piripiri315.setForeground(new java.awt.Color(255, 51, 51));
-        piripiri315.setText("315 - NÃO CHEGOU");
-
-        piripiri316.setForeground(new java.awt.Color(255, 51, 51));
-        piripiri316.setText("316 - NÃO CHEGOU");
-
-        piripiri317.setForeground(new java.awt.Color(255, 51, 51));
-        piripiri317.setText("317 - NÃO CHEGOU");
-
-        piripiri318.setForeground(new java.awt.Color(255, 51, 51));
-        piripiri318.setText("318 - NÃO CHEGOU");
-
-        piripiri319.setForeground(new java.awt.Color(255, 51, 51));
-        piripiri319.setText("319 - NÃO CHEGOU");
-
-        piripiri320.setForeground(new java.awt.Color(255, 51, 51));
-        piripiri320.setText("320 - NÃO CHEGOU");
-
-        piripiri321.setForeground(new java.awt.Color(255, 51, 51));
-        piripiri321.setText("321 - NÃO CHEGOU");
-
-        piripiri322.setForeground(new java.awt.Color(255, 51, 51));
-        piripiri322.setText("322 - NÃO CHEGOU");
-
-        piripiri323.setForeground(new java.awt.Color(255, 51, 51));
-        piripiri323.setText("323 - NÃO CHEGOU");
-
-        piripiri326.setForeground(new java.awt.Color(255, 51, 51));
-        piripiri326.setText("326 - NÃO CHEGOU");
-
-        piripiri327.setForeground(new java.awt.Color(255, 51, 51));
-        piripiri327.setText("327 - NÃO CHEGOU");
-
-        piripiri328.setForeground(new java.awt.Color(255, 51, 51));
-        piripiri328.setText("328 - NÃO CHEGOU");
-
-        piripiri329.setForeground(new java.awt.Color(255, 51, 51));
-        piripiri329.setText("329 - NÃO CHEGOU");
-
-        piripiri330.setForeground(new java.awt.Color(255, 51, 51));
-        piripiri330.setText("330 - NÃO CHEGOU");
-
-        piripiri331.setForeground(new java.awt.Color(255, 51, 51));
-        piripiri331.setText("331 - NÃO CHEGOU");
-
-        piripiri332.setForeground(new java.awt.Color(255, 51, 51));
-        piripiri332.setText("332 - NÃO CHEGOU");
-
-        piripiri333.setForeground(new java.awt.Color(255, 51, 51));
-        piripiri333.setText("333 - NÃO CHEGOU");
-
-        piripiri334.setForeground(new java.awt.Color(255, 51, 51));
-        piripiri334.setText("334 - NÃO CHEGOU");
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(piripiri309)
-                    .addComponent(piripiri310)
-                    .addComponent(piripiri311)
-                    .addComponent(piripiri312)
-                    .addComponent(piripiri313)
-                    .addComponent(piripiri308)
-                    .addComponent(piripiri302)
-                    .addComponent(piripiri303)
-                    .addComponent(piripiri304)
-                    .addComponent(piripiri305)
-                    .addComponent(piripiri306)
-                    .addComponent(piripiri307)
-                    .addComponent(piripiri301))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(piripiri314)
-                    .addComponent(piripiri320)
-                    .addComponent(piripiri321)
-                    .addComponent(piripiri322)
-                    .addComponent(piripiri323)
-                    .addComponent(piripiri326)
-                    .addComponent(piripiri327)
-                    .addComponent(piripiri328)
-                    .addComponent(piripiri315)
-                    .addComponent(piripiri316)
-                    .addComponent(piripiri317)
-                    .addComponent(piripiri318)
-                    .addComponent(piripiri319))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(piripiri329)
-                    .addComponent(piripiri330)
-                    .addComponent(piripiri331)
-                    .addComponent(piripiri332)
-                    .addComponent(piripiri333)
-                    .addComponent(piripiri334))
-                .addContainerGap(105, Short.MAX_VALUE))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(piripiri301)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(piripiri302)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(piripiri303)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(piripiri304)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(piripiri305)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(piripiri306)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(piripiri307)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(piripiri308)
-                            .addComponent(piripiri321))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(piripiri309)
-                            .addComponent(piripiri322))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(piripiri310)
-                            .addComponent(piripiri323))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(piripiri311)
-                            .addComponent(piripiri326))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(piripiri312)
-                            .addComponent(piripiri327))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(piripiri313)
-                            .addComponent(piripiri328)))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(piripiri314)
-                            .addComponent(piripiri329))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(piripiri315)
-                            .addComponent(piripiri330))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(piripiri316)
-                            .addComponent(piripiri331))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(piripiri317)
-                            .addComponent(piripiri332))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(piripiri318)
-                            .addComponent(piripiri333))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(piripiri319)
-                            .addComponent(piripiri334))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(piripiri320)))
-                .addGap(0, 20, Short.MAX_VALUE))
-        );
-
-        srn.addTab("Piripiri", jPanel1);
+        jPanel2.setPreferredSize(new java.awt.Dimension(600, 600));
 
         caxias101.setForeground(new java.awt.Color(255, 51, 51));
         caxias101.setText("101 - NÃO CHEGOU");
@@ -548,26 +250,20 @@ public Jmain() {
         caxias111.setForeground(new java.awt.Color(255, 51, 51));
         caxias111.setText("111 - NÃO CHEGOU");
 
-        caxias112.setForeground(new java.awt.Color(255, 51, 51));
-        caxias112.setText("112 - NÃO CHEGOU");
-
         caxias113.setForeground(new java.awt.Color(255, 51, 51));
         caxias113.setText("113 - NÃO CHEGOU");
 
         caxias114.setForeground(new java.awt.Color(255, 51, 51));
         caxias114.setText("114 - NÃO CHEGOU");
 
-        caxias116.setForeground(new java.awt.Color(255, 51, 51));
-        caxias116.setText("116 - NÃO CHEGOU");
-
-        caxias121.setForeground(new java.awt.Color(255, 51, 51));
-        caxias121.setText("121 - NÃO CHEGOU");
-
         caxias122.setForeground(new java.awt.Color(255, 51, 51));
         caxias122.setText("122 - NÃO CHEGOU");
 
         caxias123.setForeground(new java.awt.Color(255, 51, 51));
         caxias123.setText("123 - NÃO CHEGOU");
+
+        caxias112.setForeground(new java.awt.Color(255, 51, 51));
+        caxias112.setText("112 - NÃO CHEGOU");
 
         javax.swing.GroupLayout saoraimundo1Layout = new javax.swing.GroupLayout(saoraimundo1);
         saoraimundo1.setLayout(saoraimundo1Layout);
@@ -576,59 +272,37 @@ public Jmain() {
             .addGroup(saoraimundo1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(saoraimundo1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(saoraimundo1Layout.createSequentialGroup()
-                        .addComponent(caxias101)
-                        .addGap(18, 18, 18)
-                        .addComponent(caxias114))
-                    .addGroup(saoraimundo1Layout.createSequentialGroup()
-                        .addComponent(caxias103)
-                        .addGap(18, 18, 18)
-                        .addComponent(caxias121))
-                    .addGroup(saoraimundo1Layout.createSequentialGroup()
-                        .addComponent(caxias104)
-                        .addGap(18, 18, 18)
-                        .addComponent(caxias122))
-                    .addGroup(saoraimundo1Layout.createSequentialGroup()
-                        .addComponent(caxias105)
-                        .addGap(18, 18, 18)
-                        .addComponent(caxias123))
+                    .addComponent(caxias101)
+                    .addComponent(caxias103)
+                    .addComponent(caxias104)
+                    .addComponent(caxias105)
                     .addComponent(caxias106)
                     .addComponent(caxias107)
                     .addComponent(caxias108)
                     .addComponent(caxias109)
                     .addComponent(caxias110)
                     .addComponent(caxias111)
-                    .addComponent(caxias112)
                     .addComponent(caxias113)
-                    .addGroup(saoraimundo1Layout.createSequentialGroup()
-                        .addComponent(caxias102)
-                        .addGap(18, 18, 18)
-                        .addComponent(caxias116)))
-                .addContainerGap(218, Short.MAX_VALUE))
+                    .addComponent(caxias102)
+                    .addComponent(caxias114)
+                    .addComponent(caxias122)
+                    .addComponent(caxias123)
+                    .addComponent(caxias112))
+                .addContainerGap(337, Short.MAX_VALUE))
         );
         saoraimundo1Layout.setVerticalGroup(
             saoraimundo1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(saoraimundo1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(saoraimundo1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(caxias101)
-                    .addComponent(caxias114, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(caxias101)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(saoraimundo1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(caxias102)
-                    .addComponent(caxias116, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(caxias102)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(saoraimundo1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(caxias103)
-                    .addComponent(caxias121, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(caxias103)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(saoraimundo1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(caxias104)
-                    .addComponent(caxias122, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(caxias104)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(saoraimundo1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(caxias105)
-                    .addComponent(caxias123, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(caxias105)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(caxias106)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -645,409 +319,34 @@ public Jmain() {
                 .addComponent(caxias112, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(caxias113, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(20, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(caxias114, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(caxias122, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(caxias123, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(12, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 436, Short.MAX_VALUE)
-            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(jPanel2Layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(saoraimundo1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addComponent(saoraimundo1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(368, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 285, Short.MAX_VALUE)
-            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(jPanel2Layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(saoraimundo1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(saoraimundo1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(481, Short.MAX_VALUE))
         );
 
         srn.addTab("Caxias", jPanel2);
 
-        picos201.setForeground(new java.awt.Color(255, 51, 51));
-        picos201.setText("201 - NÃO CHEGOU");
-
-        picos202.setForeground(new java.awt.Color(255, 51, 51));
-        picos202.setText("202 - NÃO CHEGOU");
-
-        picos203.setForeground(new java.awt.Color(255, 51, 51));
-        picos203.setText("203 - NÃO CHEGOU");
-
-        picos204.setForeground(new java.awt.Color(255, 51, 51));
-        picos204.setText("204 - NÃO CHEGOU");
-
-        picos205.setForeground(new java.awt.Color(255, 51, 51));
-        picos205.setText("205 - NÃO CHEGOU");
-
-        picos206.setForeground(new java.awt.Color(255, 51, 51));
-        picos206.setText("206 - NÃO CHEGOU");
-
-        picos207.setForeground(new java.awt.Color(255, 51, 51));
-        picos207.setText("207 - NÃO CHEGOU");
-
-        picos208.setForeground(new java.awt.Color(255, 51, 51));
-        picos208.setText("208 - NÃO CHEGOU");
-
-        picos209.setForeground(new java.awt.Color(255, 51, 51));
-        picos209.setText("209 - NÃO CHEGOU");
-
-        picos210.setForeground(new java.awt.Color(255, 51, 51));
-        picos210.setText("210 - NÃO CHEGOU");
-
-        picos211.setForeground(new java.awt.Color(255, 51, 51));
-        picos211.setText("211 - NÃO CHEGOU");
-
-        picos212.setForeground(new java.awt.Color(255, 51, 51));
-        picos212.setText("212 - NÃO CHEGOU");
-
-        picos213.setForeground(new java.awt.Color(255, 51, 51));
-        picos213.setText("213 - NÃO CHEGOU");
-
-        picos214.setForeground(new java.awt.Color(255, 51, 51));
-        picos214.setText("214 - NÃO CHEGOU");
-
-        picos215.setForeground(new java.awt.Color(255, 51, 51));
-        picos215.setText("215 - NÃO CHEGOU");
-
-        picos216.setForeground(new java.awt.Color(255, 51, 51));
-        picos216.setText("216 - NÃO CHEGOU");
-
-        picos217.setForeground(new java.awt.Color(255, 51, 51));
-        picos217.setText("217 - NÃO CHEGOU");
-
-        picos218.setForeground(new java.awt.Color(255, 51, 51));
-        picos218.setText("218 - NÃO CHEGOU");
-
-        picos219.setForeground(new java.awt.Color(255, 51, 51));
-        picos219.setText("219 - NÃO CHEGOU");
-
-        picos220.setForeground(new java.awt.Color(255, 51, 51));
-        picos220.setText("220 - NÃO CHEGOU");
-
-        picos221.setForeground(new java.awt.Color(255, 51, 51));
-        picos221.setText("221 - NÃO CHEGOU");
-
-        picos222.setForeground(new java.awt.Color(255, 51, 51));
-        picos222.setText("222 - NÃO CHEGOU");
-
-        picos223.setForeground(new java.awt.Color(255, 51, 51));
-        picos223.setText("223 - NÃO CHEGOU");
-
-        picos226.setForeground(new java.awt.Color(255, 51, 51));
-        picos226.setText("226 - NÃO CHEGOU");
-
-        picos227.setForeground(new java.awt.Color(255, 51, 51));
-        picos227.setText("227 - NÃO CHEGOU");
-
-        picos228.setForeground(new java.awt.Color(255, 51, 51));
-        picos228.setText("228 - NÃO CHEGOU");
-
-        picos229.setForeground(new java.awt.Color(255, 51, 51));
-        picos229.setText("229 - NÃO CHEGOU");
-
-        picos230.setForeground(new java.awt.Color(255, 51, 51));
-        picos230.setText("230 - NÃO CHEGOU");
-
-        picos231.setForeground(new java.awt.Color(255, 51, 51));
-        picos231.setText("231 - NÃO CHEGOU");
-
-        picos232.setForeground(new java.awt.Color(255, 51, 51));
-        picos232.setText("232 - NÃO CHEGOU");
-
-        picos234.setForeground(new java.awt.Color(255, 51, 51));
-        picos234.setText("234 - NÃO CHEGOU");
-
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(picos209)
-                    .addComponent(picos210)
-                    .addComponent(picos211)
-                    .addComponent(picos212)
-                    .addComponent(picos213)
-                    .addComponent(picos208)
-                    .addComponent(picos202)
-                    .addComponent(picos203)
-                    .addComponent(picos204)
-                    .addComponent(picos205)
-                    .addComponent(picos206)
-                    .addComponent(picos207)
-                    .addComponent(picos201))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(picos214)
-                    .addComponent(picos220)
-                    .addComponent(picos221)
-                    .addComponent(picos222)
-                    .addComponent(picos223)
-                    .addComponent(picos226)
-                    .addComponent(picos227)
-                    .addComponent(picos228)
-                    .addComponent(picos215)
-                    .addComponent(picos216)
-                    .addComponent(picos217)
-                    .addComponent(picos218)
-                    .addComponent(picos219))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(picos229)
-                    .addComponent(picos230)
-                    .addComponent(picos231)
-                    .addComponent(picos232)
-                    .addComponent(picos234))
-                .addContainerGap(105, Short.MAX_VALUE))
-        );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addComponent(picos201)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(picos202)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(picos203)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(picos204)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(picos205)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(picos206)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(picos207)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(picos208)
-                            .addComponent(picos221))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(picos209)
-                            .addComponent(picos222))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(picos210)
-                            .addComponent(picos223))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(picos211)
-                            .addComponent(picos226))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(picos212)
-                            .addComponent(picos227))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(picos213)
-                            .addComponent(picos228)))
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(picos214)
-                            .addComponent(picos229))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(picos215)
-                            .addComponent(picos230))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(picos216)
-                            .addComponent(picos231))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(picos217)
-                            .addComponent(picos232))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(picos218)
-                            .addComponent(picos234))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(picos219)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(picos220)))
-                .addGap(0, 20, Short.MAX_VALUE))
-        );
-
-        srn.addTab("Picos", jPanel3);
-
-        floriano401.setForeground(new java.awt.Color(255, 51, 51));
-        floriano401.setText("401 - NÃO CHEGOU");
-
-        floriano402.setForeground(new java.awt.Color(255, 51, 51));
-        floriano402.setText("402 - NÃO CHEGOU");
-
-        floriano403.setForeground(new java.awt.Color(255, 51, 51));
-        floriano403.setText("403 - NÃO CHEGOU");
-
-        floriano404.setForeground(new java.awt.Color(255, 51, 51));
-        floriano404.setText("404 - NÃO CHEGOU");
-
-        floriano405.setForeground(new java.awt.Color(255, 51, 51));
-        floriano405.setText("405 - NÃO CHEGOU");
-
-        floriano406.setForeground(new java.awt.Color(255, 51, 51));
-        floriano406.setText("406 - NÃO CHEGOU");
-
-        floriano407.setForeground(new java.awt.Color(255, 51, 51));
-        floriano407.setText("407 - NÃO CHEGOU");
-
-        floriano408.setForeground(new java.awt.Color(255, 51, 51));
-        floriano408.setText("408 - NÃO CHEGOU");
-
-        floriano409.setForeground(new java.awt.Color(255, 51, 51));
-        floriano409.setText("409 - NÃO CHEGOU");
-
-        floriano410.setForeground(new java.awt.Color(255, 51, 51));
-        floriano410.setText("410 - NÃO CHEGOU");
-
-        floriano411.setForeground(new java.awt.Color(255, 51, 51));
-        floriano411.setText("411 - NÃO CHEGOU");
-
-        floriano412.setForeground(new java.awt.Color(255, 51, 51));
-        floriano412.setText("412 - NÃO CHEGOU");
-
-        floriano413.setForeground(new java.awt.Color(255, 51, 51));
-        floriano413.setText("413 - NÃO CHEGOU");
-
-        floriano414.setForeground(new java.awt.Color(255, 51, 51));
-        floriano414.setText("414 - NÃO CHEGOU");
-
-        floriano415.setForeground(new java.awt.Color(255, 51, 51));
-        floriano415.setText("415 - NÃO CHEGOU");
-
-        floriano416.setForeground(new java.awt.Color(255, 51, 51));
-        floriano416.setText("416 - NÃO CHEGOU");
-
-        floriano417.setForeground(new java.awt.Color(255, 51, 51));
-        floriano417.setText("417 - NÃO CHEGOU");
-
-        floriano419.setForeground(new java.awt.Color(255, 51, 51));
-        floriano419.setText("419 - NÃO CHEGOU");
-
-        floriano426.setForeground(new java.awt.Color(255, 51, 51));
-        floriano426.setText("426 - NÃO CHEGOU");
-
-        floriano427.setForeground(new java.awt.Color(255, 51, 51));
-        floriano427.setText("427 - NÃO CHEGOU");
-
-        floriano428.setForeground(new java.awt.Color(255, 51, 51));
-        floriano428.setText("428 - NÃO CHEGOU");
-
-        floriano429.setForeground(new java.awt.Color(255, 51, 51));
-        floriano429.setText("429 - NÃO CHEGOU");
-
-        floriano430.setForeground(new java.awt.Color(255, 51, 51));
-        floriano430.setText("430 - NÃO CHEGOU");
-
-        floriano431.setForeground(new java.awt.Color(255, 51, 51));
-        floriano431.setText("431 - NÃO CHEGOU");
-
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(floriano413)
-                    .addComponent(floriano412)
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(floriano402)
-                            .addComponent(floriano403)
-                            .addComponent(floriano404)
-                            .addComponent(floriano405)
-                            .addComponent(floriano401)
-                            .addComponent(floriano406)
-                            .addComponent(floriano407)
-                            .addComponent(floriano409)
-                            .addComponent(floriano408)
-                            .addComponent(floriano410)
-                            .addComponent(floriano411))
-                        .addGap(29, 29, 29)
-                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(floriano431)
-                            .addComponent(floriano430)
-                            .addComponent(floriano429)
-                            .addComponent(floriano428)
-                            .addComponent(floriano427)
-                            .addComponent(floriano426)
-                            .addComponent(floriano415)
-                            .addComponent(floriano416)
-                            .addComponent(floriano417)
-                            .addComponent(floriano419)
-                            .addComponent(floriano414))))
-                .addContainerGap(207, Short.MAX_VALUE))
-        );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(jPanel4Layout.createSequentialGroup()
-                                .addComponent(floriano401)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(floriano402)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(floriano403)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(floriano404)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(floriano405))
-                            .addGroup(jPanel4Layout.createSequentialGroup()
-                                .addComponent(floriano414)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(floriano415)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(floriano416)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(floriano417)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(floriano419)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(floriano406)
-                            .addComponent(floriano426))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(floriano407)
-                            .addComponent(floriano427))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(floriano408)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(floriano409))
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addComponent(floriano428)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(floriano429)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(floriano410)
-                    .addComponent(floriano430))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(floriano411)
-                    .addComponent(floriano431))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(floriano412)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(floriano413)
-                .addContainerGap(20, Short.MAX_VALUE))
-        );
-
-        srn.addTab("Floriano", jPanel4);
+        jPanel5.setPreferredSize(new java.awt.Dimension(600, 600));
 
         ativarPicos.setText("Ativar Picos");
         ativarPicos.addActionListener(new java.awt.event.ActionListener() {
@@ -1163,7 +462,7 @@ public Jmain() {
                     .addComponent(quinta)
                     .addComponent(sexta)
                     .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.TRAILING))
-                .addContainerGap(225, Short.MAX_VALUE))
+                .addContainerGap(601, Short.MAX_VALUE))
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1195,20 +494,683 @@ public Jmain() {
                 .addComponent(sabado)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(domingo)
-                .addContainerGap(108, Short.MAX_VALUE))
+                .addContainerGap(645, Short.MAX_VALUE))
         );
 
         srn.addTab("Config", jPanel5);
+
+        jPanel3.setPreferredSize(new java.awt.Dimension(600, 600));
+
+        picos201.setForeground(new java.awt.Color(255, 51, 51));
+        picos201.setText("201 - NÃO CHEGOU");
+
+        picos202.setForeground(new java.awt.Color(255, 51, 51));
+        picos202.setText("202 - NÃO CHEGOU");
+
+        picos203.setForeground(new java.awt.Color(255, 51, 51));
+        picos203.setText("203 - NÃO CHEGOU");
+
+        picos204.setForeground(new java.awt.Color(255, 51, 51));
+        picos204.setText("204 - NÃO CHEGOU");
+
+        picos205.setForeground(new java.awt.Color(255, 51, 51));
+        picos205.setText("205 - NÃO CHEGOU");
+
+        picos206.setForeground(new java.awt.Color(255, 51, 51));
+        picos206.setText("206 - NÃO CHEGOU");
+
+        picos207.setForeground(new java.awt.Color(255, 51, 51));
+        picos207.setText("207 - NÃO CHEGOU");
+
+        picos208.setForeground(new java.awt.Color(255, 51, 51));
+        picos208.setText("208 - NÃO CHEGOU");
+
+        picos209.setForeground(new java.awt.Color(255, 51, 51));
+        picos209.setText("209 - NÃO CHEGOU");
+
+        picos210.setForeground(new java.awt.Color(255, 51, 51));
+        picos210.setText("210 - NÃO CHEGOU");
+
+        picos211.setForeground(new java.awt.Color(255, 51, 51));
+        picos211.setText("211 - NÃO CHEGOU");
+
+        picos212.setForeground(new java.awt.Color(255, 51, 51));
+        picos212.setText("212 - NÃO CHEGOU");
+
+        picos213.setForeground(new java.awt.Color(255, 51, 51));
+        picos213.setText("213 - NÃO CHEGOU");
+
+        picos214.setForeground(new java.awt.Color(255, 51, 51));
+        picos214.setText("214 - NÃO CHEGOU");
+
+        picos215.setForeground(new java.awt.Color(255, 51, 51));
+        picos215.setText("215 - NÃO CHEGOU");
+
+        picos216.setForeground(new java.awt.Color(255, 51, 51));
+        picos216.setText("216 - NÃO CHEGOU");
+
+        picos217.setForeground(new java.awt.Color(255, 51, 51));
+        picos217.setText("217 - NÃO CHEGOU");
+
+        picos218.setForeground(new java.awt.Color(255, 51, 51));
+        picos218.setText("218 - NÃO CHEGOU");
+
+        picos219.setForeground(new java.awt.Color(255, 51, 51));
+        picos219.setText("219 - NÃO CHEGOU");
+
+        picos220.setForeground(new java.awt.Color(255, 51, 51));
+        picos220.setText("220 - NÃO CHEGOU");
+
+        picos221.setForeground(new java.awt.Color(255, 51, 51));
+        picos221.setText("221 - NÃO CHEGOU");
+
+        picos222.setForeground(new java.awt.Color(255, 51, 51));
+        picos222.setText("222 - NÃO CHEGOU");
+
+        picos223.setForeground(new java.awt.Color(255, 51, 51));
+        picos223.setText("223 - NÃO CHEGOU");
+
+        picos226.setForeground(new java.awt.Color(255, 51, 51));
+        picos226.setText("226 - NÃO CHEGOU");
+
+        picos227.setForeground(new java.awt.Color(255, 51, 51));
+        picos227.setText("227 - NÃO CHEGOU");
+
+        picos228.setForeground(new java.awt.Color(255, 51, 51));
+        picos228.setText("228 - NÃO CHEGOU");
+
+        picos229.setForeground(new java.awt.Color(255, 51, 51));
+        picos229.setText("229 - NÃO CHEGOU");
+
+        picos230.setForeground(new java.awt.Color(255, 51, 51));
+        picos230.setText("230 - NÃO CHEGOU");
+
+        picos231.setForeground(new java.awt.Color(255, 51, 51));
+        picos231.setText("231 - NÃO CHEGOU");
+
+        picos232.setForeground(new java.awt.Color(255, 51, 51));
+        picos232.setText("232 - NÃO CHEGOU");
+
+        picos234.setForeground(new java.awt.Color(255, 51, 51));
+        picos234.setText("234 - NÃO CHEGOU");
+
+        jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel3.setText("SR NONATO");
+
+        piripiri301.setForeground(new java.awt.Color(255, 51, 51));
+        piripiri301.setText("301 - NÃO CHEGOU");
+
+        piripiri302.setForeground(new java.awt.Color(255, 51, 51));
+        piripiri302.setText("302 - NÃO CHEGOU");
+
+        piripiri303.setForeground(new java.awt.Color(255, 51, 51));
+        piripiri303.setText("303 - NÃO CHEGOU");
+
+        piripiri304.setForeground(new java.awt.Color(255, 51, 51));
+        piripiri304.setText("304 - NÃO CHEGOU");
+
+        piripiri305.setForeground(new java.awt.Color(255, 51, 51));
+        piripiri305.setText("305 - NÃO CHEGOU");
+
+        piripiri306.setForeground(new java.awt.Color(255, 51, 51));
+        piripiri306.setText("306 - NÃO CHEGOU");
+
+        piripiri307.setForeground(new java.awt.Color(255, 51, 51));
+        piripiri307.setText("307 - NÃO CHEGOU");
+
+        piripiri308.setForeground(new java.awt.Color(255, 51, 51));
+        piripiri308.setText("308 - NÃO CHEGOU");
+
+        piripiri309.setForeground(new java.awt.Color(255, 51, 51));
+        piripiri309.setText("309 - NÃO CHEGOU");
+
+        piripiri310.setForeground(new java.awt.Color(255, 51, 51));
+        piripiri310.setText("310 - NÃO CHEGOU");
+
+        piripiri311.setForeground(new java.awt.Color(255, 51, 51));
+        piripiri311.setText("311 - NÃO CHEGOU");
+
+        piripiri312.setForeground(new java.awt.Color(255, 51, 51));
+        piripiri312.setText("312 - NÃO CHEGOU");
+
+        piripiri313.setForeground(new java.awt.Color(255, 51, 51));
+        piripiri313.setText("313 - NÃO CHEGOU");
+
+        piripiri314.setForeground(new java.awt.Color(255, 51, 51));
+        piripiri314.setText("314 - NÃO CHEGOU");
+
+        piripiri315.setForeground(new java.awt.Color(255, 51, 51));
+        piripiri315.setText("315 - NÃO CHEGOU");
+
+        piripiri316.setForeground(new java.awt.Color(255, 51, 51));
+        piripiri316.setText("316 - NÃO CHEGOU");
+
+        piripiri317.setForeground(new java.awt.Color(255, 51, 51));
+        piripiri317.setText("317 - NÃO CHEGOU");
+
+        piripiri319.setForeground(new java.awt.Color(255, 51, 51));
+        piripiri319.setText("319 - NÃO CHEGOU");
+
+        piripiri320.setForeground(new java.awt.Color(255, 51, 51));
+        piripiri320.setText("320 - NÃO CHEGOU");
+
+        piripiri321.setForeground(new java.awt.Color(255, 51, 51));
+        piripiri321.setText("321 - NÃO CHEGOU");
+
+        piripiri322.setForeground(new java.awt.Color(255, 51, 51));
+        piripiri322.setText("322 - NÃO CHEGOU");
+
+        piripiri323.setForeground(new java.awt.Color(255, 51, 51));
+        piripiri323.setText("323 - NÃO CHEGOU");
+
+        piripiri326.setForeground(new java.awt.Color(255, 51, 51));
+        piripiri326.setText("326 - NÃO CHEGOU");
+
+        piripiri327.setForeground(new java.awt.Color(255, 51, 51));
+        piripiri327.setText("327 - NÃO CHEGOU");
+
+        piripiri328.setForeground(new java.awt.Color(255, 51, 51));
+        piripiri328.setText("328 - NÃO CHEGOU");
+
+        piripiri329.setForeground(new java.awt.Color(255, 51, 51));
+        piripiri329.setText("329 - NÃO CHEGOU");
+
+        piripiri330.setForeground(new java.awt.Color(255, 51, 51));
+        piripiri330.setText("330 - NÃO CHEGOU");
+
+        piripiri331.setForeground(new java.awt.Color(255, 51, 51));
+        piripiri331.setText("331 - NÃO CHEGOU");
+
+        piripiri332.setForeground(new java.awt.Color(255, 51, 51));
+        piripiri332.setText("332 - NÃO CHEGOU");
+
+        piripiri333.setForeground(new java.awt.Color(255, 51, 51));
+        piripiri333.setText("333 - NÃO CHEGOU");
+
+        piripiri334.setForeground(new java.awt.Color(255, 51, 51));
+        piripiri334.setText("334 - NÃO CHEGOU");
+
+        jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel4.setText("PIRIPIRI");
+
+        floriano401.setForeground(new java.awt.Color(255, 51, 51));
+        floriano401.setText("401 - NÃO CHEGOU");
+
+        floriano402.setForeground(new java.awt.Color(255, 51, 51));
+        floriano402.setText("402 - NÃO CHEGOU");
+
+        floriano403.setForeground(new java.awt.Color(255, 51, 51));
+        floriano403.setText("403 - NÃO CHEGOU");
+
+        floriano404.setForeground(new java.awt.Color(255, 51, 51));
+        floriano404.setText("404 - NÃO CHEGOU");
+
+        floriano405.setForeground(new java.awt.Color(255, 51, 51));
+        floriano405.setText("405 - NÃO CHEGOU");
+
+        floriano406.setForeground(new java.awt.Color(255, 51, 51));
+        floriano406.setText("406 - NÃO CHEGOU");
+
+        floriano407.setForeground(new java.awt.Color(255, 51, 51));
+        floriano407.setText("407 - NÃO CHEGOU");
+
+        floriano409.setForeground(new java.awt.Color(255, 51, 51));
+        floriano409.setText("409 - NÃO CHEGOU");
+
+        floriano410.setForeground(new java.awt.Color(255, 51, 51));
+        floriano410.setText("410 - NÃO CHEGOU");
+
+        floriano411.setForeground(new java.awt.Color(255, 51, 51));
+        floriano411.setText("411 - NÃO CHEGOU");
+
+        floriano412.setForeground(new java.awt.Color(255, 51, 51));
+        floriano412.setText("412 - NÃO CHEGOU");
+
+        floriano413.setForeground(new java.awt.Color(255, 51, 51));
+        floriano413.setText("413 - NÃO CHEGOU");
+
+        floriano414.setForeground(new java.awt.Color(255, 51, 51));
+        floriano414.setText("414 - NÃO CHEGOU");
+
+        floriano415.setForeground(new java.awt.Color(255, 51, 51));
+        floriano415.setText("415 - NÃO CHEGOU");
+
+        floriano416.setForeground(new java.awt.Color(255, 51, 51));
+        floriano416.setText("416 - NÃO CHEGOU");
+
+        floriano417.setForeground(new java.awt.Color(255, 51, 51));
+        floriano417.setText("417 - NÃO CHEGOU");
+
+        floriano419.setForeground(new java.awt.Color(255, 51, 51));
+        floriano419.setText("419 - NÃO CHEGOU");
+
+        floriano426.setForeground(new java.awt.Color(255, 51, 51));
+        floriano426.setText("426 - NÃO CHEGOU");
+
+        floriano427.setForeground(new java.awt.Color(255, 51, 51));
+        floriano427.setText("427 - NÃO CHEGOU");
+
+        floriano428.setForeground(new java.awt.Color(255, 51, 51));
+        floriano428.setText("428 - NÃO CHEGOU");
+
+        floriano429.setForeground(new java.awt.Color(255, 51, 51));
+        floriano429.setText("429 - NÃO CHEGOU");
+
+        floriano430.setForeground(new java.awt.Color(255, 51, 51));
+        floriano430.setText("430 - NÃO CHEGOU");
+
+        floriano431.setForeground(new java.awt.Color(255, 51, 51));
+        floriano431.setText("431 - NÃO CHEGOU");
+
+        jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel5.setText("PICOS");
+
+        srn501.setForeground(new java.awt.Color(255, 51, 51));
+        srn501.setText("501 - NÃO CHEGOU");
+
+        srn502.setForeground(new java.awt.Color(255, 51, 51));
+        srn502.setText("502 - NÃO CHEGOU");
+
+        srn503.setForeground(new java.awt.Color(255, 51, 51));
+        srn503.setText("503 - NÃO CHEGOU");
+
+        srn504.setForeground(new java.awt.Color(255, 51, 51));
+        srn504.setText("504 - NÃO CHEGOU");
+
+        srn505.setForeground(new java.awt.Color(255, 51, 51));
+        srn505.setText("505 - NÃO CHEGOU");
+
+        srn506.setForeground(new java.awt.Color(255, 51, 51));
+        srn506.setText("506 - NÃO CHEGOU");
+
+        srn507.setForeground(new java.awt.Color(255, 51, 51));
+        srn507.setText("507 - NÃO CHEGOU");
+
+        srn511.setForeground(new java.awt.Color(255, 51, 51));
+        srn511.setText("511 - NÃO CHEGOU");
+
+        srn512.setForeground(new java.awt.Color(255, 51, 51));
+        srn512.setText("512 - NÃO CHEGOU");
+
+        srn513.setForeground(new java.awt.Color(255, 51, 51));
+        srn513.setText("513 - NÃO CHEGOU");
+
+        srn514.setForeground(new java.awt.Color(255, 51, 51));
+        srn514.setText("514 - NÃO CHEGOU");
+
+        jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel6.setText("FLORIANO");
+
+        floriano418.setForeground(new java.awt.Color(255, 51, 51));
+        floriano418.setText("418 - NÃO CHEGOU");
+
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(picos209)
+                            .addComponent(picos210)
+                            .addComponent(picos211)
+                            .addComponent(picos212)
+                            .addComponent(picos213)
+                            .addComponent(picos208)
+                            .addComponent(picos202)
+                            .addComponent(picos203)
+                            .addComponent(picos204)
+                            .addComponent(picos205)
+                            .addComponent(picos206)
+                            .addComponent(picos207)
+                            .addComponent(picos201))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(picos214)
+                            .addComponent(picos220)
+                            .addComponent(picos221)
+                            .addComponent(picos222)
+                            .addComponent(picos223)
+                            .addComponent(picos226)
+                            .addComponent(picos227)
+                            .addComponent(picos228)
+                            .addComponent(picos215)
+                            .addComponent(picos216)
+                            .addComponent(picos217)
+                            .addComponent(picos218)
+                            .addComponent(picos219))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(picos229)
+                            .addComponent(picos230)
+                            .addComponent(picos231)
+                            .addComponent(picos232)
+                            .addComponent(picos234)))
+                    .addComponent(jLabel5)
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(floriano402)
+                            .addComponent(floriano403)
+                            .addComponent(floriano404)
+                            .addComponent(floriano405)
+                            .addComponent(floriano401)
+                            .addComponent(floriano406)
+                            .addComponent(floriano407)
+                            .addComponent(floriano413)
+                            .addComponent(floriano412)
+                            .addComponent(floriano409)
+                            .addComponent(floriano410)
+                            .addComponent(floriano411))
+                        .addGap(29, 29, 29)
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(floriano431)
+                            .addComponent(floriano430)
+                            .addComponent(floriano429)
+                            .addComponent(floriano428)
+                            .addComponent(floriano427)
+                            .addComponent(floriano426)
+                            .addComponent(floriano415)
+                            .addComponent(floriano416)
+                            .addComponent(floriano417)
+                            .addComponent(floriano419)
+                            .addComponent(floriano414)
+                            .addComponent(floriano418)))
+                    .addComponent(jLabel6))
+                .addGap(30, 30, 30)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(piripiri309)
+                            .addComponent(piripiri310)
+                            .addComponent(piripiri311)
+                            .addComponent(piripiri312)
+                            .addComponent(piripiri313)
+                            .addComponent(piripiri308)
+                            .addComponent(piripiri302)
+                            .addComponent(piripiri303)
+                            .addComponent(piripiri304)
+                            .addComponent(piripiri305)
+                            .addComponent(piripiri306)
+                            .addComponent(piripiri307)
+                            .addComponent(piripiri301))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel3Layout.createSequentialGroup()
+                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(piripiri314)
+                                    .addComponent(piripiri320)
+                                    .addComponent(piripiri321)
+                                    .addComponent(piripiri322)
+                                    .addComponent(piripiri323)
+                                    .addComponent(piripiri326)
+                                    .addComponent(piripiri327)
+                                    .addComponent(piripiri328)
+                                    .addComponent(piripiri315)
+                                    .addComponent(piripiri316)
+                                    .addComponent(piripiri317)
+                                    .addComponent(piripiri319))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(piripiri330)
+                                    .addComponent(piripiri331)
+                                    .addComponent(piripiri332)
+                                    .addComponent(piripiri333)
+                                    .addComponent(piripiri334)))
+                            .addComponent(piripiri329)))
+                    .addComponent(jLabel4)
+                    .addComponent(srn502)
+                    .addComponent(srn503)
+                    .addComponent(srn504)
+                    .addComponent(srn505)
+                    .addComponent(srn506)
+                    .addComponent(srn507)
+                    .addComponent(srn511)
+                    .addComponent(srn512)
+                    .addComponent(srn513)
+                    .addComponent(srn514)
+                    .addComponent(srn501)
+                    .addComponent(jLabel3))
+                .addContainerGap(79, Short.MAX_VALUE))
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(16, 16, 16)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel4)
+                            .addComponent(jLabel5))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel3Layout.createSequentialGroup()
+                                .addComponent(picos201)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(picos202)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(picos203)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(picos204)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(picos205)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(picos206)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(picos207)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(picos208)
+                                    .addComponent(picos221))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(picos209)
+                                    .addComponent(picos222))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(picos210)
+                                    .addComponent(picos223))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(picos211)
+                                    .addComponent(picos226))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(picos212)
+                                    .addComponent(picos227))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(picos213)
+                                    .addComponent(picos228)))
+                            .addGroup(jPanel3Layout.createSequentialGroup()
+                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(picos214)
+                                    .addComponent(picos229))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(picos215)
+                                    .addComponent(picos230))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(picos216)
+                                    .addComponent(picos231))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(picos217)
+                                    .addComponent(picos232))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(picos218)
+                                    .addComponent(picos234))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(picos219)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(picos220))
+                            .addGroup(jPanel3Layout.createSequentialGroup()
+                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanel3Layout.createSequentialGroup()
+                                        .addComponent(piripiri301)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(piripiri302)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(piripiri303)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(piripiri304)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(piripiri305)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(piripiri306)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(piripiri307)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(piripiri308)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(piripiri309)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(piripiri310)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(piripiri311)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(piripiri312))
+                                    .addGroup(jPanel3Layout.createSequentialGroup()
+                                        .addComponent(piripiri330)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(piripiri331)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(piripiri332)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(piripiri333)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(piripiri334)))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(piripiri313)
+                                    .addComponent(piripiri329)))
+                            .addGroup(jPanel3Layout.createSequentialGroup()
+                                .addComponent(piripiri314)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(piripiri315)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(piripiri316)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(piripiri317)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanel3Layout.createSequentialGroup()
+                                        .addGap(44, 44, 44)
+                                        .addComponent(piripiri321)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(piripiri322)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(piripiri323)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(piripiri326)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(piripiri327)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(piripiri328))
+                                    .addGroup(jPanel3Layout.createSequentialGroup()
+                                        .addComponent(piripiri319)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(piripiri320)))))
+                        .addGap(30, 30, 30)
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(jPanel3Layout.createSequentialGroup()
+                                .addComponent(jLabel6)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addGroup(jPanel3Layout.createSequentialGroup()
+                                        .addComponent(floriano401)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(floriano402)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(floriano403)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(floriano404)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                            .addComponent(floriano405)
+                                            .addComponent(floriano418)))
+                                    .addGroup(jPanel3Layout.createSequentialGroup()
+                                        .addComponent(floriano414)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(floriano415)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(floriano416)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(floriano417)
+                                        .addGap(22, 22, 22)))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(floriano406)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(floriano407)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(floriano409)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(floriano410)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(floriano411)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(floriano412)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(floriano413))
+                            .addGroup(jPanel3Layout.createSequentialGroup()
+                                .addComponent(floriano419)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(floriano426)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(floriano427)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(floriano428)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(floriano429)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(floriano430)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(floriano431))))
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addComponent(jLabel3)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(srn501)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(srn502)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(srn503)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(srn504)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(srn505)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(srn506)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(srn507)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(srn511)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(srn512)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(srn513, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(srn514, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(40, 40, 40))
+        );
+
+        srn.addTab("Piauí", jPanel3);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(srn)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(srn, javax.swing.GroupLayout.PREFERRED_SIZE, 817, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(srn)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addComponent(srn, javax.swing.GroupLayout.PREFERRED_SIZE, 870, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         pack();
@@ -1286,10 +1248,6 @@ public Jmain() {
                 if (pathname.getName().endsWith(diaDaSemana+"317.TXT.GZ") == true) {
                     piripiri317.setText("317 Chegou");
                     piripiri317.setForeground(Color.blue);
-                }
-                if (pathname.getName().endsWith(diaDaSemana+"318.TXT.GZ") == true) {
-                    piripiri318.setText("318 Chegou");
-                    piripiri318.setForeground(Color.blue);
                 }
                 if (pathname.getName().endsWith(diaDaSemana+"319.TXT.GZ") == true) {
                     piripiri319.setText("319 Chegou");
@@ -1385,10 +1343,6 @@ public Jmain() {
                     floriano407.setText("407 Chegou");
                     floriano407.setForeground(Color.blue);
                 }
-                if (pathname.getName().endsWith(diaDaSemana+"408.TXT.GZ") == true) {
-                    floriano408.setText("408 Chegou");
-                    floriano408.setForeground(Color.blue);
-                }
                 if (pathname.getName().endsWith(diaDaSemana+"409.TXT.GZ") == true) {
                     floriano409.setText("409 Chegou");
                     floriano409.setForeground(Color.blue);
@@ -1424,6 +1378,10 @@ public Jmain() {
                 if (pathname.getName().endsWith(diaDaSemana+"417.TXT.GZ") == true) {
                     floriano417.setText("417 Chegou");
                     floriano417.setForeground(Color.blue);
+                }
+                if (pathname.getName().endsWith(diaDaSemana+"418.TXT.GZ") == true) {
+                    floriano418.setText("418 Chegou");
+                    floriano418.setForeground(Color.blue);
                 }
                 if (pathname.getName().endsWith(diaDaSemana+"419.TXT.GZ") == true) {
                     floriano419.setText("419 Chegou");
@@ -1645,6 +1603,7 @@ public Jmain() {
                 caxias112.setText("112 Chegou");
                 caxias112.setForeground(Color.blue);
                 }
+            
             if (pathname.getName().endsWith(diaDaSemana+"113.TXT.GZ") == true) {
                 caxias113.setText("113 Chegou");
                 caxias113.setForeground(Color.blue);
@@ -1653,14 +1612,7 @@ public Jmain() {
                 caxias114.setText("114 Chegou");
                 caxias114.setForeground(Color.blue);
                 }
-            if (pathname.getName().endsWith(diaDaSemana+"116.TXT.GZ") == true) {
-                caxias116.setText("116 Chegou");
-                caxias116.setForeground(Color.blue);
-                }
-            if (pathname.getName().endsWith(diaDaSemana+"121.TXT.GZ") == true) {
-                caxias121.setText("121 Chegou");
-                caxias121.setForeground(Color.blue);
-                }
+
             if (pathname.getName().endsWith(diaDaSemana+"122.TXT.GZ") == true) {
                 caxias122.setText("122 Chegou");
                 caxias122.setForeground(Color.blue);
@@ -1729,38 +1681,97 @@ public Jmain() {
         });
     }//GEN-LAST:event_sraimundoOnTime
 
-    private void ativarPicosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ativarPicosActionPerformed
-        if(ativarPicos.isSelected()){
-          picos.start();  
-        }else{
-          picos.stop();
+    private void domingoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_domingoActionPerformed
+        if(domingo.isSelected()){
+            segunda.setSelected(false);
+            terca.setSelected(false);
+            quarta.setSelected(false);
+            quinta.setSelected(false);
+            sabado.setSelected(false);
+            sexta.setSelected(false);
         }
-        
-    }//GEN-LAST:event_ativarPicosActionPerformed
+        Dia dia = new Dia();
+        diaDaSemana = dia.getDomingo();
+    }//GEN-LAST:event_domingoActionPerformed
 
-    private void ativarPiripiriActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ativarPiripiriActionPerformed
-        if(ativarPiripiri.isSelected()){
-            piripiri.start();
-        }else{
-            piripiri.stop();
+    private void sabadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sabadoActionPerformed
+        if(sabado.isSelected()){
+            segunda.setSelected(false);
+            terca.setSelected(false);
+            quarta.setSelected(false);
+            quinta.setSelected(false);
+            sexta.setSelected(false);
+            domingo.setSelected(false);
         }
-    }//GEN-LAST:event_ativarPiripiriActionPerformed
+        Dia dia = new Dia();
+        diaDaSemana = dia.getSabado();
+    }//GEN-LAST:event_sabadoActionPerformed
 
-    private void ativarFlorianoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ativarFlorianoActionPerformed
-        if(ativarFloriano.isSelected()){
-            floriano.start();
-        }else{
-            floriano.stop();
+    private void sextaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sextaActionPerformed
+        if(sexta.isSelected()){
+            segunda.setSelected(false);
+            terca.setSelected(false);
+            quarta.setSelected(false);
+            quinta.setSelected(false);
+            sabado.setSelected(false);
+            domingo.setSelected(false);
         }
-    }//GEN-LAST:event_ativarFlorianoActionPerformed
+        Dia dia = new Dia();
+        diaDaSemana = dia.getSexta();
+    }//GEN-LAST:event_sextaActionPerformed
 
-    private void ativarSrnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ativarSrnActionPerformed
-        if(ativarSrn.isSelected()){
-            sraimundo.start();
-        }else{
-            sraimundo.stop();
+    private void quintaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_quintaActionPerformed
+        if(quinta.isSelected()){
+            terca.setSelected(false);
+            quarta.setSelected(false);
+            segunda.setSelected(false);
+            sexta.setSelected(false);
+            sabado.setSelected(false);
+            domingo.setSelected(false);
         }
-    }//GEN-LAST:event_ativarSrnActionPerformed
+        Dia dia = new Dia();
+        diaDaSemana = dia.getQuinta();
+    }//GEN-LAST:event_quintaActionPerformed
+
+    private void quartaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_quartaActionPerformed
+        if(quarta.isSelected()){
+            segunda.setSelected(false);
+            terca.setSelected(false);
+            sexta.setSelected(false);
+            quinta.setSelected(false);
+            sabado.setSelected(false);
+            domingo.setSelected(false);
+        }
+        Dia dia = new Dia();
+        diaDaSemana = dia.getQuarta();
+    }//GEN-LAST:event_quartaActionPerformed
+
+    private void tercaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tercaActionPerformed
+        if(terca.isSelected()){
+            segunda.setSelected(false);
+            quarta.setSelected(false);
+            quinta.setSelected(false);
+            sexta.setSelected(false);
+            sabado.setSelected(false);
+            domingo.setSelected(false);
+        }
+        Dia dia = new Dia();
+        diaDaSemana = dia.getTerca();
+    }//GEN-LAST:event_tercaActionPerformed
+
+    private void segundaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_segundaActionPerformed
+        if(segunda.isSelected()){
+            terca.setSelected(false);
+            quarta.setSelected(false);
+            quinta.setSelected(false);
+            sexta.setSelected(false);
+            sabado.setSelected(false);
+            domingo.setSelected(false);
+
+        }
+        Dia dia = new Dia();
+        diaDaSemana = dia.getSegunda();
+    }//GEN-LAST:event_segundaActionPerformed
 
     private void ativarCaxiasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ativarCaxiasActionPerformed
         if(ativarCaxias.isSelected()){
@@ -1770,97 +1781,37 @@ public Jmain() {
         }
     }//GEN-LAST:event_ativarCaxiasActionPerformed
 
-    private void segundaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_segundaActionPerformed
-        if(segunda.isSelected()){
-           terca.setSelected(false);
-           quarta.setSelected(false);
-           quinta.setSelected(false);
-           sexta.setSelected(false);
-           sabado.setSelected(false);
-           domingo.setSelected(false);
-          
-       }
-        Dia dia = new Dia();
-        diaDaSemana = dia.getSegunda();
-    }//GEN-LAST:event_segundaActionPerformed
+    private void ativarSrnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ativarSrnActionPerformed
+        if(ativarSrn.isSelected()){
+            sraimundo.start();
+        }else{
+            sraimundo.stop();
+        }
+    }//GEN-LAST:event_ativarSrnActionPerformed
 
-    private void quartaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_quartaActionPerformed
-        if(quarta.isSelected()){
-           segunda.setSelected(false);
-           terca.setSelected(false);
-           sexta.setSelected(false);
-           quinta.setSelected(false);       
-           sabado.setSelected(false);
-           domingo.setSelected(false); 
-       }
-        Dia dia = new Dia();
-        diaDaSemana = dia.getQuarta();
-    }//GEN-LAST:event_quartaActionPerformed
+    private void ativarFlorianoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ativarFlorianoActionPerformed
+        if(ativarFloriano.isSelected()){
+            floriano.start();
+        }else{
+            floriano.stop();
+        }
+    }//GEN-LAST:event_ativarFlorianoActionPerformed
 
-    private void tercaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tercaActionPerformed
-        if(terca.isSelected()){
-           segunda.setSelected(false);
-           quarta.setSelected(false);
-           quinta.setSelected(false);
-           sexta.setSelected(false);
-           sabado.setSelected(false);
-           domingo.setSelected(false);
-       }
-        Dia dia = new Dia();
-        diaDaSemana = dia.getTerca();
-    }//GEN-LAST:event_tercaActionPerformed
+    private void ativarPiripiriActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ativarPiripiriActionPerformed
+        if(ativarPiripiri.isSelected()){
+            piripiri.start();
+        }else{
+            piripiri.stop();
+        }
+    }//GEN-LAST:event_ativarPiripiriActionPerformed
 
-    private void quintaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_quintaActionPerformed
-       if(quinta.isSelected()){
-           terca.setSelected(false);
-           quarta.setSelected(false);
-           segunda.setSelected(false);
-           sexta.setSelected(false);
-           sabado.setSelected(false);
-           domingo.setSelected(false);
-       }
-        Dia dia = new Dia();
-        diaDaSemana = dia.getQuinta();
-    }//GEN-LAST:event_quintaActionPerformed
-
-    private void sextaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sextaActionPerformed
-        if(sexta.isSelected()){
-           segunda.setSelected(false);
-           terca.setSelected(false);
-           quarta.setSelected(false);
-           quinta.setSelected(false);       
-           sabado.setSelected(false);
-           domingo.setSelected(false);
-       }
-        Dia dia = new Dia();
-        diaDaSemana = dia.getSexta();
-    }//GEN-LAST:event_sextaActionPerformed
-
-    private void sabadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sabadoActionPerformed
-        if(sabado.isSelected()){
-           segunda.setSelected(false);
-           terca.setSelected(false);
-           quarta.setSelected(false);
-           quinta.setSelected(false);       
-           sexta.setSelected(false);
-           domingo.setSelected(false);
-       }
-        Dia dia = new Dia();
-        diaDaSemana = dia.getSabado();
-    }//GEN-LAST:event_sabadoActionPerformed
-
-    private void domingoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_domingoActionPerformed
-        if(domingo.isSelected()){
-           segunda.setSelected(false);
-           terca.setSelected(false);
-           quarta.setSelected(false);
-           quinta.setSelected(false);       
-           sabado.setSelected(false);
-           sexta.setSelected(false);
-       }
-        Dia dia = new Dia();
-        diaDaSemana = dia.getDomingo();
-    }//GEN-LAST:event_domingoActionPerformed
+    private void ativarPicosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ativarPicosActionPerformed
+        if(ativarPicos.isSelected()){
+            picos.start();
+        }else{
+            picos.stop();
+        }
+    }//GEN-LAST:event_ativarPicosActionPerformed
 
     /**
      * @param args the command line arguments
@@ -1945,8 +1896,6 @@ public Jmain() {
     private javax.swing.JLabel caxias112;
     private javax.swing.JLabel caxias113;
     private javax.swing.JLabel caxias114;
-    private javax.swing.JLabel caxias116;
-    private javax.swing.JLabel caxias121;
     private javax.swing.JLabel caxias122;
     private javax.swing.JLabel caxias123;
     private javax.swing.JRadioButton domingo;
@@ -1958,7 +1907,6 @@ public Jmain() {
     private javax.swing.JLabel floriano405;
     private javax.swing.JLabel floriano406;
     private javax.swing.JLabel floriano407;
-    private javax.swing.JLabel floriano408;
     private javax.swing.JLabel floriano409;
     private javax.swing.JLabel floriano410;
     private javax.swing.JLabel floriano411;
@@ -1968,6 +1916,7 @@ public Jmain() {
     private javax.swing.JLabel floriano415;
     private javax.swing.JLabel floriano416;
     private javax.swing.JLabel floriano417;
+    private javax.swing.JLabel floriano418;
     private javax.swing.JLabel floriano419;
     private javax.swing.JLabel floriano426;
     private javax.swing.JLabel floriano427;
@@ -1977,10 +1926,12 @@ public Jmain() {
     private javax.swing.JLabel floriano431;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JPanel jPanel1;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
     private org.netbeans.examples.lib.timerbean.Timer picos;
     private javax.swing.JLabel picos201;
@@ -2032,7 +1983,6 @@ public Jmain() {
     private javax.swing.JLabel piripiri315;
     private javax.swing.JLabel piripiri316;
     private javax.swing.JLabel piripiri317;
-    private javax.swing.JLabel piripiri318;
     private javax.swing.JLabel piripiri319;
     private javax.swing.JLabel piripiri320;
     private javax.swing.JLabel piripiri321;
@@ -2050,7 +2000,6 @@ public Jmain() {
     private javax.swing.JRadioButton quarta;
     private javax.swing.JRadioButton quinta;
     private javax.swing.JRadioButton sabado;
-    private javax.swing.JPanel saoraimundo;
     private javax.swing.JPanel saoraimundo1;
     private javax.swing.JRadioButton segunda;
     private javax.swing.JRadioButton sexta;

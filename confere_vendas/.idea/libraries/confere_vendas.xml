@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="confere_vendas">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dist/confere_vendas.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
